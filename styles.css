@@ -1,0 +1,146 @@
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  -webkit-tap-highlight-color: rgb(205,49,114);
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(33,45,49);
+  font-weight: 400;
+  font-family: "ff-tisa-sans-web-pro", sans-serif !important;
+}
+
+::selection {
+  background: rgb(205,49,114);
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 680px;
+  padding: 20px;
+  line-height: 27px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  color: #3e4d52;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 1.7em;
+}
+h3 {
+  margin-top: 30px;
+  font-size: 1.37em;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 1em;
+}
+code {
+  background-color: rgb(59, 71, 74);
+  border: 1px solid rgb(33,45,49);
+  color: #f56ba4;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+pre > code {
+  padding: 2px;
+}
+
+code.avoid-wrap {
+  display: inline-block;
+  white-space: pre-wrap;
+  padding: 1px 10px;
+}
+
+a, a:hover, a:active, a:visited {
+  color: rgb(38,145,173);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+.footer {
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #aaa;
+  text-align: center;
+  font-family: brandon-grotesque;
+}
+
+.footer a {
+  color: #aaa;
+  font-weight: normal;
+}
+
+.nav {
+  position: fixed;
+  padding: 25px;
+  min-width: 162px;
+  top: 40px;
+  left: 40px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0 7px 5px -12px rgba(0,0,0,0.13), 0 13px 34px 0 rgba(0,0,0,0.07);
+}
+
+.nav a {
+  display: block;
+  margin-top: 17px;
+  font-size: 14px;
+}
+
+.nav a.sub {
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: 12px;
+}
+
+.docs-title {
+  position: absolute;
+  top: 28px;
+  left: 54px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 987px) {
+  .nav {
+    display: none;
+  }
+  .container {
+    margin: 0 auto;
+  }
+}

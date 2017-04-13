@@ -5,35 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <title>Instructions for beta users | Haiku</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-  <style>
-    .container {
-      margin: 0 auto;
-      max-width: 600px;
-      padding: 20px;
-      font-family: Helvetica, Arial, sans-serif;
-      font-weight: 100;
-      line-height: 22px;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-weight: 100;
-    }
-    li {
-      margin-bottom: 1em;
-    }
-    code {
-      background-color: pink;
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
-    pre > code {
-      padding: 2px;
-    }
-    a, a:hover, a:active, a:visited {
-      color: orange;
-    }
-    h2 { margin-top: 40px; }
-    h3 { margin-top: 30px; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://use.typekit.net/blb2kiz.js"></script>
+  <script>try{Typekit.load({ async: false });}catch(e){console.log("Error loading typekit font", e)}</script>
 </head>
 <body>
   <div class="container">
@@ -44,41 +18,41 @@
     <p>Haiku is still under construction, and we hope you'll pardon our rough edges. In the next months, we'll be making it a lot faster, easier to use, and simpler to install.</p>
 
 
-    <h2>Quick start</h2>
+    <h2 id="quick-start">Quick start</h2>
 
     <p>If you don't need a lot of detail or context, here's the <em>tl;dr</em> version (scroll down for the same steps in more detail):
 
-    <p><strong>Install</strong></p>
+    <h3 id="install">Install</strong></h3>
     <ol>
       <li>Check that your system meets all the <a href="#prerequisites">prerequisites</a> (Mac only; Sketch, node, npm, and dev tools installed).</li>
       <li><a href="https://s3.amazonaws.com/haiku-electron-releases-production/releases/production-master-mac-latest.zip" target="_blank"><strong>Download the latest release</strong></a>, extract it, and move <strong>Haiku.app</strong> to your <strong>Applications</strong> folder.</li>
-      <li>Install our dev tools by running this command: <code>curl http://code.haiku.ai/scripts/cli/installer.js | node</code></li>
+      <li>Install our dev tools by running this command: <code class="avoid-wrap">curl http://code.haiku.ai/scripts/cli/installer.js | node</code></li>
     </ol>
 
-    <p><strong>Design</strong></p>
+    <h3 id="design"><strong>Design</strong></h3>
     <ol>
       <li>Open <strong>Haiku.app</strong>, wait for it to launch, and sign in with your username and password. (Don't have a login? <a href="mailto:contact@haiku.ai">Contact us.</a>)</li>
       <li>Create and select a project. Click the "Open in Editor" button.</li>
       <li>Animate! (<a href="https://www.youtube.com/watch?v=13ogotKqoDw" target="_blank">See our demo video</a> for ideas.)</li>
       <li>Click the <em>floppy disk icon</em> to save changes.</li>
-      <li>Go back to the project dashboard. Copy the installation code snippet for your animation. (<code>haiku install ...</code>)</li>
+      <li>Go back to the project dashboard. Copy the installation code snippet for your animation. ( <code>haiku install ...</code> )</li>
     </ol>
 
-    <p><strong>Code</strong></p>
+    <h3 id="code"><strong>Code</strong></h3>
     <ol>
       <li>Install your animation in a React codebase: <code>haiku install ...</code></li>
-      <li>Import the animation into your code: <code>import HaikuAnimation from '@haiku/{project}/react';</code></li>
-      <li>Embed the animation in your <em>render</em> method: <code>&lt;HaikuAnimation /&gt;</code></li>  
+      <li>Import the animation into your code: <code class="avoid-wrap">import HaikuAnimation from '@haiku/{project}/react';</code></li>
+      <li>Embed the animation in your <em>render</em> method: <code>&lt;HaikuAnimation /&gt;</code></li>
       <li>Refresh and watch your animation come to life.</li>
     </ol>
 
     <br>
     <hr style="border: none; border-bottom: 1px solid #eee">
 
-    <h2>Detailed Instructions</h2>
+    <h2 id="detailed">Detailed Instructions</h2>
 
     <a name="prerequisites"></a>
-    <h3>Prerequisites</h3>
+    <h3 id="prereqs">Prerequisites</h3>
 
     <p>Today, Haiku can only run on a system that meets a handful of prerequisites. Before continuing, please make sure your system has all of the following. (Big improvements on this are coming soon.)</p>
 
@@ -86,21 +60,23 @@
       <li>Mac OS 10.9 (Mavericks) or greater</li>
       <li><a href="https://www.sketchapp.com" target="_blank">Sketch</a> v42</li>
       <li>Xcode</li>
-      <li>Xcode command line tools installed (<code>xcode-select --install</code>)</li>
+      <li>Xcode command line tools installed ( <code>xcode-select --install</code> )</li>
       <li>node 6.6+</li>
       <li>npm 3.10+</li>
     </ul>
 
-    <h3>Installing Haiku</h3>
+    <h3 id="installing-haiku">Installing Haiku</h3>
 
     <p>Assuming your system checks out, you're ready to install Haiku. We recommend you install both our <strong>desktop app</strong> and our <strong>developer tools</strong> so you can experience Haiku as both a designer and an engineer.</p>
 
     <ol>
       <li><strong>Desktop app:</strong> <strong><a href="https://s3.amazonaws.com/haiku-electron-releases-production/releases/production-master-mac-latest.zip" target="_blank">Download Haiku</a></strong>. Unzip the archive, open the extracted folder, and move <strong>Haiku.app</strong> into your <strong>Applications</strong> folder.</li>
-      <li><strong>Developer tools:</strong> (You must completely install the desktop app before doing this.) Launch the <strong>Terminal</strong> application on your Mac, and when you see a command prompt, enter the following snippet: <code>curl http://code.haiku.ai/scripts/cli/installer.js | node</code></li>
+      <li><strong>Developer tools:</strong> (You must completely install the desktop app before doing this.) Launch the <strong>Terminal</strong> application on your Mac, and when you see a command prompt, enter the following snippet:
+        <code class="avoid-wrap">curl http://code.haiku.ai/scripts/cli/installer.js | node</code>
+      </li>
     </ol>
 
-    <h3>Creating an Animation</h3>
+    <h3 id="creating">Creating an Animation</h3>
 
     <p>With Haiku installed, we're now ready to create an animation. Go ahead and launch the Haiku desktop app. Once it has loaded...</p>
 
@@ -113,7 +89,7 @@
       <li><strong>Get the code snippet:</strong> Find the <em>arrow icon</em> at top-left and click it to navigate back to your account dashboard. There, you should see a code snippet that looks like this <code>haiku install ...</code>. Make note of that snippet, as we'll be using it below.</li>
     </ol>
 
-    <h3>Getting Your Animation into Code</h3>
+    <h3 id="into-code">Getting Your Animation into Code</h3>
 
     <p>With your project saved, we can now pull your animation into a real codebase. To illustrate, we'll first create a minimal website using the React framework, and then embed your animation in it.</p>
 
@@ -122,13 +98,13 @@
     <ol>
       <li><strong>Install <em>create-react-app</em>:</strong> This popular command-line tool is the easiest way to create a basic React project, which we'll use to demonstrate Haiku's workflow for for engineers. To install it, open Terminal and enter this command (it should take a minute or so to install): <code>npm install -g create-react-app</code></li>
       <li><strong>Create a React project:</strong> Once the installation of <em>create-react-app</em> is complete, create an empty folder on your Mac that you can use for code projects. Navigate to that folder using your command line. In that folder, enter the following command: <code>create-react-app my-app</code></li>
-      <li><strong>Start the React project:</strong> A new folder, <em>my-app</em>, should have been created containing the contents of your new project. Navigate into that <em>my-app</em> subfolder with <code>cd my-app</code>. Then start the local development server with <code>npm start</code>. After a short time, a browser window should open automatically, and a simple React website should be displayed.</li>
+      <li><strong>Start the React project:</strong> A new folder, <em>my-app</em>, should have been created containing the contents of your new project. Navigate into that <em>my-app</em> subfolder with <br><code>cd my-app</code>. Then start the local development server with <code>npm start</code>. After a short time, a browser window should open automatically, and a simple React website should be displayed.</li>
       <li><strong>Install your Haiku animation:</strong> With Haiku's developer tools, you can pull your Haiku animation code into any <em>npm</em>-based project with one command. And that's exactly what we'll do inside your new React project: Remember that code snippet from step #6 above? Run it: <code>haiku install ...</code></li>
       <li><strong>Import and embed your Haiku animation:</strong> Now that the Haiku animation is available in this project, we can insert it into the code by adding just a couple of lines. Open the file <em>src/App.js</em> in your favorite code editor. At the top of the file, insert <code>import HaikuAnimation from '@haiku/{something}/react';</code>. Then add the animation somewhere inside your component's <em>render</em> method: <code>&lt;HaikuAnimation /&gt;</code></li>
       <li><strong>Save, and watch your animation come to life:</strong> Save the code file and your browser should automatically refresh. You should see your animation displayed in the website. (If you had trouble with the coding step, compare your code to <a href="https://github.com/HaikuTeam/sample-create-react-app">our sample project</a>.)</li>
     </ol>
 
-    <h2>Contact / Feedback / Troubleshooting</h2>
+    <h2 id="trouble">Contact / Feedback / Troubleshooting</h2>
 
     <p>If you're having trouble with anything, don't hesitate to <a href="mailto:contact@haiku.ai">contact us</a>. We'll do our  best to help.</p>
 
@@ -137,7 +113,70 @@
     <br>
     <br>
 
-    <p style="color: #aaa;">Copyright &copy; 2017 Haiku</p>
+  </div>
+  <div class="footer">
+    <a href="http://haiku.ai">haiku.ai</a>
+    <span style="margin-left: 15px;">&copy; 2017 Haiku</span>
+  </div>
+
+  <div class="nav">
+    <svg width="21px" height="24px" viewBox="0 0 21 24" >
+      <g id="Share-Page" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+          <g id="Share-Page-Open" transform="translate(-29.000000, -10.000000)" fillRule="nonzero" fill="#22282A">
+              <g id="topbar">
+                  <g id="logo" transform="translate(29.000000, 10.000000)">
+                      <g id="favicon">
+                          <path d="M3.18072026,3.93916317 L4.05240845,4.29201799 C4.39986726,4.4326675 4.79540528,4.26463957 4.93586735,3.9167171 C5.07632942,3.56879464 4.90852541,3.1727288 4.56106661,3.03207929 L3.68937842,2.67922447 L1.02986322,1.60266663 C0.682404414,1.46201713 0.286866392,1.63004506 0.146404322,1.97796752 C0.00594225097,2.32588999 0.17374626,2.72195583 0.521205066,2.86260533 L3.18072026,3.93916317 Z" id="Line-Copy-3"></path>
+                          <path d="M7.58974879,2.85922119 C7.93534108,3.00440842 8.33303964,2.84157418 8.47803339,2.49552072 C8.62302714,2.14946727 8.46040989,1.75123801 8.11481761,1.60605078 L4.60269814,0.130569606 C4.25710586,-0.0146176274 3.8594073,0.148216617 3.71441355,0.49427007 C3.5694198,0.840323523 3.73203704,1.23855278 4.07762933,1.38374002 L7.58974879,2.85922119 Z" id="Line-Copy-34"></path>
+                          <path d="M3.91416694,3.12915042 C3.56670814,3.26979993 3.39890413,3.66586577 3.5393662,4.01378823 C3.67982827,4.3617107 4.07536629,4.52973863 4.4228251,4.38908912 L7.95402848,2.95967646 C8.30148729,2.81902696 8.4692913,2.42296112 8.32882923,2.07503865 C8.18836716,1.72711619 7.79282914,1.55908826 7.44537033,1.69973776 L3.91416694,3.12915042 Z" id="Line-Copy-33"></path>
+                          <path d="M3.18072026,22.6738912 L4.05240845,23.026746 C4.39986726,23.1673955 4.79540528,22.9993676 4.93586735,22.6514451 C5.07632942,22.3035227 4.90852541,21.9074568 4.56106661,21.7668073 L3.68937842,21.4139525 L1.02986322,20.3373947 C0.682404414,20.1967452 0.286866392,20.3647731 0.146404322,20.7126956 C0.00594225097,21.060618 0.17374626,21.4566839 0.521205066,21.5973334 L3.18072026,22.6738912 Z" id="Line-Copy-6"></path>
+                          <path d="M4.10805048,21.8068661 C3.76059167,21.9475156 3.59278766,22.3435815 3.73324973,22.6915039 C3.8737118,23.0394264 4.26924983,23.2074543 4.61670863,23.0668048 L8.00706947,21.6944045 C8.35452827,21.553755 8.52233228,21.1576892 8.38187021,20.8097667 C8.24140814,20.4618442 7.84587012,20.2938163 7.49841131,20.4344658 L4.10805048,21.8068661 Z" id="Line-Copy-66"></path>
+                          <path d="M0.521205066,1.57601235 C0.17374626,1.71666185 0.00594225097,2.11272769 0.146404322,2.46065016 C0.286866392,2.80857262 0.682404414,2.97660055 1.02986322,2.83595105 L4.56106661,1.40653839 C4.90852541,1.26588888 5.07632942,0.869823042 4.93586735,0.521900577 C4.79540528,0.173978112 4.39986726,0.00595018048 4.05240845,0.146599688 L0.521205066,1.57601235 Z" id="Line-Copy-30"></path>
+                          <path d="M15.5892666,3.93916317 L16.4609547,4.29201799 C16.8084136,4.4326675 17.2039516,4.26463957 17.3444136,3.9167171 C17.4848757,3.56879464 17.3170717,3.1727288 16.9696129,3.03207929 L16.0979247,2.67922447 L13.4384095,1.60266663 C13.0909507,1.46201713 12.6954127,1.63004506 12.5549506,1.97796752 C12.4144885,2.32588999 12.5822926,2.72195583 12.9297514,2.86260533 L15.5892666,3.93916317 Z" id="Line-Copy-4"></path>
+                          <path d="M15.7831501,6.94836819 C16.1306089,7.0890177 16.5261469,6.92098977 16.666609,6.5730673 C16.8070711,6.22514484 16.6392671,5.829079 16.2918082,5.68842949 L13.632293,4.61187165 C13.2848342,4.47122215 12.8892962,4.63925008 12.7488341,4.98717254 C12.6083721,5.33509501 12.7761761,5.73116085 13.1236349,5.87181035 L15.7831501,6.94836819 Z" id="Line-Copy-5"></path>
+                          <path d="M19.9982951,2.85922119 C20.3438874,3.00440842 20.7415859,2.84157418 20.8865797,2.49552072 C21.0315734,2.14946727 20.8689562,1.75123801 20.5233639,1.60605078 L17.0112444,0.130569606 C16.6656521,-0.0146176274 16.2679536,0.148216617 16.1229598,0.49427007 C15.9779661,0.840323523 16.1405833,1.23855278 16.4861756,1.38374002 L19.9982951,2.85922119 Z" id="Line-Copy-37"></path>
+                          <path d="M16.3227132,3.12915042 C15.9752544,3.26979993 15.8074504,3.66586577 15.9479125,4.01378823 C16.0883746,4.3617107 16.4839126,4.52973863 16.8313714,4.38908912 L20.3625748,2.95967646 C20.7100336,2.81902696 20.8778376,2.42296112 20.7373755,2.07503865 C20.5969135,1.72711619 20.2013754,1.55908826 19.8539166,1.69973776 L16.3227132,3.12915042 Z" id="Line-Copy-36"></path>
+                          <path d="M15.513276,22.6431306 L16.3849641,22.9959854 C16.7324229,23.1366349 17.127961,22.968607 17.268423,22.6206845 C17.4088851,22.2727621 17.2410811,21.8766962 16.8936223,21.7360467 L16.0219341,21.3831919 L13.4384095,20.3373947 C13.0909507,20.1967452 12.6954127,20.3647731 12.5549506,20.7126956 C12.4144885,21.060618 12.5822926,21.4566839 12.9297514,21.5973334 L15.513276,22.6431306 Z" id="Line-Copy-8"></path>
+                          <path d="M16.5165968,21.8076259 C16.169138,21.9482754 16.001334,22.3443413 16.141796,22.6922637 C16.2822581,23.0401862 16.6777961,23.2082141 17.0252549,23.0675646 L20.4174927,21.6944045 C20.7649515,21.553755 20.9327555,21.1576892 20.7922935,20.8097667 C20.6518314,20.4618442 20.2562934,20.2938163 19.9088346,20.4344658 L16.5165968,21.8076259 Z" id="Line-Copy-70"></path>
+                          <path d="M12.9297514,1.57601235 C12.5822926,1.71666185 12.4144885,2.11272769 12.5549506,2.46065016 C12.6954127,2.80857262 13.0909507,2.97660055 13.4384095,2.83595105 L16.9696129,1.40653839 C17.3170717,1.26588888 17.4848757,0.869823042 17.3444136,0.521900577 C17.2039516,0.173978112 16.8084136,0.00595018048 16.4609547,0.146599688 L12.9297514,1.57601235 Z" id="Line-Copy-35"></path>
+                          <path d="M1.35718475,2.18385024 C1.35718475,1.83537936 1.07506975,1.55288789 0.727063259,1.55288789 C0.379056769,1.55288789 0.0969417679,1.83537936 0.0969417679,2.18385024 L0.0969417679,21.0158996 C0.0969417679,21.3643705 0.379056769,21.6468619 0.727063259,21.6468619 C1.07506975,21.6468619 1.35718475,21.3643705 1.35718475,21.0158996 L1.35718475,2.18385024 Z" id="Line-Copy-7"></path>
+                          <path d="M8.43393381,17.139492 C8.43393381,16.7910211 8.15181881,16.5085296 7.80381232,16.5085296 C7.45580583,16.5085296 7.17369083,16.7910211 7.17369083,17.139492 L7.17369083,21.0107254 C7.17369083,21.3591963 7.45580583,21.6416877 7.80381232,21.6416877 C8.15181881,21.6416877 8.43393381,21.3591963 8.43393381,21.0107254 L8.43393381,17.139492 Z" id="Line-Copy-68"></path>
+                          <path d="M8.53087558,2.13556485 C8.53087558,1.78709397 8.24876057,1.50460251 7.90075408,1.50460251 C7.55274759,1.50460251 7.27063259,1.78709397 7.27063259,2.13556485 L7.27063259,9.99832636 C7.27063259,10.3467972 7.55274759,10.6292887 7.90075408,10.6292887 C8.24876057,10.6292887 8.53087558,10.3467972 8.53087558,9.99832636 L8.53087558,2.13556485 Z" id="Line-Copy-67"></path>
+                          <path d="M4.11995726,10.9211745 C3.79873612,11.0552393 3.6468711,11.4246689 3.78075724,11.7463187 C3.91464337,12.0679685 4.28358072,12.2200362 4.60480185,12.0859714 L16.8169939,6.98909301 C17.138215,6.85502821 17.29008,6.48559855 17.1561939,6.16394877 C17.0223078,5.84229898 16.6533704,5.69023131 16.3321493,5.82429611 L4.11995726,10.9211745 Z" id="Line-Copy-65"></path>
+                          <path d="M12.6145839,11.4670591 C12.2962957,11.6079634 12.1523454,11.9805568 12.2930619,12.2992697 C12.4337784,12.6179827 12.8058752,12.7621251 13.1241635,12.6212208 L16.8683503,10.9636917 C17.1866385,10.8227874 17.3305888,10.4501941 17.1898723,10.1314811 C17.0491558,9.81276817 16.677059,9.66862577 16.3587708,9.80953005 L12.6145839,11.4670591 Z" id="Line-Copy-72"></path>
+                          <path d="M7.71380473,6.67985622 C7.39099895,6.81004873 7.23471438,7.17762561 7.36473339,7.50086215 C7.49475239,7.8240987 7.86183942,7.98059181 8.1846452,7.85039931 L13.4419662,5.73004142 C13.764772,5.59984891 13.9210565,5.23227204 13.7910375,4.90903549 C13.6610185,4.58579894 13.2939315,4.42930583 12.9711257,4.55949833 L7.71380473,6.67985622 Z" id="Line-Copy-64"></path>
+                          <path d="M12.8155453,15.6833944 C13.136538,15.8180066 13.5057333,15.6665681 13.6401662,15.3451471 C13.774599,15.023726 13.6233624,14.654038 13.3023697,14.5194257 L4.60579176,10.872409 C4.28479904,10.7377968 3.91560367,10.8892352 3.78117082,11.2106563 C3.64673797,11.5320773 3.79797463,11.9017654 4.11896735,12.0363776 L12.8155453,15.6833944 Z" id="Line-Copy-63"></path>
+                          <path d="M12.5122107,19.6738285 L12.755623,19.0918442 L12.4970388,19.6672303 L12.8082183,19.8074508 C13.1255718,19.9504535 13.4986097,19.8087709 13.6414217,19.4909939 C13.7842338,19.173217 13.64274,18.7996813 13.3253866,18.6566787 L13.0142071,18.5164581 L4.50884999,14.9493964 C4.18785727,14.8147842 3.8186619,14.9662227 3.68422905,15.2876437 C3.54979621,15.6090648 3.70103286,15.9787528 4.02202558,16.1133651 L12.5122107,19.6738285 Z" id="Line-Copy-62"></path>
+                          <path d="M12.8373876,12.7729533 C13.1583804,12.9075656 13.5275757,12.7561271 13.6620086,12.434706 C13.7964414,12.113285 13.6452048,11.743597 13.324212,11.6089847 L8.09569541,9.41634204 C7.77470269,9.28172981 7.40550732,9.43316828 7.27107447,9.75458934 C7.13664162,10.0760104 7.28787828,10.4456984 7.608871,10.5803107 L12.8373876,12.7729533 Z" id="Line-Copy-61"></path>
+                          <path d="M4.89555928,3.78577406 C4.89555928,3.43730318 4.61344428,3.15481172 4.26543779,3.15481172 C3.9174313,3.15481172 3.6353163,3.43730318 3.6353163,3.78577406 L3.6353163,11.4142455 C3.6353163,11.7627164 3.9174313,12.0452079 4.26543779,12.0452079 C4.61344428,12.0452079 4.89555928,11.7627164 4.89555928,11.4142455 L4.89555928,3.78577406 Z" id="Line-Copy-58"></path>
+                          <path d="M20.9394219,2.18385024 C20.9394219,1.83537936 20.6573069,1.55288789 20.3093004,1.55288789 C19.9612939,1.55288789 19.6791789,1.83537936 19.6791789,2.18385024 L19.6791789,21.0158996 C19.6791789,21.3643705 19.9612939,21.6468619 20.3093004,21.6468619 C20.6573069,21.6468619 20.9394219,21.3643705 20.9394219,21.0158996 L20.9394219,2.18385024 Z" id="Line-Copy-9"></path>
+                          <path d="M13.765731,19.2200837 C13.765731,18.8716128 13.483616,18.5891213 13.1356096,18.5891213 C12.7876031,18.5891213 12.5054881,18.8716128 12.5054881,19.2200837 L12.5054881,20.9736202 C12.5054881,21.322091 12.7876031,21.6045825 13.1356096,21.6045825 C13.483616,21.6045825 13.765731,21.322091 13.765731,20.9736202 L13.765731,19.2200837 Z" id="Line-Copy-73"></path>
+                          <path d="M13.765731,2.13556485 C13.765731,1.78709397 13.483616,1.50460251 13.1356096,1.50460251 C12.7876031,1.50460251 12.5054881,1.78709397 12.5054881,2.13556485 L12.5054881,5.04769874 C12.5054881,5.39616962 12.7876031,5.67866109 13.1356096,5.67866109 C13.483616,5.67866109 13.765731,5.39616962 13.765731,5.04769874 L13.765731,2.13556485 Z" id="Line-Copy-74"></path>
+                          <path d="M17.3041056,3.78577406 C17.3041056,3.43730318 17.0219906,3.15481172 16.6739841,3.15481172 C16.3259776,3.15481172 16.0438626,3.43730318 16.0438626,3.78577406 L16.0438626,6.30684199 C16.0438626,6.65531287 16.3259776,6.93780433 16.6739841,6.93780433 C17.0219906,6.93780433 17.3041056,6.65531287 17.3041056,6.30684199 L17.3041056,3.78577406 Z" id="Line-Copy-59"></path>
+                          <path d="M17.3041056,10.50274 C17.3041056,10.1542691 17.0219906,9.87177761 16.6739841,9.87177761 C16.3259776,9.87177761 16.0438626,10.1542691 16.0438626,10.50274 L16.0438626,22.4034417 C16.0438626,22.7519126 16.3259776,23.034404 16.6739841,23.034404 C17.0219906,23.034404 17.3041056,22.7519126 17.3041056,22.4034417 L17.3041056,10.50274 Z" id="Line-Copy-71"></path>
+                          <path d="M4.89555928,15.5883041 C4.89555928,15.2398332 4.61344428,14.9573418 4.26543779,14.9573418 C3.9174313,14.9573418 3.6353163,15.2398332 3.6353163,15.5883041 L3.6353163,22.4803543 C3.6353163,22.8288252 3.9174313,23.1113167 4.26543779,23.1113167 C4.61344428,23.1113167 4.89555928,22.8288252 4.89555928,22.4803543 L4.89555928,15.5883041 Z" id="Line-Copy-69"></path>
+                          <path d="M13.765731,12.0488614 C13.765731,11.7003906 13.483616,11.4178991 13.1356096,11.4178991 C12.7876031,11.4178991 12.5054881,11.7003906 12.5054881,12.0488614 L12.5054881,15.1333286 C12.5054881,15.4817994 12.7876031,15.7642909 13.1356096,15.7642909 C13.483616,15.7642909 13.765731,15.4817994 13.765731,15.1333286 L13.765731,12.0488614 Z" id="Line-Copy-55"></path>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </g>
+    </svg>
+
+    <span class="docs-title">Haiku Beta Docs</span>
+    <a href="#quick-start">Quick Start</a>
+    <a href="#install" class="sub">Install</a>
+    <a href="#design" class="sub">Design</a>
+    <a href="#code" class="sub">Code</a>
+
+    <a href="#detailed">Detailed Instructions</a>
+    <a href="#prereqs" class="sub">Prerequisites</a>
+    <a href="#installing-haiku" class="sub">Installing Haiku</a>
+    <a href="#creating" class="sub">Creating an Animation</a>
+    <a href="#into-code" class="sub">Animation into Code</a>
+
+    <a href="#trouble">Troubleshooting</a>
+    <a href="mailto:contact@haiku.ai" class="sub">Contact</a>
   </div>
 </body>
 </html>
