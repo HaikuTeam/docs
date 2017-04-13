@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <title>Instructions for beta users | Haiku</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <style>
+    .container {
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 20px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 100;
+      line-height: 22px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 100;
+    }
+    li {
+      margin-bottom: 1em;
+    }
+    code {
+      background-color: pink;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    pre > code {
+      padding: 2px;
+    }
+    a, a:hover, a:active, a:visited {
+      color: orange;
+    }
+    h2 { margin-top: 40px; }
+    h3 { margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Instructions for Haiku beta users</h1>
+
+    <p>Thank you for taking <a href="https://www.haiku.ai" target="_blank"><strong>Haiku</strong></a> for a spin. We can't tell you how excited we are to give you this early glimpse of the future of designer-engineer collaboration.</p>
+
+    <p>Haiku is still under construction, and we hope you'll pardon our rough edges. In the next months, we'll be making it a lot faster, easier to use, and simpler to install.</p>
+
+
+    <h2>Quick start</h2>
+
+    <p>If you don't need a lot of detail or context, here's the <em>tl;dr</em> version (scroll down for the same steps in more detail):
+
+    <p><strong>Install</strong></p>
+    <ol>
+      <li>Check that your system meets all the <a href="#prerequisites">prerequisites</a> (Mac only; Sketch, node, npm, and dev tools installed).</li>
+      <li><a href="https://s3.amazonaws.com/haiku-electron-releases-production/releases/production-master-mac-latest.zip" target="_blank"><strong>Download the latest release</strong></a>, extract it, and move <strong>Haiku.app</strong> to your <strong>Applications</strong> folder.</li>
+      <li>Install our dev tools by running this command: <code>curl http://code.haiku.ai/scripts/cli/installer.js | node</code></li>
+    </ol>
+
+    <p><strong>Design</strong></p>
+    <ol>
+      <li>Open <strong>Haiku.app</strong>, wait for it to launch, and sign in with your username and password. (Don't have a login? <a href="mailto:contact@haiku.ai">Contact us.</a>)</li>
+      <li>Create and select a project. Click the "Open in Editor" button.</li>
+      <li>Animate! (<a href="https://www.youtube.com/watch?v=13ogotKqoDw" target="_blank">See our demo video</a> for ideas.)</li>
+      <li>Click the <em>floppy disk icon</em> to save changes.</li>
+      <li>Go back to the project dashboard. Copy the installation code snippet for your animation. (<code>haiku install ...</code>)</li>
+    </ol>
+
+    <p><strong>Code</strong></p>
+    <ol>
+      <li>Install your animation in a React codebase: <code>haiku install ...</code></li>
+      <li>Import the animation into your code: <code>import HaikuAnimation from '@haiku/{project}/react';</code></li>
+      <li>Embed the animation in your <em>render</em> method: <code>&lt;HaikuAnimation /&gt;</code></li>  
+      <li>Refresh and watch your animation come to life.</li>
+    </ol>
+
+    <br>
+    <hr style="border: none; border-bottom: 1px solid #eee">
+
+    <h2>Detailed Instructions</h2>
+
+    <a name="prerequisites"></a>
+    <h3>Prerequisites</h3>
+
+    <p>Today, Haiku can only run on a system that meets a handful of prerequisites. Before continuing, please make sure your system has all of the following. (Big improvements on this are coming soon.)</p>
+
+    <ul style="line-height: 10px;">
+      <li>Mac OS 10.9 (Mavericks) or greater</li>
+      <li><a href="https://www.sketchapp.com" target="_blank">Sketch</a> v42</li>
+      <li>Xcode</li>
+      <li>Xcode command line tools installed (<code>xcode-select --install</code>)</li>
+      <li>node 6.6+</li>
+      <li>npm 3.10+</li>
+    </ul>
+
+    <h3>Installing Haiku</h3>
+
+    <p>Assuming your system checks out, you're ready to install Haiku. We recommend you install both our <strong>desktop app</strong> and our <strong>developer tools</strong> so you can experience Haiku as both a designer and an engineer.</p>
+
+    <ol>
+      <li><strong>Desktop app:</strong> <strong><a href="https://s3.amazonaws.com/haiku-electron-releases-production/releases/production-master-mac-latest.zip" target="_blank">Download Haiku</a></strong>. Unzip the archive, open the extracted folder, and move <strong>Haiku.app</strong> into your <strong>Applications</strong> folder.</li>
+      <li><strong>Developer tools:</strong> (You must completely install the desktop app before doing this.) Launch the <strong>Terminal</strong> application on your Mac, and when you see a command prompt, enter the following snippet: <code>curl http://code.haiku.ai/scripts/cli/installer.js | node</code></li>
+    </ol>
+
+    <h3>Creating an Animation</h3>
+
+    <p>With Haiku installed, we're now ready to create an animation. Go ahead and launch the Haiku desktop app. Once it has loaded...</p>
+
+    <ol>
+      <li><strong>Sign in</strong>. (Don't have a login? <a href="mailto:contact@haiku.ai">Contact us.</a>)</li>
+      <li><strong>Select (or create) a project.</strong> Once sign-in has succeeded, you should see a listing of projects including a couple of samples. We suggest you start by editing one of these, but if you prefer a blank slate, you can also create a new project here.</li>
+      <li><strong>Open the project:</strong> Select a project and click the "Open In Editor" button. Wait for the project to load. (This can take several seconds while we set up your project on the cloud for the first time.)</li>
+      <li><strong>Animate!</strong> Compose, move, transform, and tween. For an overview of things you can currently do in Haiku, <a href="https://www.youtube.com/watch?v=13ogotKqoDw" target="_blank">see our demo video</a>. (Note: We still have a lot of kinks to iron out in our animation editor &mdash; UI streamlining, performance improvements, and bug fixes &mdash; but we think you'll at least get a glimmer of where we'll be in a few months' time.)</li>
+      <li><strong>Save.</strong> Once you're finished, find the <em>floppy disk icon</em> at top-right and click it to save your changes. You should see a green checkmark if the save went well.</li>
+      <li><strong>Get the code snippet:</strong> Find the <em>arrow icon</em> at top-left and click it to navigate back to your account dashboard. There, you should see a code snippet that looks like this <code>haiku install ...</code>. Make note of that snippet, as we'll be using it below.</li>
+    </ol>
+
+    <h3>Getting Your Animation into Code</h3>
+
+    <p>With your project saved, we can now pull your animation into a real codebase. To illustrate, we'll first create a minimal website using the React framework, and then embed your animation in it.</p>
+
+    <p>For simplicity, these instructions will make use of the popular command-line tool <a href="https://github.com/facebookincubator/create-react-app" target="_blank"><em>create-react-app</em></a>. We've also put a <a href="https://github.com/HaikuTeam/sample-create-react-app" target="_blank">sample project on GitHub</a> that you can clone and modify.</p>
+
+    <ol>
+      <li><strong>Install <em>create-react-app</em>:</strong> This popular command-line tool is the easiest way to create a basic React project, which we'll use to demonstrate Haiku's workflow for for engineers. To install it, open Terminal and enter this command (it should take a minute or so to install): <code>npm install -g create-react-app</code></li>
+      <li><strong>Create a React project:</strong> Once the installation of <em>create-react-app</em> is complete, create an empty folder on your Mac that you can use for code projects. Navigate to that folder using your command line. In that folder, enter the following command: <code>create-react-app my-app</code></li>
+      <li><strong>Start the React project:</strong> A new folder, <em>my-app</em>, should have been created containing the contents of your new project. Navigate into that <em>my-app</em> subfolder with <code>cd my-app</code>. Then start the local development server with <code>npm start</code>. After a short time, a browser window should open automatically, and a simple React website should be displayed.</li>
+      <li><strong>Install your Haiku animation:</strong> With Haiku's developer tools, you can pull your Haiku animation code into any <em>npm</em>-based project with one command. And that's exactly what we'll do inside your new React project: Remember that code snippet from step #6 above? Run it: <code>haiku install ...</code></li>
+      <li><strong>Import and embed your Haiku animation:</strong> Now that the Haiku animation is available in this project, we can insert it into the code by adding just a couple of lines. Open the file <em>src/App.js</em> in your favorite code editor. At the top of the file, insert <code>import HaikuAnimation from '@haiku/{something}/react';</code>. Then add the animation somewhere inside your component's <em>render</em> method: <code>&lt;HaikuAnimation /&gt;</code></li>
+      <li><strong>Save, and watch your animation come to life:</strong> Save the code file and your browser should automatically refresh. You should see your animation displayed in the website. (If you had trouble with the coding step, compare your code to <a href="https://github.com/HaikuTeam/sample-create-react-app">our sample project</a>.)</li>
+    </ol>
+
+    <h2>Contact / Feedback / Troubleshooting</h2>
+
+    <p>If you're having trouble with anything, don't hesitate to <a href="mailto:contact@haiku.ai">contact us</a>. We'll do our  best to help.</p>
+
+    <p>Note that Haiku is still in its early stages and we're still ironing things out. But we're eager to hear any suggestions and feeback you may have.</p>
+
+    <br>
+    <br>
+
+    <p style="color: #aaa;">Copyright &copy; 2017 Haiku</p>
+  </div>
+</body>
+</html>
