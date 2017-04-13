@@ -114,20 +114,32 @@ a:hover, a:active {
 
 .nav a {
   display: block;
-  margin-top: 17px;
+  margin-top: 20px;
   font-size: 14px;
+  color: #5b6365;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #222e31;
 }
 
 .nav a.sub {
   font-size: 12px;
   margin-left: 20px;
   margin-top: 12px;
+  color: #5995a5;
+}
+
+.nav a.sub:hover {
+  color: #16738c;
 }
 
 .docs-title {
   position: absolute;
   top: 28px;
   left: 54px;
+
 }
 
 @media (max-width: 1200px) {
