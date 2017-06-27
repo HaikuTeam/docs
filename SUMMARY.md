@@ -18,7 +18,7 @@
 
 ## Embedding and Using Haiku
 
-* Haiku Player Overview
+* [Haiku Player Overview](embedding-and-using-haiku/haiku-player-overview.md)
 * Publishing and Embedding
 * Haiku Player API
 
