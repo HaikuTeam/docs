@@ -4,10 +4,6 @@
 
 * [Getting Started](README.md)
 
-## Methods
-
-* [Defining Methods](methods.md)
-
 ## Creating Content with Haiku
 
 * [Account](using-haiku/account.md)
@@ -20,5 +16,5 @@
 
 * [Haiku Player Overview](embedding-and-using-haiku/haiku-player-overview.md)
 * Publishing and Embedding
-* Haiku Player API
+* [Haiku Player API](methods.md)
 
