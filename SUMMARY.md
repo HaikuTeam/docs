@@ -16,5 +16,5 @@
 
 * [Haiku Player Overview](embedding-and-using-haiku/haiku-player-overview.md)
 * [Publishing and Embedding](embedding-and-using-haiku/publishing-and-embedding.md)
-* [Haiku Player API](methods.md)
+* [Haiku Player API](embedding-and-using-haiku/haiku-player-api.md)
 
