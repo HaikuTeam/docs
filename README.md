@@ -1,18 +1,18 @@
 # Getting Started
 
-<br><br>
+<br>
 
 #### GETTING AN INVITE
 
 You can sign up for an invite at [https://www.haiku.ai/](https://www.haiku.ai/) — or you can request an invite from someone who's already using Haiku.
 
-<br><br>
+<br>
 
 #### DOWNLOADING HAIKU
 
 When you accept your invite, you will automatically be taken to the download site for Haiku.  If you need to download Haiku again, you can use the same invite link \(note that you will only be able to create a single account.\)
 
-<br><br>
+<br>
 
 #### INSTALLING THE HAIKU CLI
 
