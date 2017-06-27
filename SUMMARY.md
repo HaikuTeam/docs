@@ -10,6 +10,7 @@
 * [Sketch and Image Assets](using-haiku/sketch-and-image-assets.md)
 * [Editing Elements on the Stage](using-haiku/editing-elements-on-the-stage.md)
 * [Creating Animations](using-haiku/creating-an-animation.md)
+* [Using the Haiku CLI](using-haiku/using-the-cli.md)
 * [Advanced:  Editing Haiku as Code](using-haiku/advanced-editing-haiku-as-code.md)
 
 ## Embedding Haiku Components

@@ -12,7 +12,7 @@ Once you've set up two points in time, you can then create a *transition* to hav
 
 ![](/assets/animate-position.gif)
 
-> Advanced: Animating along curves
+> **Advanced: Animating along curves**<br>
 > While we plan to support custom, visual animation along paths in the future, there's a lot you can do with Haiku today.  Since you can animate X and Y position separately, try out *different easing curves* for each of X and Y positions.  For example, if you animate `linear` with X and `ease in > quadratic` with Y, you can plot half of a parabola (then `ease out > quadratic` with Y while continuing linearly with X to plot the other half.)  You can do the same thing with `sin`, `circ`, `bounce`, and any number of other transitions to create complex parametric path animations.
 
 
@@ -55,7 +55,7 @@ To create a transition, RIGHT CLICK between two keyframes, then choose "Create T
 
 ![](/assets/make-tween.png)
 
-> Coming soon:  we'll be adding support for custom easing curves, plus the ability to better visualize the shape of a given curve.
+> **Coming soon:**  we'll be adding support for custom easing curves, plus the ability to better visualize the shape of a given curve.
 
 <br>
 
