@@ -12,7 +12,7 @@
 * [Creating an Animation](using-haiku/creating-an-animation.md)
 * [Advanced:  Editing Haiku as Code](using-haiku/advanced-editing-haiku-as-code.md)
 
-## Embedding and Using Haiku
+## Embedding Haiku Components
 
 * [Haiku Player Overview](embedding-and-using-haiku/haiku-player-overview.md)
 * [Publishing and Embedding](embedding-and-using-haiku/publishing-and-embedding.md)
