@@ -2,7 +2,7 @@
 
 <br>
 
-#### Logging In
+#### LOGGING IN
 
 When you first open Haiku, you will be prompted to log in.  Enter the username and password you created when you accepted your invite.  If you forgot, you can contact [Haiku support](mailto:support@haiku.ai) for help.
 
@@ -10,19 +10,19 @@ When you first open Haiku, you will be prompted to log in.  Enter the username a
 
 <br>
 
-#### Creating a Project
+#### CREATING A PROJECT
 
 Simply click the (+) button next to Projects on the top-left of the Project screen.
 
 ![](/assets/new-project.png)
 
-Note that new projects can only contain letters and numbers—no other characters, not even spaces, hyphens, or underscores.
+Note that project names can only contain letters and numbers—no other characters, not even spaces, hyphens, or underscores.
 
 Also note:  currently there's a limit of 15 projects per account.  Please contact [Haiku support](mailto:support@haiku.ai) if you need to raise this limit.
 
 <br>
 
-#### Sharing a Project with Teammates
+#### SHARING A PROJECT WITH TEAMMATES
 
 Every project is shared with all of your teammates by default!  Simply press "Publish" to share your changes.  [Read more about Publishing.](embedding-and-using-haiku/publishing-and-embedding.md)  New changes your teammates have made will be brought in every time you open a project or Publish.
 
