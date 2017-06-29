@@ -42,7 +42,7 @@ body {
   font-family: "ff-tisa-sans-web-pro", sans-serif !important;
 }
 
-.gitbook-link, a[aria-label="Share"], .font-settings, a[aria-label="Change Layout"] {
+.gitbook-link, a[aria-label="Share"], .font-settings, a[aria-label="Change Layout"], .custom-link {
   display: none !important;
 }
 
