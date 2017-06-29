@@ -43,7 +43,7 @@ From the Share Page "How to Use" menu, select the HTML Embed option, then copy a
 
 **React Component**
 
-From the Share Page "How to Use" menu, select the React option, then **follow the instructions to install the CLI** (More info here:  [Using the Haiku CLI](using-haiku/using-the-cli.md))
+From the Share Page "How to Use" menu, select the React option, then **follow the instructions to install the CLI** (More info here:  [Using the Haiku CLI](../using-haiku/using-the-cli.md))
 
 Then from the command line, inside your React project, run `haiku install YourProjectName`.  Behind the scenes, this simply runs `npm install`, and sets up your environment to pull that component from the correct server.
 
@@ -58,4 +58,4 @@ When you open any project with Haiku on your desktop, the project files are copi
 
 **`haiku clone`**
 
-You can also clone down a project directly to any location of your choosing.  You can do this with the `haiku clone YourProject` command, which uses `git clone` behind the scenes.  First, you need to install the Haiku CLI, see:  [Using the Haiku CLI](using-haiku/using-the-cli.md)
+You can also clone down a project directly to any location of your choosing.  You can do this with the `haiku clone YourProject` command, which uses `git clone` behind the scenes.  First, you need to install the Haiku CLI, see:  [Using the Haiku CLI](../using-haiku/using-the-cli.md)
