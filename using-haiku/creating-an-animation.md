@@ -1,10 +1,8 @@
 # Creating Animations
 
-<br>
-
 #### OVERVIEW
 
-When you're crafting animations in Haiku, it helps to think about how you're *changing values over time.*  For example, how does the `X position` or the `Y position` of this object change over the span of 1 second?  
+When you're crafting animations in Haiku, it helps to think about how you're *changing values over time.*  For example, how does the `X position` or the `Y position` of this object change over the span of 1 second?
 
 When you drag the timeline *ticker* left or right, you're changing the current *time.*  Any changes you make for a given ticker position affect the values (keyframes) specifically at that time.
 
@@ -23,7 +21,7 @@ A technical note:  dragging an element across the stage *at a point in time* is 
 
 #### TIMELINE ANATOMY
 
-Creating animations boils down to using the Timeline and the Stage.  The Stage is pretty self-explanatory, especially if you're familiar with a drawing tool like Sketch.  The Timeline, on the other hand, may seem intimidating if you're new to animation.  Don't be scared!  We've done our best to make it as accessible and familiar as possible, taking cues from existing tools like After Effects and Flash/Animate (and even data entry tools like Excel!) 
+Creating animations boils down to using the Timeline and the Stage.  The Stage is pretty self-explanatory, especially if you're familiar with a drawing tool like Sketch.  The Timeline, on the other hand, may seem intimidating if you're new to animation.  Don't be scared!  We've done our best to make it as accessible and familiar as possible, taking cues from existing tools like After Effects and Flash/Animate (and even data entry tools like Excel!)
 
 This is the basic anatomy of the Timeline.  These terms are defined visually here for clarity when they're referenced elsewhere in the docs.
 

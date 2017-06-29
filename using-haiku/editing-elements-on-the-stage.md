@@ -1,7 +1,5 @@
 # Editing Elements on the Stage
 
-<br>
-
 #### ADDING ELEMENTS TO THE STAGE
 
 To get an item from the Library to the Stage, simply drag and drop from the Library.  The new element will show up on the stage where you drop it, and a new row will show up in the Timeline representing the new element.  To learn more about getting elements into the Library, see [Sketch and Image Assets](using-haiku/sketch-and-image-assets.md).

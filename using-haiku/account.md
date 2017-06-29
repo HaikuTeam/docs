@@ -1,7 +1,5 @@
 # Account
 
-<br>
-
 #### LOGGING IN
 
 When you first open Haiku, you will be prompted to log in.  Enter the username and password you created when you accepted your invite.  If you forgot, you can contact [Haiku support](mailto:support@haiku.ai) for help.

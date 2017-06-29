@@ -1,0 +1,62 @@
+<!---
+Note: no documentation on gitbook about how to do this, found old examples in old commits here:
+https://github.com/GitbookIO/theme-api/commit/306cd2b746d041e71bf609ed534c27a34eb5225d
+-->
+
+
+{% macro articles(_articles) %}
+     {% for article in _articles %}
+         <li class="chapter {% if article.path == file.path and not article.anchor %}active{% endif %}" data-level="{{ article.level }}" {% if article.path %}data-path="{{ article.path|resolveFile }}"{% endif %}>
+             {% if article.path %}
+                 <a href="{{ article.path|resolveFile }}{{ article.anchor }}">
+             {% elif article.url %}
+                 <a target="_blank" href="{{ article.url }}">
+             {% else %}
+                 <span>
+             {% endif %}
+                     {% if article.level != "0" and config.pluginsConfig['theme-default'].showLevel %}
+                         <b>{{ article.level }}.</b>
+                     {% endif %}
+                     {{ article.title }}
+             {% if article.path  or article.url %}
+                 </a>
+             {% else %}
+                 </span>
+             {% endif %}
+
+             {% if article.articles.length > 0 %}
+             <ul class="articles">
+                 {{ articles(article.articles, file, config) }}
+             </ul>
+             {% endif %}
+         </li>
+     {% endfor %}
+ {% endmacro %}
+
+ <img src="/assets/docs-logo.svg" class="docs-logo">
+
+ <ul class="summary">
+     {% set _divider = false %}
+     {% if config.links.sidebar  %}
+     {% for linkTitle, link in config.links.sidebar  %}
+         {% set _divider = true %}
+         <li>
+             <a href="{{ link }}" target="_blank" class="custom-link">{{ linkTitle }}</a>
+         </li>
+     {% endfor %}
+     {% endif %}
+
+     {% if _divider %}
+     <li class="divider"></li>
+     {% endif %}
+
+     {% for part in summary.parts %}
+         {% if part.title %}
+         <li class="header">{{ part.title }}</li>
+         {% elif not loop.first %}
+         <li class="divider"></li>
+         {% endif %}
+         {{ articles(part.articles, file, config) }}
+     {% endfor %}
+
+ </ul>

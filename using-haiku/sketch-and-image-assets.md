@@ -1,7 +1,5 @@
 # Sketch and Image Assets
 
-<br>
-
 #### HOW TO LINK A SKETCH FILE
 
 Simply click "IMPORT" at the top of the library.

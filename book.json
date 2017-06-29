@@ -4,6 +4,9 @@
     },
     "plugins": [ "theme-api" ],
     "pluginsConfig": {
+        "typekit" : {
+            "kitID": "blb2kiz"
+        },
         "theme-api": {
             "languages": [
                 {

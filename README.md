@@ -1,6 +1,5 @@
-# Getting Started
 
-<br>
+# Getting Started
 
 #### GETTING AN INVITE
 
@@ -30,7 +29,7 @@ If you don't have Sketch, you can download a free 30-day trial at [https://sketc
 
 #### INSTALLING THE HAIKU CLI
 
-The CLI \(Command Line Interface\) is an optional part of Haiku, but it opens up a lot of powerful features—for example, you need the CLI to import a Haiku into an existing codebase, or you can use the CLI to directly clone a Haiku project to your computer, to access and edit the code manually. 
+The CLI \(Command Line Interface\) is an optional part of Haiku, but it opens up a lot of powerful features—for example, you need the CLI to import a Haiku into an existing codebase, or you can use the CLI to directly clone a Haiku project to your computer, to access and edit the code manually.
 
 To install, run the following command in your terminal:
 
