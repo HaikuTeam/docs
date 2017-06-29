@@ -2,7 +2,7 @@
     "styles": {
         "website": "styles/website.css"
     },
-    "plugins": [ "theme-api" ],
+    "plugins": [ "theme-api", "typekit@0.0.2"],
     "pluginsConfig": {
         "typekit" : {
             "kitID": "blb2kiz"
