@@ -6,7 +6,7 @@ To get an item from the Library to the Stage, simply drag and drop from the Libr
 
 <br>
 
-#### SELECTING, RESIZING, ROTATING
+#### SELECTING, RESIZING, ROTATING, DELETING
 
 To select an element on stage, simply click it.
 
@@ -15,6 +15,8 @@ To select an element on stage, simply click it.
 To *Resize,* click and drag one of the control points around the selected object.  Optionally, hold `SHIFT` to maintain aspect ratio and/or hold `ALT` to transform from the object's center.
 
 To *Rotate,* hold `CMD` and hover outside any control point (similar behavior to Sketch.)  Optionally, hold `SHIFT` to lock rotation to increments of 15 degrees.
+
+To *Delete,* once an element is selected, press `DELETE`.
 
 <br>
 
