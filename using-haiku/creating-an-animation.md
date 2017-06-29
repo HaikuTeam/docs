@@ -14,7 +14,7 @@ Once you've set up two points in time, you can then create a *transition* to hav
 > While we plan to support custom, visual animation along paths in the future, there's a lot you can do with Haiku today.  Since you can animate X and Y position separately, try out *different easing curves* for each of X and Y positions.  For example, if you animate `linear` with X and `ease in > quadratic` with Y, you can plot half of a parabola (then `ease out > quadratic` with Y while continuing linearly with X to plot the other half.)  You can do the same thing with `sin`, `circ`, `bounce`, and any number of other transitions to create complex parametric path animations.
 
 
-A technical note:  dragging an element across the stage *at a point in time* is exactly the same as editing the `X Position` and `Y Position` properties in the Properties *at that point in time.*  They are both 'windows' into the same underlying data.  In fact, both of these are *also* the same as editing the values manually in the code—you can read more about this at [Advanced:  Editing Haiku as Code](using-haiku/advanced-editing-haiku-as-code.md).
+A technical note:  dragging an element across the stage *at a point in time* is exactly the same as editing the `X Position` and `Y Position` properties in the Properties *at that point in time.*  They are both 'windows' into the same underlying data.  In fact, both of these are *also* the same as editing the values manually in the code—you can read more about this at [Advanced:  Editing Haiku as Code](./advanced-editing-haiku-as-code.md).
 
 
 <br>

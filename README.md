@@ -1,5 +1,5 @@
 
-# Getting Started
+# Haiku Docs: Getting Started
 
 #### GETTING AN INVITE
 

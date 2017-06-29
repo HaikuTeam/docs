@@ -1,3 +1,5 @@
-Docs coming soon!
+# Advanced:  Editing Haiku as Code
 
-For intrepid explorers:  your Haiku projects are all located at `~/.haiku/projects/YourOrg`
+#### DOCS COMING SOON
+
+For intrepid explorers:  your Haiku projects are all located on your filesystem at `~/.haiku/projects/YOUR_ORG`

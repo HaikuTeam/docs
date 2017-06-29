@@ -22,7 +22,7 @@ Also note:  currently there's a limit of 15 projects per account.  Please contac
 
 #### SHARING A PROJECT WITH TEAMMATES
 
-Every project is shared with all of your teammates by default!  Simply press "Publish" to share your changes.  [Read more about Publishing.](embedding-and-using-haiku/publishing-and-embedding.md)  New changes your teammates have made will be brought in every time you open a project or Publish.
+Every project is shared with all of your teammates by default!  Simply press "Publish" to share your changes.  [Read more about Publishing.](../embedding-and-using-haiku/publishing-and-embedding.md)  New changes your teammates have made will be brought in every time you open a project or Publish.
 
 > Coming soon:  we plan to add support for realtime collaborative editing in the near future.  In the meantime, you must "Publish" to synchronize changes with teammates.
 
