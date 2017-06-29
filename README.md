@@ -1,4 +1,4 @@
-
+<br>
 # Haiku Docs: Getting Started
 
 #### GETTING AN INVITE
