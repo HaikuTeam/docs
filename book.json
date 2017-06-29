@@ -7,13 +7,21 @@
         "theme-api": {
             "languages": [
                 {
+                    "lang": "html",
+                    "name": "HTML Embed"
+                },
+                {
                     "lang": "js",
-                    "name": "JavaScript",
+                    "name": "JavaScript"
+                },
+                {
+                    "lang": "js",
+                    "name": "React",
                     "default": true
                 },
                 {
-                    "lang": "go",
-                    "name": "Go"
+                    "lang": "js",
+                    "name": "Angular"
                 }
             ]
         }
