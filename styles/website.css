@@ -63,6 +63,17 @@ body {
   background-color: rgba(85, 176, 199, 0.04);
 }
 
+#book-search-input {
+  background-color: rgba(85, 176, 199, 0.04);
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  top: 17px;
+  right: 14px;
+}
+
 .docs-logo {
   width: 179px;
   margin: 20px 0 0 14px;
