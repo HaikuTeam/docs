@@ -18,7 +18,7 @@ Simply click the (+) button next to Projects on the top-left of the Project scre
 
 Note that project names can only contain letters and numbers—no other characters, not even spaces, hyphens, or underscores.
 
-Also note:  currently there's a limit of 15 projects per account.  Please contact [Haiku support](mailto:support@haiku.ai) if you need to raise this limit.
+Also note:  Currently there's a limit of 15 projects per account.  Please contact [Haiku support](mailto:support@haiku.ai) if you need to raise this limit.
 
 <br>
 

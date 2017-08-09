@@ -1,30 +1,18 @@
-# Defining Methods
+# Haiku Player API
 
-Methods allow you to smoothly display code examples in different languages.
+<br>
 
-{% method %}
-## My first method
+#### OVERVIEW
 
-My first method exposes how to print a message in JavaScript and Go.
+A programmatic interface to the Haiku Player (and your published Haiku) is available for those who need more control. With the programmatic API, you can access your Haiku's internal content and create fine-grained behavior that responds to user and page events.
 
-{% sample lang="js" %}
-Here is how to print a message to `stdout` using JavaScript.
 
-```js
-console.log('My first method');
+####
+
+**Passing in/overriding states**
+
+The states can be overridden by passing them into your embedded Haiku instance. For example, if you are embedding a Haiku as a React component, you can override its internal states by passing a `haikuStates` prop. (Note: It is best to think of Haiku states as a combination of React's `this.state` and `this.props`, since internally we treat them the same.)
+
 ```
-
-{% sample lang="go" %}
-Here is how to print a message to `stdout` using Go.
-
-```go
-fmt.Println("My first method")
+<MyHaiku haikuStates={{ "clicks": { "value": 0 }}}/>
 ```
-
-{% common %}
-Whatever language you are using, the result will be the same.
-
-```bash
-$ My first method
-```
-{% endmethod %}
