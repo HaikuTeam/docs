@@ -1,0 +1,14 @@
+{% extends template.self %}
+
+{% block body %}
+  <script src="//use.typekit.net/blb2kiz.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  {{ super() }}
+{% endblock %}
+
+
+{% block search_input %}
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="{{ 'Search'|t }}"><i class="fa fa-search"></i></input>
+</div>
+{% endblock %}

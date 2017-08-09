@@ -1,10 +1,8 @@
 # Creating Animations
 
-<br>
-
 #### OVERVIEW
 
-When you're crafting animations in Haiku, it helps to think about how you're *changing values over time.*  For example, how does the `X position` or the `Y position` of this object change over the span of 1 second?  
+When you're crafting animations in Haiku, it helps to think about how you're *changing values over time.*  For example, how does the `X position` or the `Y position` of this object change over the span of 1 second?
 
 When you drag the timeline *ticker* left or right, you're changing the current *time.*  Any changes you make for a given ticker position affect the values (keyframes) specifically at that time.
 
@@ -16,14 +14,14 @@ Once you've set up two points in time, you can then create a *transition* to hav
 > While we plan to support custom, visual animation along paths in the future, there's a lot you can do with Haiku today.  Since you can animate X and Y position separately, try out *different easing curves* for each of X and Y positions.  For example, if you animate `linear` with X and `ease in > quadratic` with Y, you can plot half of a parabola (then `ease out > quadratic` with Y while continuing linearly with X to plot the other half.)  You can do the same thing with `sin`, `circ`, `bounce`, and any number of other transitions to create complex parametric path animations.
 
 
-A technical note:  dragging an element across the stage *at a point in time* is exactly the same as editing the `X Position` and `Y Position` properties in the Properties *at that point in time.*  They are both 'windows' into the same underlying data.  In fact, both of these are *also* the same as editing the values manually in the code—you can read more about this at [Advanced:  Editing Haiku as Code](using-haiku/advanced-editing-haiku-as-code.md).
+A technical note:  dragging an element across the stage *at a point in time* is exactly the same as editing the `X Position` and `Y Position` properties in the Properties *at that point in time.*  They are both 'windows' into the same underlying data.  In fact, both of these are *also* the same as editing the values manually in the code—you can read more about this at [Advanced:  Editing Haiku as Code](./advanced-editing-haiku-as-code.md).
 
 
 <br>
 
 #### TIMELINE ANATOMY
 
-Creating animations boils down to using the Timeline and the Stage.  The Stage is pretty self-explanatory, especially if you're familiar with a drawing tool like Sketch.  The Timeline, on the other hand, may seem intimidating if you're new to animation.  Don't be scared!  We've done our best to make it as accessible and familiar as possible, taking cues from existing tools like After Effects and Flash/Animate (and even data entry tools like Excel!) 
+Creating animations boils down to using the Timeline and the Stage.  The Stage is pretty self-explanatory, especially if you're familiar with a drawing tool like Sketch.  The Timeline, on the other hand, may seem intimidating if you're new to animation.  Don't be scared!  We've done our best to make it as accessible and familiar as possible, taking cues from existing tools like After Effects and Flash/Animate (and even data entry tools like Excel!)
 
 This is the basic anatomy of the Timeline.  These terms are defined visually here for clarity when they're referenced elsewhere in the docs.
 

@@ -1,3 +1,80 @@
-.gitbook-link {
-    display: none !important;
+body {
+  font-family: "ff-tisa-sans-web-pro", sans-serif !important;
+}
+
+::selection {
+  background: #57c8e6;
+  color: #FAFCFC;
+}
+::-moz-selection {
+  background: #57c8e6;
+  color: #FAFCFC;
+}
+
+.markdown-section {
+  padding: 20px 80px 40px 90px;
+}
+
+.markdown-section code, .markdown-section pre {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  padding: 0.5em;
+}
+
+.markdown-section h1 {
+  font-weight: 400;
+}
+
+.markdown-section a {
+  color: rgb(23,113,145);
+}
+
+.book-header .btn.lang-switcher.active {
+  background-color: rgb(23,113,145);
+}
+
+.book-summary ul.summary li.header {
+  font-weight: bold;
+  color: #224048;
+}
+
+.book.font-family-1, .book-summary {
+  font-family: "ff-tisa-sans-web-pro", sans-serif !important;
+}
+
+.gitbook-link, a[aria-label="Share"], .font-settings, a[aria-label="Change Layout"], .custom-link {
+  display: none !important;
+}
+
+.markdown-section a, .book-summary ul.summary li.active>a {
+  color: rgb(38,145,173);
+  font-weight: bold;
+}
+
+.book-summary ul.summary li.header {
+  padding: 30px 15px 5px 15px;
+}
+
+.book-summary ul.summary li a, .book-summary ul.summary li span {
+  padding: 8px 15px;
+}
+
+.book-summary {
+  background-color: rgba(85, 176, 199, 0.04);
+}
+
+#book-search-input {
+  background-color: rgba(85, 176, 199, 0.04);
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  top: 17px;
+  right: 14px;
+}
+
+.docs-logo {
+  width: 179px;
+  margin: 20px 0 0 14px;
 }
