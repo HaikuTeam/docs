@@ -11,6 +11,8 @@ Cruise over to [What is Haiku?](what-is-haiku.md) for a brief overview that expl
 * Who Haiku is for
 * Why you and your team might use Haiku
 
+Or jump right in and checkout [our beginners tutorial](/tutorials/tutorial-1/tutorial.md).
+
 ## I'm ready to get started
 
 If you're already hip to what Haiku is all about — and if you're ready to start creating something cool — head over to [our Getting Started guide](getting-started), which covers how to:

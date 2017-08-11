@@ -4,6 +4,10 @@
 * [What Is Haiku?](what-is-haiku.md)
 * [Getting Started](getting-started.md)
 
+## Lessons &amp; Tutorials
+
+* [Tutorial 1: Progress Bar](tutorials/tutorial-1/tutorial.md)
+
 ## Creating Content with Haiku
 
 * [Starting Haiku](using-haiku/starting-haiku.md)
