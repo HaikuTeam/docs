@@ -1,4 +1,4 @@
-# Account
+# Starting Haiku
 
 #### LOGGING IN
 
@@ -26,3 +26,7 @@ Every project is shared with all of your teammates by default!  Simply press "Pu
 
 > Coming soon:  we plan to add support for realtime collaborative editing in the near future.  In the meantime, you must "Publish" to synchronize changes with teammates.
 
+
+<br>
+
+[Next: Importing Sketch and Image Assets](/using-haiku/sketch-and-image-assets.md) &rarr;

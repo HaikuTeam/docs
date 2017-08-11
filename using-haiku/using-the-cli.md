@@ -31,3 +31,7 @@ Commands:
   update - Updates all Haiku-installed packages, passing through to npm update
   help - Display this message
 ```
+
+<br>
+
+[Next: Haiku Player Developer API](/embedding-and-using-haiku/haiku-player-api.md) &rarr;

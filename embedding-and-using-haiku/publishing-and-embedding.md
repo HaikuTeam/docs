@@ -49,6 +49,7 @@ Then from the command line, inside your React project, run `haiku install YourPr
 
 > _Important_: the `haiku install` command will create or modify a file called `.npmrc` in your project.  It's important that you check this in to your version control, otherwise other teammates will not be able to install your Haiku components.
 
+<br>
 
 #### ACCESSING THE RAW CODE
 
@@ -59,3 +60,7 @@ When you open any project with Haiku on your desktop, the project files are copi
 **`haiku clone`**
 
 You can also clone down a project directly to any location of your choosing.  You can do this with the `haiku clone YourProject` command, which uses `git clone` behind the scenes.  First, you need to install the Haiku CLI, see:  [Using the Haiku CLI](../using-haiku/using-the-cli.md)
+
+<br>
+
+[Next: Using the Haiku CLI](/using-haiku/using-the-cli.md) &rarr;

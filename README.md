@@ -1,36 +1,36 @@
 <br>
-# Haiku Docs: Getting Started
+# Welcome to Haiku!
 
-#### GETTING AN INVITE
+These docs are your one-stop shop for everything you need to know about [Haiku](https://haiku.ai).
 
-You can sign up for an invite at [https://www.haiku.ai/](https://www.haiku.ai/) — or you can request an invite from someone who's already using Haiku.
+## I'm new here
+
+Cruise over to [What is Haiku?](what-is-haiku.md) for a brief overview that explains...
+
+* What Haiku is
+* Who Haiku is for
+* Why you and your team might use Haiku
+
+## I'm ready to get started
+
+If you're already hip to what Haiku is all about — and if you're ready to start creating something cool — head over to [our Getting Started guide](getting-started), which covers how to:
+
+* Get an invite
+* Download and install the app
+* Create your first Haiku
+
+## I'm ready for more
+
+Here are some good places to explore Haiku in more detail:
+
+* [Starting a Haiku Project](using-haiku/starting-haiku.md)
+* [Creating Animations with the Timeline](using-haiku/creating-an-animation.md)
+* [Publishing and Embedding Your Haiku](embedding-and-using-haiku/publishing-and-embedding.md)
+
+## I'm not sure / None of the above
+
+If you're confused about something, don't see the information you're looking for, or just want to reach out to us, you can always [contact us](mailto:contact@haiku.ai). We're a small team, but we'll try our best to respond to you within 1-2 business days.
 
 <br>
 
-#### DOWNLOADING HAIKU
-
-When you accept your invite, you will automatically be taken to the download site for Haiku.  If you need to download Haiku again, you can use the same invite link \(note that you will only be able to create a single account.\)
-
-Please install Haiku by dragging it to your /Applications folder.
-
-<br>
-
-#### DOWNLOADING SKETCH
-
-To get the most out of Haiku, you will need Sketch installed (Haiku doesn't have any of its own drawing tools, and we support rich integration with Sketch for this purpose.)
-
-If you don't have Sketch, you can download a free 30-day trial at [https://sketchapp.com/](https://sketchapp.com/)
-
-> _Coming soon:_ We plan to support other drawing tools like Photoshop and Illustrator, plus eventually we'll have some of our own.
-
-<br>
-
-#### INSTALLING THE HAIKU CLI
-
-The CLI \(Command Line Interface\) is an optional part of Haiku, but it opens up a lot of powerful features—for example, you need the CLI to import a Haiku into an existing codebase, or you can use the CLI to directly clone a Haiku project to your computer, to access and edit the code manually.
-
-To install, run the following command in your terminal:
-
-`curl http://code.haiku.ai/scripts/cli/installer.js | node`
-
-> Coming soon:  you will soon be able to install the CLI directly from npm, with `npm install -g @haiku/cli`\)
+[Next: What Is Haiku?](what-is-haiku.md) &rarr;

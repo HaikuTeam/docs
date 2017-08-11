@@ -1,12 +1,14 @@
 # Advanced:  Editing Haiku as Code
 
+Everything you build with Haiku is backed by simple JavaScript code.
 
-#### OVERVIEW
+<br>
 
-Everything you build with Haiku is backed by simple JavaScript code. Under the hood, your Haiku is one JavaScript file on your filesystem. You can find it in the folder that contains your project's content, e.g. `~/.haiku/projects/YOUR_ORG/YOUR_PROJECT`.
+Under the hood, your Haiku is one JavaScript file on your filesystem. You can find it in the folder that contains your project's content, e.g. `~/.haiku/projects/YOUR_ORG/YOUR_PROJECT`.
 
-The file _code/main/code.js_ (within the project folder) is the code for your Haiku. It exports a static object that you can think of as the _definition_ of your Haiku. When you embed your Haiku on a web page, the [Haiku Player](embedding-and-using-haiku/haiku-player-api.md) transforms that definition into a dynamic UI.
+The file _code/main/code.js_ (within the project folder) is the code for your Haiku. It exports a static object that you can think of as the _definition_ of your Haiku. When you embed your Haiku on a web page, the [Haiku Player](/embedding-and-using-haiku/haiku-player-api.md) transforms that definition into a dynamic UI.
 
+<br>
 
 #### EXAMPLE CODE
 
@@ -58,9 +60,9 @@ module.exports = {
 
 Let's explore how this works.
 
+<br>
 
 #### CODE.JS — GUIDED TOUR
-
 
 ##### template
 
@@ -74,6 +76,7 @@ The **template** property describes the structure of your scene. Think of the te
 
 Note that the _template_ is just a plain, static object. That's because adding dynamic behavior is the job of _eventHandlers_ and _timelines_, which we'll explain further below.
 
+<br>
 
 ##### states
 
@@ -87,10 +90,11 @@ The **states** property describes your Haiku's internal state. States are key/de
 
 Now let's look at how to modify this state using _eventHandlers_.
 
+<br>
 
 ##### eventHandlers
 
-The **eventHandlers** object describes how you want your Haiku to respond to events such as UI events (e.g., a user's mouse click) and lifecycle events (e.g., the component being instantiated).
+The **eventHandlers** object describes how you want your Haiku to respond to events such as UI events (e.g., a user's mouse click) and lifecycle events (e.g., the component's instantiation).
 
 ```
 "#box": {                           // <- CSS selector determines which elements in the template to match
@@ -103,6 +107,7 @@ As you can see, event listeners are just plain objects with a _handler_ property
 
 Within the context of a handler function, `this` is bound to your component's instance. By mutating properties that match the names of your declared _states_ (e.g. `this.clicks = 2`), you change their state values. When those state values change, the Haiku Player knows it must re-render your Haiku.
 
+<br>
 
 ##### timelines
 
@@ -128,57 +133,37 @@ In the snippet above, a `"position.x"` output is applied to some element whose i
 
 The `"value"` of an output can be any value that serializes to JSON (strings, numbers, `null`...). But the `"value"` can also be a function, giving you a powerful way to create dynamic behavior in your component.
 
+<br>
 
 **Using _expressions_ to create dynamic behavior**
 
 When the a timeline's output `"value"` is a function, we call it an _expression_. Here is an example of what an _expression_ would look like in your code:
 
 ```
-"states": {
-  "numClicks": { "value": 0 },
-  "userAge": { "value": 67 }
-},
 "timelines": {
   "Default": {
     "#box": {
       "position.x": {
         "1000": {
-          "value": function ({ numClicks, userAge }) {
-            return numClicks * userAge
+          "value": function () {
+            return Math.sin(Math.PI)
           }
 ```
 
-Expressions are essentially just JavaScript functions. The return value of the expression becomes the output value of the property it belongs to. (The above example shows an expression whose return value (`numClicks * userAge`) becomes the value for the position.x output at 1000ms.)
+<br>
 
-But where do `numClicks` and `userAge` come from? In Haiku, the signature of the expression function is special. Let's take a closer look:
+Expressions are essentially just JavaScript functions. The return value of the expression becomes the output value of the property it belongs to. 
 
-```
-"value": function ({ numClicks, userAge }) {
-  return numClicks * userAge
-}
-```
+<br>
 
-You may have noticed that `numClicks` and `userAge` correspond to two _states_ that were declared in the example further above. The Haiku Player examines your expression function signature to see what state values it depends on, and passes the values for those states into the function automatically. This mechanism is often referred to as "automatic dependency injection," and so we call these automatically injected states _injectables_.
+_Expressions are one of the most powerful features in Haiku_, and we'll only scratch the surface in this section. For much more about expressions (including how to write expressions based on dynamic data), head over to the **[guide on expressions](./using-haiku/writing-expressions.md)**.
 
-Any _states_ that you've defined can be summoned by name using this technique. For example, if you defined the states `foo`, `bar`, and `baz`, you could summon their current values with an expression function that looks like this: `function ({ foo, bar, baz }) { ... }`.
-
-The Haiku Player automatically optimizes your expression functions: Only when the states they summon have changed is the function re-evaluated. For that reason, it's required that you write expression functions as _pure functions_ (expressions should avoid making side-effects and avoid referencing any hidden state).
-
-
-**Special injectables**
-
-In addition to your explicitly defined _states_, there are a handful of _special injectables_ which may also be auto-injected into your expression function, such as `$window`, `$user`, and more. These are covered in their entirety in the [special injectables](using-haiku/special-injectables.md) guide.
-
-
-**Expressions in code vs. expressions in the Haiku app**
-
-Expressions in your code are synonymous with the [expressions](using-haiku/writing-expressions.md) you create using the Haiku app. When you write an _expression_ in the Haiku app, it gets written to your code file as an expression function, and vice versa.
-
+<br>
 
 #### FAQ
 
-- **How do I edit the code?:** Just fire up a text editor and make a change to the _code/main/code.js_ file. If the Haiku app is running, your changes should appear instantly on stage.
+- **How do I edit my project's code?:** Just fire up a text editor and make a change to the _code/main/code.js_ file. If the Haiku app is running, your changes should appear instantly on stage.
 
 - **Could the code.js format be nicer?** Yes. We plan to improve this in the near future. We welcome ideas for ways that it could be more concise to write and more clear to read.
 
-- **Why not use an HTML string or JSX or [etc] for the template?:** We plan to support a more readable template formate in the near future. For that reason, our template object format is intentionally kept quite similar to the format of compiled JSX.
+- **Why not use an HTML string or JSX or [etc] for the template?:** We plan to support a more readable template format in the near future. For that reason, our template object format is intentionally kept quite similar to the format of compiled JSX.

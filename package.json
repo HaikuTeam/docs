@@ -1,0 +1,26 @@
+{
+  "name": "haiku-docs",
+  "version": "1.0.0",
+  "description": "Haiku Docs",
+  "main": "index.js",
+  "scripts": {
+    "start": "gitbook serve",
+    "gb-install": "gitbook install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaikuTeam/docs.git"
+  },
+  "authors": [
+    "Zack Brown <zack@haiku.ai>",
+    "Matthew Trost <matthew@haiku.ai>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaikuTeam/docs/issues"
+  },
+  "homepage": "https://github.com/HaikuTeam/docs#readme",
+  "dependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}

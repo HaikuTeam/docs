@@ -1,5 +1,9 @@
 # Editing Elements on the Stage
 
+You can use the Haiku stage to position and transform your design elements. The first step is to get your designs on the stage. Then you can use Haiku's familiar on-stage tools to position and transform them.
+
+<br>
+
 #### ADDING ELEMENTS TO THE STAGE
 
 To get an item from the Library to the Stage, simply drag and drop from the Library.  The new element will show up on the stage where you drop it, and a new row will show up in the Timeline representing the new element.  To learn more about getting elements into the Library, see [Sketch and Image Assets](using-haiku/sketch-and-image-assets.md).
@@ -14,7 +18,7 @@ To select an element on stage, simply click it.
 
 To *Resize,* click and drag one of the control points around the selected object.  Optionally, hold `SHIFT` to maintain aspect ratio and/or hold `ALT` to transform from the object's center.
 
-To *Rotate,* hold `CMD` and hover outside any control point (similar behavior to Sketch.)  Optionally, hold `SHIFT` to lock rotation to increments of 15 degrees.
+To *Rotate,* hold `CMD` and hover outside any control point (similar behavior to Sketch).  Optionally, you may hold down `SHIFT` to lock rotation to increments of 15 degrees.
 
 To *Delete,* once an element is selected, press `DELETE`.
 
@@ -25,7 +29,7 @@ To *Delete,* once an element is selected, press `DELETE`.
 
 For precise control over elements on the stage, you can zoom and pan.
 
-To *Zoom*, hover over the stage with your mouse and press `CMD + Plus` (zoom in) or `CMD + Minus` (zoom out)
+To *Zoom*, hover over the stage with your mouse and press `CMD + Plus` (zoom in) or `CMD + Minus` (zoom out).
 
 To *Pan*, hover over the stage with your mouse, hold the `Space Bar` and click and drag with the mouse.
 
@@ -58,3 +62,11 @@ To change the stacking order of an element on stage, right-click on it (or `CTRL
 To undo/redo changes, press `CMD + Z` (undo) or `CMD + SHIFT + Z` (redo.)  Alternatively, click the Undo/Redo buttons on the toolbar.
 
 <br>
+
+#### CUT/COPY/PASTE
+
+To _Cut_, press `CMD + X`. To _Copy_, press `CMD + C`. To paste, press `CMD + V`. Alternately, click the Cut/Copy/Paste buttons on the toolbar. You can also right-click any on-stage element and Cut/Paste via the context menu.
+
+<br>
+
+[Next: Creating Animations with the Timeline](/using-haiku/creating-an-animation.md) &rarr;
