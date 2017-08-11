@@ -2,6 +2,29 @@
 
 Welcome to the first Haiku tutorial! Here we'll show how to use Haiku to create a small, practical component — **file upload progress bar** — and get it running in a real web app.
 
+<div id="mount-6e8b0a8d-7696-4a98-931f-22907a85784d"></div>
+<script src="https://code.haiku.ai/scripts/player/HaikuPlayer.2.1.28.min.js"></script>
+<script src="https://cdn.haiku.ai/33854682-70fd-4a97-86ef-f0d3276695d0/83cae0af4b3e60e6e1f41339f267758172730b86/index.embed.js"></script>
+<script>
+  window.component = HaikuComponentEmbed_Matthew_Tutorial1(document.getElementById('mount-6e8b0a8d-7696-4a98-931f-22907a85784d'))
+  window.component.assignConfig({options: {loop: true}, states: {uploadProgress: {value: 0}}})
+
+  var progress = 0
+  function updateProgress() {
+    if(progress >= 1.5){
+      progress = 0
+    }else if(Math.random() > .5){
+      progress += Math.random() * .02
+    }
+
+    var apparentProgress = Math.min(1, progress)
+    window.component.assignConfig({states: {uploadProgress: {value: apparentProgress}}})
+  }
+
+  setInterval(updateProgress, 32)
+</script>
+
+
 For this tutorial, we'll imagine that you work on a team that is building a web app. The web app has a feature where users can upload a file. And your task is to design the progress bar component.
 
 Let's get started!
