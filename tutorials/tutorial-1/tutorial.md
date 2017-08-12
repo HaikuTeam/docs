@@ -2,27 +2,50 @@
 
 Welcome to the first Haiku tutorial! Here we'll show how to use Haiku to create a small, practical component — **file upload progress bar** — and get it running in a real web app.
 
-<div id="mount-6e8b0a8d-7696-4a98-931f-22907a85784d"></div>
-<script src="https://code.haiku.ai/scripts/player/HaikuPlayer.2.1.28.min.js"></script>
-<script src="https://cdn.haiku.ai/33854682-70fd-4a97-86ef-f0d3276695d0/83cae0af4b3e60e6e1f41339f267758172730b86/index.embed.js"></script>
-<script>
-  window.component = HaikuComponentEmbed_Matthew_Tutorial1(document.getElementById('mount-6e8b0a8d-7696-4a98-931f-22907a85784d'))
-  window.component.assignConfig({options: {loop: true}, states: {uploadProgress: {value: 0}}})
 
-  var progress = 0
-  function updateProgress() {
-    if(progress >= 1.5){
-      progress = 0
-    }else if(Math.random() > .5){
-      progress += Math.random() * .02
-    }
+<div id="demo" style="background-color: rgb(236,236,236); text-align: center; width: 365px; overflow: hidden;">
+  <div style="font-weight: bold">Drag slider to control progress:</div>
+  <input type="range" min="0" max="1" step=".001" defaultValue=".5" id="range"></input>
+  <div id="indicator"></div>
+  <div id="mount-6e8b0a8d-7696-4a98-931f-22907a85784d"></div>
+  <script src="https://code.haiku.ai/scripts/player/HaikuPlayer.2.1.28.min.js"></script>
+  <script src="https://cdn.haiku.ai/33854682-70fd-4a97-86ef-f0d3276695d0/83cae0af4b3e60e6e1f41339f267758172730b86/index.embed.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+      window.component = HaikuComponentEmbed_Matthew_Tutorial1(document.getElementById('mount-6e8b0a8d-7696-4a98-931f-22907a85784d'))
+      window.component.assignConfig({options: {loop: true, overflowY: 'visible', overflow: 'visible'}, states: {uploadProgress: {value: 0}}})
+      var range = document.querySelector("#range")
+      var indicator = document.querySelector("#indicator")
+      var override = false
+      window.handleRangeChange = function(evt){
+        var newProgress = parseFloat(range.value)
+        indicator.innerHTML = newProgress
+        override = true
+        window.component.assignConfig({states: {uploadProgress: {value: newProgress}}})
+      }
+      range.addEventListener("change", window.handleRangeChange)
+      range.addEventListener("input", window.handleRangeChange)
+      var progress = 0
+      function updateProgress() {
+        if(!override){
+          if(progress >= 1.5){
+            progress = 0
+          }else if(Math.random() < .3){
+            progress += Math.random() * .03
+          }
+          var apparentProgress = Math.round(Math.min(1, progress) * 1000) / 1000
+          indicator.innerHTML = apparentProgress
+          window.component.assignConfig({states: {uploadProgress: {value: apparentProgress}}})
+        }
+      }
+      setInterval(updateProgress, 32)
+    });
+  </script>
+</div>
 
-    var apparentProgress = Math.min(1, progress)
-    window.component.assignConfig({states: {uploadProgress: {value: apparentProgress}}})
-  }
 
-  setInterval(updateProgress, 32)
-</script>
+
+
 
 
 For this tutorial, we'll imagine that you work on a team that is building a web app. The web app has a feature where users can upload a file. And your task is to design the progress bar component.
