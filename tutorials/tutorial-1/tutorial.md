@@ -16,10 +16,9 @@ Welcome to the first Haiku tutorial! Here we'll show how to use Haiku to create 
     */
     var s1 = document.createElement('script')
     s1.onload = function () {
-      console.log('s1 load')
+
       var s2 = document.createElement('script')
       s2.onload = function () {
-        console.log('s2 load')
         window.component = HaikuComponentEmbed_Matthew_Tutorial1(document.getElementById('mount-6e8b0a8d-7696-4a98-931f-22907a85784d'))
         window.component.assignConfig({options: {loop: true, overflowY: 'visible', overflow: 'visible'}, states: {uploadProgress: {value: 0}}})
         var range = document.querySelector("#range")
@@ -46,7 +45,10 @@ Welcome to the first Haiku tutorial! Here we'll show how to use Haiku to create 
             window.component.assignConfig({states: {uploadProgress: {value: apparentProgress}}})
           }
         }
-        setInterval(updateProgress, 32)
+        if (window.__tut1interval !== undefined) {
+          clearInterval(window.__tut1interval)
+        }
+        window.__tut1interval = setInterval(updateProgress, 32)
       }
       s2.setAttribute('src', 'https://cdn.haiku.ai/33854682-70fd-4a97-86ef-f0d3276695d0/83cae0af4b3e60e6e1f41339f267758172730b86/index.embed.js')
       document.head.appendChild(s2)
