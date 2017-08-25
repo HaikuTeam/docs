@@ -13,6 +13,7 @@ body {
 
 .markdown-section {
   padding: 20px 80px 40px 90px;
+  max-width: 1080px;
 }
 
 .markdown-section code, .markdown-section pre {
