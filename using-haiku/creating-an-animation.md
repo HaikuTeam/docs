@@ -90,7 +90,7 @@ Each transition is associated with an _easing curve_, which designates what the 
 
 #### INTERACTING WITH THE TIMELINE
 
-When you drag the timeline *ticker* left or right, you're changing the current *time.*  
+When you drag the timeline *ticker* left or right, you're changing the current *time.*
 
 **Any changes you make while the ticker is at a certain position will affect the values (_keyframes_) specifically at that time.**
 
@@ -105,7 +105,7 @@ Once you've affected values at two such points in time (i.e., created _keyframes
 
 #### USING THE STAGE TO CREATE KEYFRAMES
 
-If you dragging an element across the stage *at a point in time*, keyframes will automatically be created at that time. That is, dragging an element on stage _is exactly the same as editing the `X Position` and `Y Position` properties in the at that point in time!_
+If you drag an element across the stage *at a point in time*, keyframes will automatically be created at that time. That is, dragging an element on stage _is exactly the same as editing the `X Position` and `Y Position` properties in the at that point in time!_
 
 Both techniques are 'windows' into the same underlying data.
 
@@ -115,7 +115,7 @@ In fact, both of these techniques also have exactly the same outcome as editing 
 
 #### USING PROPERTY INPUTS TO CREATE KEYFRAMES
 
-      
+
 First, move the ticker to frame 10, then double click the "rotation" value to focus the input:
 
 ![](/assets/keyframe-input-1.png)
@@ -138,7 +138,7 @@ Expressions are a powerful tool and there's a lot you can do with them, so we've
 
 #### CREATING OR EDITING A KEYFRAME
 
-New keyframes will automatically be created when you
+New keyframes are automatically created when you:
 
 1. advance the ticker to a new point in time and then
 2. change properties *on the stage* (e.g. by resizing or moving an element) or *numerically in the properties panel*.

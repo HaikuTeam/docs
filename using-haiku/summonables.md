@@ -1,6 +1,6 @@
 # Summonables
 
-As you may know from our sections on [expressions](using-haiku/writing-expressions.md) and [editing Haiku as code](using/haiku/advanced-editing-haiku-as-code), expression functions can summon _states_ that your component has defined.
+As you may know from our sections on [expressions](/using-haiku/writing-expressions.md) and [editing Haiku as code](/using-haiku/advanced-editing-haiku-as-code.md), expression functions can summon _states_ that your component has defined.
 
 In general, we call any value you summon into an expression a **_summonable_**.
 

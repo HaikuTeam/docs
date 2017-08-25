@@ -21,7 +21,7 @@ That link will take you to your Haiku's Share Page: see below.
 
 #### SHARE PAGE
 
-![](/assets/share-page.png)
+![](/assets/sharepage.png)
 
 
 The Share Page is your entrypoint for sharing Haiku.  You can see and interact with your Haiku, share it with your colleagues, and even share it easily on social media.
