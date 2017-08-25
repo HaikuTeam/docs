@@ -76,7 +76,7 @@ In addition to _states_, Haiku also provides a collection of built-in pieces of 
 * The window size (`$window.width` and `$window.height`)
 * And a lot more
 
-[See the complete list of available built-in "summonables"](/using-haiku/summonables) &rarr;
+[See the complete list of available built-in "summonables"](/using-haiku/summonables.md) &rarr;
 
 <br>
 
@@ -92,7 +92,7 @@ Just like with states, you can summon any dynamic built-in data point if you sim
 
 #### ADVANCED: EXPRESSIONS IN CODE
 
-Expressions that you write [manually in your code](using-haiku/advanced-editing) are the same as [expressions](using-haiku/writing-expressions.md) you create visually using the Haiku app. _When you write an expression in the Haiku app, it gets written to your code file as an expression function, just as if you had written it manually!_
+Expressions that you write [manually in your code](/using-haiku/advanced-editing-haiku-as-code.md) are the same as expressions you create visually using the Haiku app. _When you write an expression in the Haiku app, it gets written to your code file as an expression function, just as if you had written it manually!_
 
 Here's what an expression might look like if hand-written in code:
 
