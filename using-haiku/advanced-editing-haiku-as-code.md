@@ -66,7 +66,7 @@ Let's explore how this works.
 
 ##### template
 
-The **template** property describes the structure of your scene. Think of the template as a picture of your Haiku as a whole – including elements that may not always be visible. 
+The **template** property describes the structure of your scene. Think of the template as a picture of your Haiku as a whole – including elements that may not always be visible.
 
 ```
 "elementName": "div",
@@ -137,7 +137,7 @@ The `"value"` of an output can be any value that serializes to JSON (strings, nu
 
 **Using _expressions_ to create dynamic behavior**
 
-When the a timeline's output `"value"` is a function, we call it an _expression_. Here is an example of what an _expression_ would look like in your code:
+When the timeline's output `"value"` is a function, we call it an _expression_. Here is an example of what an _expression_ would look like in your code:
 
 ```
 "timelines": {
@@ -152,7 +152,7 @@ When the a timeline's output `"value"` is a function, we call it an _expression_
 
 <br>
 
-Expressions are essentially just JavaScript functions. The return value of the expression becomes the output value of the property it belongs to. 
+Expressions are essentially just JavaScript functions. The return value of the expression becomes the output value of the property it belongs to.
 
 <br>
 

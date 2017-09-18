@@ -24,7 +24,7 @@ That link will take you to your Haiku's Share Page: see below.
 ![](/assets/sharepage.png)
 
 
-The Share Page is your entrypoint for sharing Haiku.  You can see and interact with your Haiku, share it with your colleagues, and even share it easily on social media.
+The Share Page is your entry point for sharing Haiku.  You can see and interact with your Haiku, share it with your colleagues, and even share it easily on social media.
 
 
 #### How to Use
@@ -47,7 +47,7 @@ From the Share Page "How to Use" menu, select the React option, then **follow th
 
 Then from the command line, inside your React project, run `haiku install YourProjectName`.  Behind the scenes, this simply runs `npm install`, and sets up your environment to pull that component from the correct server.
 
-> _Important_: the `haiku install` command will create or modify a file called `.npmrc` in your project.  It's important that you check this in to your version control, otherwise other teammates will not be able to install your Haiku components.
+> _Important_: the `haiku install` command will create or modify a file called `.npmrc` in your project.  It's important that you check this into your version control, otherwise other teammates will not be able to install your Haiku components.
 
 <br>
 

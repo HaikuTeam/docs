@@ -17,7 +17,7 @@ An engineer has already built the file upload system. She also set up a React ap
 
 ![](/assets/tutorials/tutorial-1/boring.gif)
 
-Now you, as the designer, will make a component to shows the upload progress. The upload progress value (a fraction between `0.0` and `1.0`) will drive the length of the progress bar.
+Now you, as the designer, will make a component to show the upload progress. The upload progress value (a fraction between `0.0` and `1.0`) will drive the length of the progress bar.
 
 > To see the code for the _unfinished_ React app, clone [the repo](https://github.com/HaikuTeam/tutorial-1) and check out the `master` branch.
 
@@ -111,7 +111,7 @@ Then we'll verify that our change works by modifying the state value, and watch 
 
 ### Part VI: Publishing with Haiku &amp; Grabbing the Share Link
 
-We now have a nice-looking dynamic component which is ready to be added to our team's file upload React app. The next step is to to _publish the component_ and grab a small snippet of code to _embed the component_ in our React app.
+We now have a nice-looking dynamic component which is ready to be added to our team's file upload React app. The next step is to _publish the component_ and grab a small snippet of code to _embed the component_ in our React app.
 
 First we click the `Publish` button (at top right) to **publish the component**:
 

@@ -34,7 +34,7 @@ To save a multi-line expression, press `Cmd + Enter`.
 
 Expressions like the one shown in the first example (`Math.sin(Math.PI)`) aren't incredibly useful. (At least, not for much other than making the meaning of your input numbers more obvious.) However, you can also use expressions to compute _dynamic values_ based on _dynamic data_.
 
-For example, you might want to make an element move around and follow the user's mouse cursor. Or you might want to create a loading animation thats show the progress of a file upload occurring at an unpredictable rate.
+For example, you might want to make an element move around and follow the user's mouse cursor. Or you might want to create a loading animation that shows the progress of a file upload occurring at an unpredictable rate.
 
 But where does the dynamic data come from in the first place? And how do you reference dynamic data in an expression?
 

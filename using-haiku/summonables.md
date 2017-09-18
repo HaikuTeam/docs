@@ -153,7 +153,7 @@ The following is a list of built-in summonables available to you within expressi
   * siblings (Array) - Array of the targeted element's sibling elements (if any). See the `$element` schema.
   * component (Object) - The element representing the top element of the component's render tree. See the `$element` schema.
   * root (Object) - The element representing the root element of the Haiku Player's top-level context. Usually the same as "component". See the $element schema.
-  * element (Object) - The curently targeted element. See the `$element` schema.
+  * element (Object) - The currently targeted element. See the `$element` schema.
 * **$user (Object) - Collection of data about the user's current interaction state**
   * mouse (Object) - Data about the current mouse state
     * x (Number) - The x-position in pixels of the mouse, with respect to the Haiku Player context
