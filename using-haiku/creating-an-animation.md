@@ -57,7 +57,7 @@ When the ticker is at frame 0, the heart is shown on the stage at its initial po
   </tr>
 </table>
 
-If we press the play button and wait until frame 10 is reached, we see that the heart jumps to a new position, (211, 217). That's because frame 10 is is marked as a _keyframe_ for a change in the `position.x` and `position.y` properties of the element.
+If we press the play button and wait until frame 10 is reached, we see that the heart jumps to a new position, (211, 217). That's because frame 10 is marked as a _keyframe_ for a change in the `position.x` and `position.y` properties of the element.
 
 <table>
   <tr>

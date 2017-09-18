@@ -204,11 +204,11 @@ Returns whether or not this timeline is currently playing.
 
 **.isFinished() -> boolean**
 
-Returns whether ot not this timeline has gone past its max frame.
+Returns whether or not this timeline has gone past its max frame.
 
 **.setRepeat(doRepeat: boolean) -> void**
 
-Set the looping behavior of this timeline intance. Setting `true` instructs this timeline to `loop`. This is the same as setting the `loop` option.
+Set the looping behavior of this timeline instance. Setting `true` instructs this timeline to `loop`. This is the same as setting the `loop` option.
 
 **.getRepeat() -> boolean**
 
