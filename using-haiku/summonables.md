@@ -171,7 +171,7 @@ The following is a list of built-in summonables available to you within expressi
       * y (Number) - The y-position in pixels of the touch/mouse, with respect to the Haiku Player context
 * **$helpers (Object) - Collection of helper functions**
   * now (Function) - Returns the current _apparent_ time with respect to the player clock starting time, accounting for pauses, seeks, rewinds, etc.
-  * rand (Function) - Returns a pseudo-random number generated from the `seed` specified in the `options`
+  * rand (Function) - Returns a pseudo-random number in the range [0,1] generated from the `seed` specified in the `options`
 
 > Note: The above list is incomplete and simplified. Also, we plan to provide many additional built-in summonables for convenience in the future.
 
