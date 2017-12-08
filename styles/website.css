@@ -11,9 +11,11 @@ body {
   color: #FAFCFC;
 }
 
-.markdown-section {
-  padding: 20px 80px 40px 90px;
-  max-width: 1080px;
+@media only screen and (min-width:768px) {
+  .markdown-section {
+    padding: 20px 80px 40px 90px;
+    max-width: 1080px;
+  }
 }
 
 .markdown-section code, .markdown-section pre {
