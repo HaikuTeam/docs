@@ -9,27 +9,36 @@ The Haiku CLI is the "Swiss army knife" for developers using Haiku.  You can use
 
 To install, run the following command in your terminal:
 
-`curl http://code.haiku.ai/scripts/cli/installer.js | node`
+With npm: (Instructions to [install npm](https://www.npmjs.com/get-npm) itself)
 
-> _Coming soon:_  you will soon be able to install the CLI directly from npm, with `npm install -g @haiku/cli`\)
+`npm install -g @haiku/cli`
+
+With yarn: (instructions to [install yarn](https://yarnpkg.com/lang/en/docs/install/) itself)
+
+`yarn global add @haiku/cli`
 
 
 #### USAGE
 
 ```
-Usage:
-  haiku <command> [flags]
+NAME:
+    haiku - The Haiku CLI — developer utilities for automating Haiku actions and performing local and server-enabled actions without requiring the desktop app.
 
-Commands:
-  clone <project_name> - Clone a Haiku project to your filesystem, passing through to git clone
-  delete - Delete a Haiku project by name (interactive)
-  diff-tail - See a live stream of code diffs that are being written by Haiku
-  list - List your team's Haiku projects
-  login - Log in to Haiku (interactive)
-  logout - Log out of Haiku
-  install <project_name> - Install a Haiku project as an npm module, requires a package.json in current directory
-  update - Updates all Haiku-installed packages, passing through to npm update
-  help - Display this message
+USAGE:
+    haiku [global options] command [command options] [arguments...]
+
+VERSION:
+    2.x.x
+
+COMMANDS:
+    list               Lists your team projects
+    change-password    Changes your Haiku account password (interactive)
+    clone              Clone a Haiku project to your filesystem, passing through to git clone
+    delete             Deletes a Haiku project for your entire team.  Cannot be undone.
+    install            Install a Haiku project as an npm module, requires a package.json
+    login              Logs into Haiku services.  (interactive)
+    logout             Logs out of Haiku services.
+    update,upgrade     Updates dependencies
 ```
 
 <br>
