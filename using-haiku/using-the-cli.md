@@ -9,11 +9,11 @@ The Haiku CLI is the "Swiss army knife" for developers using Haiku.  You can use
 
 To install, run the following command in your terminal:
 
-With npm: (Instructions to [install npm](https://www.npmjs.com/get-npm) itself)
+**With npm:** (and instructions to [install npm](https://www.npmjs.com/get-npm) itself)
 
 `npm install -g @haiku/cli`
 
-With yarn: (instructions to [install yarn](https://yarnpkg.com/lang/en/docs/install/) itself)
+**With yarn:** (and instructions to [install yarn](https://yarnpkg.com/lang/en/docs/install/) itself)
 
 `yarn global add @haiku/cli`
 
