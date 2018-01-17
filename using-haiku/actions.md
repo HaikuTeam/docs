@@ -24,7 +24,7 @@ Frame Actions are triggered every time a frame is crossed. To add a Frame Action
 
 #### EVENT ACTIONS
 
-![](/assets/insert-frame-action.gif)
+![](/assets/insert-event-action.gif)
 
 Event Actions are triggered every time a condition is met. To add an Event Action, select an element on the stage and click the settings button.
 
