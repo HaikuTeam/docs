@@ -179,4 +179,4 @@ You can click the number in the "Ticker Position (Current Frame)" box on the top
 
 <br>
 
-[Next: Writing Expressions](/using-haiku/writing-expressions.md) &rarr;
+[Next: Keyboard shortcuts &amp; Input](/using-haiku/keyboard-shortcuts-and-input.md) &rarr;

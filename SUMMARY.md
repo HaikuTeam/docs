@@ -17,6 +17,7 @@
 * [Importing Sketch and Image Assets](using-haiku/sketch-and-image-assets.md)
 * [Editing Elements on the Stage](using-haiku/editing-elements-on-the-stage.md)
 * [Creating Animations with the Timeline](using-haiku/creating-an-animation.md)
+* [Keyboard shortcuts &amp; Input](using-haiku/keyboard-shortcuts-and-input.md)
 
 ## Dynamic Components
 
