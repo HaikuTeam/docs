@@ -17,7 +17,7 @@ Or jump right in and checkout [our beginners tutorial](/tutorials/tutorial-1/tut
 
 If you're already hip to what Haiku is all about — and if you're ready to start creating something cool — head over to [our Getting Started guide](getting-started), which covers how to:
 
-* Get an invite
+* Create your account
 * Download and install the app
 * Create your first Haiku
 
