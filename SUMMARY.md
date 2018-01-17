@@ -6,7 +6,10 @@
 
 ## Lessons &amp; Tutorials
 
-* [Tutorial 1: Progress Bar](tutorials/tutorial-1/tutorial.md)
+
+* {% raw %}<a href="https://medium.com/haiku-blog/getting-started-with-animations-for-the-web-ios-android-with-haiku-568184eb31fa" target="_blank">Tutorial 1: Motion Design basics</a>{% endraw %}
+* {% raw %}<a href="https://medium.com/haiku-blog/designing-the-real-thing-with-haiku-actions-a80ccddfcb1" target="_blank">Tutorial 2: Interactivity with Actions</a>{% endraw %}
+* [Tutorial 3: Embedding in a web app](tutorials/tutorial-3/tutorial.md)
 
 ## Creating Content with Haiku
 
