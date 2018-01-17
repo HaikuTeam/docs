@@ -24,6 +24,7 @@
 * [Writing Expressions](using-haiku/writing-expressions.md)
 * [Defining States](using-haiku/defining-states.md)
 * [Summonables](using-haiku/summonables.md)
+* [Actions](using-haiku/actions.md)
 
 ## Embedding Haiku Components
 
