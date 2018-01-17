@@ -3,6 +3,7 @@
 * [Welcome](README.md)
 * [What Is Haiku?](what-is-haiku.md)
 * [Getting Started](getting-started.md)
+* [FAQ's &amp; Troubleshooting](faqs.md)
 
 ## Lessons &amp; Tutorials
 
