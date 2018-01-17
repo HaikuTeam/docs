@@ -45,7 +45,11 @@ This is covered in our [Terms of service](https://www.haiku.ai/terms-of-service.
 
 #### HOW DO I KEEP THE SAME TRANSFORM DIMENSIONS FOR DIFFERENT SIZED ELEMENTS?
 
+![](/assets/faqs/artboard-transform-rotation.gif)
+
 If you want to use different sized elements in Haiku with consistent transform sizes, in Sketch use Artboards instead of Slices.
+
+In the example above, you can see Sketch artboards on the left with consistent dimensions. When they're instantiated in the stage in Haiku, they have consistent transform sizes making it easier to manipulate them with the desired effect.
 
 <br>
 
