@@ -32,7 +32,7 @@ But Haiku is also a lot more than a design tool.
 
 <br>
 
-**Haiku is for engineers, too:** Under the hood, every Haiku component is clean JavaScript code that you can always hand-edit, without breaking the link to the source design. No more reworking your handcrafted code as fresh design changes come in. And we provide a [powerful API](embedding-and-using-haiku/haiku-player-api.md) for wiring up your component to external business logic.
+**Haiku is for engineers, too:** Under the hood, every Haiku component is clean JavaScript code that you can always hand-edit, without breaking the link to the source design. No more reworking your handcrafted code as fresh design changes come in. And we provide a [powerful API](embedding-and-using-haiku/haiku-core-api.md) for wiring up your component to external business logic.
 
 <br>
 

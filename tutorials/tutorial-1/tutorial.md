@@ -170,7 +170,7 @@ Now that your app is published and embedded, it's up to you to refine it and tak
 
 **If you want to make more design changes**, make them in Sketch while Haiku is running, and the changes will be merged in seamlessly. When you're ready to push them to production, just `Publish` again, and tell your engineer that a new version of the component is ready and it's time to run `$ haiku update`.
 
-**If you want to add more programmatic behavior**, check out our [Haiku Developer API](/embedding-and-using-haiku/haiku-player-api.md) which an engineer can use to add complex business logic to any component.
+**If you want to add more programmatic behavior**, check out our [Haiku Developer API](/embedding-and-using-haiku/haiku-core-api.md) which an engineer can use to add complex business logic to any component.
 
 <br>
 

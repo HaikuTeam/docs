@@ -1,10 +1,10 @@
-# Haiku Player API
+# Haiku Core API
 
 <br>
 
 #### OVERVIEW
 
-A programmatic interface to the Haiku Player (and your published Haiku) is available for those who need more control. With the programmatic API, you can access your Haiku's internal content and create fine-grained behavior that responds to user and page events.
+A programmatic interface to the Haiku Core (and your published Haiku) is available for those who need more control. With the programmatic API, you can access your Haiku's internal content and create fine-grained behavior that responds to user and page events.
 
 <br>
 
@@ -18,7 +18,7 @@ The first interface to control your Haiku is via its declarative embedding API. 
 
 The first thing you might want to do is override the [states](/using-haiku/defining-states.md) you've defined.
 
-For example, if you are embedding a Haiku as a React component, you can override its internal states by passing a `haikuStates` prop. (Note: It is best to think of Haiku states as a combination of React's `this.state` and `this.props`, since internally the Haiku Player treats them the same.)
+For example, if you are embedding a Haiku as a React component, you can override its internal states by passing a `haikuStates` prop. (Note: It is best to think of Haiku states as a combination of React's `this.state` and `this.props`, since internally the Haiku Core treats them the same.)
 
 ```
 <MyHaiku
@@ -31,7 +31,7 @@ For example, if you are embedding a Haiku as a React component, you can override
 
 **Configuring embed options**
 
-Much of the Haiku Player's options can be controlled by passing in an options prop:
+Much of the Haiku Core's options can be controlled by passing in an options prop:
 
 ```
 <MyHaiku
@@ -47,7 +47,7 @@ Much of the Haiku Player's options can be controlled by passing in an options pr
 
 **Embed lifecycle hooks**
 
-The Haiku Player also exposes lifecycle hooks for embedded components, which you can hook into in order to gain access to your component's _programmatic_ API (see below).
+The Haiku Core also exposes lifecycle hooks for embedded components, which you can hook into in order to gain access to your component's _programmatic_ API (see below).
 
 ```
 <MyHaiku

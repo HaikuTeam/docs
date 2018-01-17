@@ -4,7 +4,7 @@ As you may know from our sections on [expressions](/using-haiku/writing-expressi
 
 In general, we call any value you summon into an expression a **_summonable_**.
 
-In addition to its states, expressions can also summon _built-in variable values_. Built-in summonables are commonly-used pieces of data that the Haiku player automatically tracks and updates for your convenience.
+In addition to its states, expressions can also summon _built-in variable values_. Built-in summonables are commonly-used pieces of data that the Haiku core automatically tracks and updates for your convenience.
 
 They represent things such as the user's current mouse position or the dimensions of the viewport.  When writing an expression, any of them can be summoned by name.
 
@@ -78,11 +78,11 @@ The following is a list of built-in summonables available to you within expressi
     * pathname (String)
     * protocol (String)
     * search (String)
-* **$player (Object) - Collection of data about the current state of the [Haiku Player](./embedding-and-using-haiku/haiku-player-overview.md)**
-  * version (String) - The current version of the player
-  * options (Object) - The current option configuration of the player
+* **$core (Object) - Collection of data about the current state of the [Haiku Core](./embedding-and-using-haiku/haiku-core-overview.md)**
+  * version (String) - The current version of the core
+  * options (Object) - The current option configuration of the core
     * seed (String) - Seed used for producing predictable randomness, etc.
-    * loop (Boolean) - Whether or not the player is configured to loop the animation
+    * loop (Boolean) - Whether or not the core is configured to loop the animation
     * sizing (String) - The sizing mode of the component (`"cover"` or `"contain"`)
     * preserve3d (Boolean)
     * position (String)
@@ -99,10 +99,10 @@ The following is a list of built-in summonables available to you within expressi
     * frame (Object) - Collection of data about the timeline's current frame
       * apparent (Number) - The frame the component is currently rendering (e.g. if paused at frame `2`, the value will be `2`)
       * elapsed (Number) - The total number of frames that would have elapsed since this timeline started playing
-  * clock (Object) - Collection of data about the player's global clock
+  * clock (Object) - Collection of data about the core's global clock
     * frameDuration (Number) - How much "apparent time" each frame represents (usually 16.666 milliseconds)
-    * frameDelay (Number) - How long the player waits between frame renders (usually 16.666 milliseconds)
-    * time (Object) - Collection of data about the player's global clock time
+    * frameDelay (Number) - How long the core waits between frame renders (usually 16.666 milliseconds)
+    * time (Object) - Collection of data about the core's global clock time
       * apparent (Number) - The current time at which the context is currently rendering
       * elapsed (Number) - The total time that has elapsed since the clock started ticking
 * **$element (Object) - Collection of data about the currently targeted element**
@@ -152,25 +152,25 @@ The following is a list of built-in summonables available to you within expressi
   * children (Array) - Array of the targeted element's child elements (if any). See the `$element` schema.
   * siblings (Array) - Array of the targeted element's sibling elements (if any). See the `$element` schema.
   * component (Object) - The element representing the top element of the component's render tree. See the `$element` schema.
-  * root (Object) - The element representing the root element of the Haiku Player's top-level context. Usually the same as "component". See the $element schema.
+  * root (Object) - The element representing the root element of the Haiku Core's top-level context. Usually the same as "component". See the $element schema.
   * element (Object) - The currently targeted element. See the `$element` schema.
 * **$user (Object) - Collection of data about the user's current interaction state**
   * mouse (Object) - Data about the current mouse state
-    * x (Number) - The x-position in pixels of the mouse, with respect to the Haiku Player context
-    * y (Number) - The y-position in pixels of the mouse, with respect to the Haiku Player context
+    * x (Number) - The x-position in pixels of the mouse, with respect to the Haiku Core context
+    * y (Number) - The y-position in pixels of the mouse, with respect to the Haiku Core context
     * down (Boolean) - Whether any of the mouse buttons are down
     * buttons (Array) - Array of currently pressed mouse buttons (e.g. `[1,0,0]` if only the primary button is down)
   * keys (Object) - Dictionary mapping key codes to each key's currently active presses (e.g. `{"72": 1, "65": 0}` means `h` is pressed but `a` is not)
   * touches (Array) - List of currently active touchscreen touches
     * [array element]
-      * x (Number) - The x-position in pixels of the touch, with respect to the Haiku Player context
-      * y (Number) - The y-position in pixels of the touch, with respect to the Haiku Player context
+      * x (Number) - The x-position in pixels of the touch, with respect to the Haiku Core context
+      * y (Number) - The y-position in pixels of the touch, with respect to the Haiku Core context
   * mouches (Array) - For convenience, a combination of currently active touches and mouse presses _(mouse only included when the mouse is down)_
     * [array element]
-      * x (Number) - The x-position in pixels of the touch/mouse, with respect to the Haiku Player context
-      * y (Number) - The y-position in pixels of the touch/mouse, with respect to the Haiku Player context
+      * x (Number) - The x-position in pixels of the touch/mouse, with respect to the Haiku Core context
+      * y (Number) - The y-position in pixels of the touch/mouse, with respect to the Haiku Core context
 * **$helpers (Object) - Collection of helper functions**
-  * now (Function) - Returns the current _apparent_ time with respect to the player clock starting time, accounting for pauses, seeks, rewinds, etc.
+  * now (Function) - Returns the current _apparent_ time with respect to the core clock starting time, accounting for pauses, seeks, rewinds, etc.
   * rand (Function) - Returns a pseudo-random number in the range [0,1] generated from the `seed` specified in the `options`
 
 > Note: The above list is incomplete and simplified. Also, we plan to provide many additional built-in summonables for convenience in the future.
@@ -179,4 +179,4 @@ The following is a list of built-in summonables available to you within expressi
 
 <br>
 
-[Next: Haiku Player Overview](/embedding-and-using-haiku/haiku-player-overview.md) &rarr;
+[Next: Haiku Core Overview](/embedding-and-using-haiku/haiku-core-overview.md) &rarr;

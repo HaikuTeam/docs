@@ -6,7 +6,7 @@ Everything you build with Haiku is backed by simple JavaScript code.
 
 Under the hood, your Haiku is one JavaScript file on your filesystem. You can find it in the folder that contains your project's content, e.g. `~/.haiku/projects/YOUR_ORG/YOUR_PROJECT`.
 
-The file _code/main/code.js_ (within the project folder) is the code for your Haiku. It exports a static object that you can think of as the _definition_ of your Haiku. When you embed your Haiku on a web page, the [Haiku Player](/embedding-and-using-haiku/haiku-player-api.md) transforms that definition into a dynamic UI.
+The file _code/main/code.js_ (within the project folder) is the code for your Haiku. It exports a static object that you can think of as the _definition_ of your Haiku. When you embed your Haiku on a web page, the [Haiku Core](/embedding-and-using-haiku/haiku-core-api.md) transforms that definition into a dynamic UI.
 
 <br>
 
@@ -105,13 +105,13 @@ The **eventHandlers** object describes how you want your Haiku to respond to eve
 
 As you can see, event listeners are just plain objects with a _handler_ property, which is a function. The parent object designates the name of the event to subscribe to. And the outermost object uses a CSS selector to designate which elements in the _template_ to listen to.
 
-Within the context of a handler function, `this` is bound to your component's instance. By mutating properties that match the names of your declared _states_ (e.g. `this.clicks = 2`), you change their state values. When those state values change, the Haiku Player knows it must re-render your Haiku.
+Within the context of a handler function, `this` is bound to your component's instance. By mutating properties that match the names of your declared _states_ (e.g. `this.clicks = 2`), you change their state values. When those state values change, the Haiku Core knows it must re-render your Haiku.
 
 <br>
 
 ##### timelines
 
-The **timelines** object is where _states_, _eventHandlers_, and _template_ come together to create a dynamic UI. The Haiku Player processes your timeline definitions and applies their _outputs_ to the appropriate elements in your scene.
+The **timelines** object is where _states_, _eventHandlers_, and _template_ come together to create a dynamic UI. The Haiku Core processes your timeline definitions and applies their _outputs_ to the appropriate elements in your scene.
 
 You can create as many timelines as you want, but there must always be a `"Default"` timeline:
 
@@ -127,7 +127,7 @@ You can create as many timelines as you want, but there must always be a `"Defau
         "value": 123      // <- Keyframe value specifies the value of the "content" output at 1000ms
 ```
 
-A _timeline_'s purpose is to answer the question "What should the elements on stage look like right now?" During each frame of playback, the player queries your timeline object and assembles a set of _outputs_ to apply to the elements in your template.
+A _timeline_'s purpose is to answer the question "What should the elements on stage look like right now?" During each frame of playback, the core queries your timeline object and assembles a set of _outputs_ to apply to the elements in your template.
 
 In the snippet above, a `"position.x"` output is applied to some element whose id is `"box"`. At 0ms, the element's position.x will be `0`. At 1000ms, it will be `123`. As the clock advances from 0ms to 1000ms, the value of position.x gets smoothly transitioned from `0` to `123`, using a `"linear"` curve.
 
