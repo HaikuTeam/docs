@@ -25,6 +25,7 @@
 * [Defining States](using-haiku/defining-states.md)
 * [Summonables](using-haiku/summonables.md)
 * [Actions](using-haiku/actions.md)
+* [Just-in-time Properties](using-haiku/just-in-time-properties.md)
 
 ## Embedding Haiku Components
 

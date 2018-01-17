@@ -30,4 +30,4 @@ Event Actions are triggered every time a condition is met. To add an Event Actio
 
 <br>
 
-[Next: Haiku Player Overview](/embedding-and-using-haiku/haiku-player-overview.md) &rarr;
+[Next: Just-in-time Properties](/using-haiku/just-in-time-properties.md) &rarr;
