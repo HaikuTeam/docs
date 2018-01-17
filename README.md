@@ -15,7 +15,7 @@ Or jump right in and checkout [our beginners tutorial](/tutorials/tutorial-1/tut
 
 ## I'm ready to get started
 
-If you're already hip to what Haiku is all about — and if you're ready to start creating something cool — head over to [our Getting Started guide](getting-started), which covers how to:
+If you're already hip to what Haiku is all about — and if you're ready to start creating something cool — head over to [our Getting Started guide](getting-started.md), which covers how to:
 
 * Get an invite
 * Download and install the app
