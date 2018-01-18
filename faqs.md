@@ -17,7 +17,7 @@ Haiku is already usable and ready for production projects, however we'll likely 
 
 #### HOW MUCH WILL HAIKU COST?
 
-While we're in public beta Haiku is 100% free to use. In future, we'll charge for premium features however Haiku will always have a free tier or trial in some capacity.
+While we're in public beta Haiku is 100% free to use. For more information, please [contact us](mailto:contact@haiku.ai).
 
 <br>
 
