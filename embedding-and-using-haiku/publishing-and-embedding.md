@@ -67,4 +67,4 @@ You can also clone down a project directly to any location of your choosing.  Yo
 
 <br>
 
-[Next: Using the Haiku CLI](/using-haiku/lottie.md) &rarr;
+[Next: iOS & Android rendering powered by Lottie](/using-haiku/lottie.md) &rarr;
