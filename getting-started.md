@@ -39,4 +39,4 @@ To install, run the following command in your terminal:
 
 <br>
 
-[Next: Starting Haiku](using-haiku/starting-haiku.md) &rarr;
+[Next: FAQ's](faqs.md) &rarr;

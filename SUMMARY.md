@@ -3,10 +3,13 @@
 * [Welcome](README.md)
 * [What Is Haiku?](what-is-haiku.md)
 * [Getting Started](getting-started.md)
+* [FAQ's &amp; Troubleshooting](faqs.md)
 
 ## Lessons &amp; Tutorials
 
-* [Tutorial 1: Progress Bar](tutorials/tutorial-1/tutorial.md)
+* [Tutorial 1: Motion Design basics](https://medium.com/haiku-blog/getting-started-with-animations-for-the-web-ios-android-with-haiku-568184eb31fa)
+* [Tutorial 2: Interactivity with Actions](https://medium.com/haiku-blog/designing-the-real-thing-with-haiku-actions-a80ccddfcb1)
+* [Tutorial 3: Embedding in a web app](tutorials/tutorial-3/tutorial.md)
 
 ## Creating Content with Haiku
 
@@ -14,12 +17,15 @@
 * [Importing Sketch and Image Assets](using-haiku/sketch-and-image-assets.md)
 * [Editing Elements on the Stage](using-haiku/editing-elements-on-the-stage.md)
 * [Creating Animations with the Timeline](using-haiku/creating-an-animation.md)
+* [Keyboard shortcuts &amp; Input](using-haiku/keyboard-shortcuts-and-input.md)
 
 ## Dynamic Components
 
 * [Writing Expressions](using-haiku/writing-expressions.md)
 * [Defining States](using-haiku/defining-states.md)
 * [Summonables](using-haiku/summonables.md)
+* [Actions](using-haiku/actions.md)
+* [Just-in-time Properties](using-haiku/just-in-time-properties.md)
 
 ## Embedding Haiku Components
 

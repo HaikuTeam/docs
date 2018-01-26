@@ -15,7 +15,7 @@ Or jump right in and checkout [our beginners tutorial](/tutorials/tutorial-1/tut
 
 ## I'm ready to get started
 
-If you're already hip to what Haiku is all about — and if you're ready to start creating something cool — head over to [our Getting Started guide](getting-started), which covers how to:
+If you're already hip to what Haiku is all about — and if you're ready to start creating something cool — head over to [our Getting Started guide](getting-started.md), which covers how to:
 
 * Get an invite
 * Download and install the app
@@ -31,7 +31,9 @@ Here are some good places to explore Haiku in more detail:
 
 ## I'm not sure / None of the above
 
-If you're confused about something, don't see the information you're looking for, or just want to reach out to us, you can always [contact us](mailto:contact@haiku.ai). We're a small team, but we'll try our best to respond to you within 1-2 business days.
+If you're confused about something or don't see the information you're looking for, we recommend reading the [FAQ's](faqs.md) first.
+
+If you want to reach out to us, the best way to do that is on [our community Slack](https://join.slack.com/t/haiku-community/shared_invite/enQtMjU0NzExMzQzMjIxLTA3NjgzZDYzYmNjYzcxNmUwY2NhMTE0YTE2OGVjZGE0MDhmNGIxOWUzOTk5OTI5MmQ0ZjA5MDAwNGY1Yjk1OTg) or [by email](mailto:contact@haiku.ai). We're a small team, but we'll try our best to respond to emails within 1-2 business days.
 
 <br>
 
