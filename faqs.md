@@ -1,3 +1,7 @@
+---
+description: Common issues and fixes related to Haiku and where to get help from our community Slack and by email.
+---
+
 <br>
 # FAQ's
 

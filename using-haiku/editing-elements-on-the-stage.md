@@ -1,3 +1,7 @@
+---
+description: You can use the Haiku stage to position and transform your design elements. The first step is to get your designs on the stage. Then you can use Haiku's familiar on-stage tools to position and transform them.
+---
+
 # Editing Elements on the Stage
 
 You can use the Haiku stage to position and transform your design elements. The first step is to get your designs on the stage. Then you can use Haiku's familiar on-stage tools to position and transform them.

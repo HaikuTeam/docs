@@ -1,3 +1,7 @@
+---
+description: The Haiku CLI is the Swiss army knife for developers using Haiku. You can use it to import a Haiku into an existing codebase (using npm install) or you can use the CLI to perform advanced operations on your local machine.
+---
+
 # Using the Haiku CLI
 
 #### OVERVIEW

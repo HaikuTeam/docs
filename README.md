@@ -1,3 +1,7 @@
+---
+description: The Haiku docs are your one stop shop for everything you need to know about Haiku. Learn about what Haiku is, who it's for and why you or your time might use it. 
+---
+
 <br>
 # Welcome to Haiku!
 

@@ -1,3 +1,7 @@
+---
+description: Animation is one of the main features of Haiku, and the heart of creating animations in Haiku is the Timeline. Using a combination of the Timeline and Stage, you can move and transform elements in your component over time, with the result being... animation!
+---
+
 # Creating Animations with the Timeline
 
 Animation is one of the main features of Haiku, and the heart of creating animations in Haiku is the **Timeline**. Using a combination of the Timeline and Stage, you can move and transform elements in your component over time, with the result being... animation!

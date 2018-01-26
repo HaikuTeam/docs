@@ -1,3 +1,7 @@
+---
+description: Everything you build with Haiku is backed by simple JavaScript code. Under the hood, your Haiku is one JavaScript file on your filesystem.
+---
+
 # Advanced:  Editing Haiku as Code
 
 Everything you build with Haiku is backed by simple JavaScript code.

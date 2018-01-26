@@ -1,3 +1,7 @@
+---
+description: Learn about publishing and embedding your Haiku. The first step to getting your Haiku out into the world is to publish it. Simply press Publish and your up-to-the-moment work will be shuttled out to the cloud and packaged up for use in any codebase.
+---
+
 # Publishing and Embedding
 
 

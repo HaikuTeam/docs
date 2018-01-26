@@ -1,3 +1,7 @@
+---
+description: Every Haiku you create can have its own collection of internal state. These pieces of data are special to your component in that you may summon them into your expression functions, allowing you to create complex dynamic behavior.
+---
+
 # Defining States
 
 Every Haiku you create can have its own collection of internal state. These pieces of data are special to your component in that you may "summon" them into your [expression functions](/using-haiku/writing-expressions.md), allowing you to create complex dynamic behavior.

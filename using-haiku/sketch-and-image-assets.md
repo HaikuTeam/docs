@@ -1,3 +1,7 @@
+---
+description: Haiku integrates with the tools you already love. Draw in Sketch, bring to life in Haiku. Let's start by covering how to get your Sketch design into Haiku.
+---
+
 # Sketch and Image Assets
 
 Haiku doesn't _yet_ provide its own drawing tools. Though we plan to add some in the future, this was an intentional decision.  Designers told us resoundingly that they don't want _yet another drawing tool_, so we simply integrated with existing ones.  Think of it this way:  **draw in Sketch, bring to life in Haiku.**

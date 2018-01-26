@@ -1,3 +1,7 @@
+---
+description: Haiku is a desktop app backed by cloud services for creating interactive, animated UI components. Bring your designs to life with animation, add interactivity responding to user events and data, and publish your creations as web, iOS and Android UI components.
+---
+
 <br>
 # What is Haiku?
 

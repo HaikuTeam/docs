@@ -1,3 +1,7 @@
+---
+description: When you first open Haiku, you will be prompted to log in.  Enter the username and password you used when you created your account.  If you forgot your password, you can reset it with this link. 
+---
+
 # Starting Haiku
 
 #### LOGGING IN

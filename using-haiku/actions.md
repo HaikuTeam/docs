@@ -1,3 +1,7 @@
+---
+description: Use Actions to execute small snippets of JavaScript throughout your project. Actions are designed to be accessible to people who only know a little code, or who want to learn—as well as to engineers.
+---
+
 # Actions
 
 Use Actions to execute small snippets of JavaScript throughout your project. Actions are designed to be accessible to people who only know a little code, or who want to learn—as well as to engineers.

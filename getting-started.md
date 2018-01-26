@@ -1,3 +1,7 @@
+---
+description: Get started with Haiku. Create your account, download Haiku for Mac and get set up.
+---
+
 <br>
 # Getting Started with Haiku
 

@@ -1,3 +1,7 @@
+---
+description:  Use Just-in-time Properties to dynamically manipulate a wide array of properties throughout your Haiku projects. Add Just-in-time Properties by clicking the add button underneath the element name in the timeline.
+---
+
 # Just-in-time Properties
 
 Use Just-in-time Properties to dynamically manipulate a wide array of properties throughout your Haiku projects.

@@ -1,3 +1,7 @@
+---
+description: Expressions are small snippets of code that add dynamic behaviour to your projects. Specifically, they're smart JavaScript functions that run at specific moments in time as your project animates.
+---
+
 <br>
 
 # Writing Expressions

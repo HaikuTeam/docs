@@ -1,3 +1,7 @@
+---
+description: Values you summon into expressions are called summonables. Built-in summonables are commonly-used piece of data that Haiku tracks and updates such as current mouse position or the dimensions of the viewport.
+---
+
 # Summonables
 
 As you may know from our sections on [expressions](/using-haiku/writing-expressions.md) and [editing Haiku as code](/using-haiku/advanced-editing-haiku-as-code.md), expression functions can summon _states_ that your component has defined.

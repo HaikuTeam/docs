@@ -1,3 +1,7 @@
+---
+description: SEO TUT
+---
+
 # Tutorial 3: Progress Bar
 
 Welcome to the third Haiku tutorial! Here we'll show how to use Haiku to create a small, practical component — **file upload progress bar** — and get it running in a real web app.

@@ -1,3 +1,6 @@
+---
+description: Boost your productivity with keyboard shortcuts. Haiku supports an array of keyboard shortcuts to help expedite your workflow.
+---
 # Keyboard shortcuts &amp; Input
 
 #### KEYBOARD SHORTCUTS
