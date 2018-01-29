@@ -47,4 +47,4 @@ COMMANDS:
 
 <br>
 
-[Next: Haiku Player Developer API](/embedding-and-using-haiku/haiku-player-api.md) &rarr;
+[Next: Haiku Core Developer API](/embedding-and-using-haiku/haiku-core-api.md) &rarr;

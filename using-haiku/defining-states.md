@@ -56,7 +56,7 @@ All you need to do to update states dynamically as your component animates is to
 ```
 <br>
 
-> Note: For more about how to interact with your component programmatically, see the [Haiku Player API section](/embedding-and-using-haiku/haiku-player-api.md).
+> Note: For more about how to interact with your component programmatically, see the [Haiku Core API section](/embedding-and-using-haiku/haiku-core-api.md).
 
 <br>
 

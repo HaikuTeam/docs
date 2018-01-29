@@ -29,11 +29,11 @@
 
 ## Embedding Haiku Components
 
-* [Haiku Player Overview](embedding-and-using-haiku/haiku-player-overview.md)
+* [Haiku Core Overview](embedding-and-using-haiku/haiku-core-overview.md)
 * [Publishing and Embedding](embedding-and-using-haiku/publishing-and-embedding.md)
 
 ## Haiku for Developers
 
 * [Using the Haiku CLI](using-haiku/using-the-cli.md)
-* [Haiku Developer API](embedding-and-using-haiku/haiku-player-api.md)
+* [Haiku Developer API](embedding-and-using-haiku/haiku-core-api.md)
 * [Editing Haiku as Code](using-haiku/advanced-editing-haiku-as-code.md)

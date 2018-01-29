@@ -64,7 +64,7 @@ To access a state value in an expression, simply **type its name**. Haiku will a
 
 <br>
 
-If you toggle multi-line mode, you can see the entire expression function. As you can see, the state you referenced has been added to the function signature. (The Haiku Player uses the function signature to know which states to automatically _inject_ into your expression function.)
+If you toggle multi-line mode, you can see the entire expression function. As you can see, the state you referenced has been added to the function signature. (The Haiku Core uses the function signature to know which states to automatically _inject_ into your expression function.)
 
 ![](/assets/expr-multiline-ui-0.png)
 
@@ -123,7 +123,7 @@ Here's a full code snippet showing how a hand-written expression which reference
 
 <br>
 
-> Technical note: The Haiku Player automatically optimizes your expression functions using summoned values: Only when the states they summon have changed is the function re-evaluated. For that reason, it's required that you write expression functions as _pure functions_ (expressions should avoid making side-effects and/or referencing any hidden state).
+> Technical note: The Haiku Core automatically optimizes your expression functions using summoned values: Only when the states they summon have changed is the function re-evaluated. For that reason, it's required that you write expression functions as _pure functions_ (expressions should avoid making side-effects and/or referencing any hidden state).
 
 <br>
 
