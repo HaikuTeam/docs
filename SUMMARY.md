@@ -31,6 +31,7 @@
 
 * [Haiku Core Overview](embedding-and-using-haiku/haiku-core-overview.md)
 * [Publishing and Embedding](embedding-and-using-haiku/publishing-and-embedding.md)
+* [iOS & Android powered by Lottie](embedding-and-using-haiku/lottie.md)
 
 ## Haiku for Developers
 
