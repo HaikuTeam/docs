@@ -19,7 +19,7 @@ They represent things such as the user's current mouse position or the dimension
 Built-in summonables can be summoned in the same way as states. Just include them by **typing their names** in your expression function's signature. For example, if you want to access the injectable called `$user.mouse.x` (i.e., the x-position of the user's mouse), your expression would look like this:
 
 ```
-function ({ $user, $user: { mouse: { x }}}) {
+function ($user) {
   return $user.mouse.x
 }
 ```
