@@ -15,7 +15,7 @@ Cruise over to [What is Haiku?](what-is-haiku.md) for a brief overview that expl
 * Who Haiku is for
 * Why you and your team might use Haiku
 
-Or jump right in and checkout [our beginners tutorial](/tutorials/tutorial-1/tutorial.md).
+Or jump right in and checkout [our beginners tutorial](https://medium.com/haiku-blog/getting-started-with-animations-for-the-web-ios-android-with-haiku-568184eb31fa).
 
 ## I'm ready to get started
 
