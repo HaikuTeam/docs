@@ -31,16 +31,135 @@ For example, if you are embedding a Haiku as a React component, you can override
 
 **Configuring embed options**
 
-Much of the Haiku Core's options can be controlled by passing in an options prop:
+Haiku Core's behavior can be controlled by passing in lifecycle event handlers and a `haikuOptions` prop:
 
 ```
 <MyHaiku
+  // onHaikuComponentWillInitialize: Function
+  // Fired when the component initialization begins
+  onHaikuComponentWillInitialize: null,
+
+  // onHaikuComponentDidMount: Function
+  // Fired when the component initialization finishes
+  onHaikuComponentDidMount: null,
+
+  // onHaikuComponentWillMount: Function
+  // Fired when the component is about to attach to the DOM
+  onHaikuComponentWillMount: null,
+
+  // onHaikuComponentDidInitialize: Function
+  // Fired immediately after the component has attached to the DOM
+  onHaikuComponentDidInitialize: null,
+
+  // onHaikuComponentWillUnmount: Function
+  // Fired when the component is about to detach from the DOM
+  onHaikuComponentWillUnmount: null,
+
   haikuOptions={{
-    seed: '{random}', // (String) - Random seed used for deterministic randomness
-    autoplay: true, // (boolean) - Whether to start playing the animation immediately
-    loop: true, // (boolean) - Whether to continuously loop the animation
-    sizing: 'normal' // (String) - The sizing mode, either "cover" or "contain"
+    // contextMenu: String
+    // Whether the Haiku menu will display when the component is right-clicked;
+    // value may be 'enabled' or 'disabled'
+    contextMenu: 'enabled',
+
+    // mixpanel: String|Boolean
+    // If provided, the component will transmit metadata to Mixpanel;
+    // specify your own token here, or set to falsy to disable tracking altogether.
+    // We send only public information: your component's name, its Haiku account username,
+    // the software version it was built with, and its share identifier.
+    mixpanel: '{mixpanel api token}',
+
+    // seed: String
+    // Random seed used for deterministic randomness
+    seed: '{will be auto-generated if not supplied}',
+
+    // automount: Boolean
+    // Whether we should mount the given context to the mount element automatically
+    automount: true,
+
+    // autoplay: Boolean
+    // Whether to start playing the animation immediately
+    autoplay: true,
+
+    // loop: Boolean
+    // Whether to continuously loop the animation
+    loop: true,
+
+    // sizing: String
+    // Configures the sizing mode of the component;
+    // controls how it sizes to fill its container;
+    // values may be 'normal', 'stretch', 'contain', or 'cover';
+    // the behavior matches CSS' behavior
+    sizing: 'normal',
+
+    // forceFlush: Boolean
+    // If true, the renderer will not cache properties nor patch updates;
+    // it will fully render the component on every animation frame
+    // (wraning: not recommended, as this can severely deoptimize animation)
+    forceFlush: false,
+
+    // freeze: Boolean
+    // Whether to prevent the global clock from updating the timelines
+    // (warning: only use if you know what you're doing)
+    freeze: false,
+
+    // frame: Function
+    // Optional function that we will call before every frame renders
+    frame: null,
+
+    // clock: Object
+    // Configuration options that will be passed to the HaikuClock instance
+    clock: {},
+
+    // alwaysComputeSizing: Boolean
+    // Whether we should always assume the size of the mount element will change on every tick;
+    // This boosts performance when not using an explicit `sizing` option
+    alwaysComputeSizing: true,
+
+    // position: String
+    // CSS position setting for the root of the component in DOM;
+    // (warning: not recommended to change this, as it may affect layout behavior)
+    position: 'relative',
+
+    // useWebkitPrefix: Boolean
+    // Whether to prepend a webkit prefix to transform properties;
+    // `undefined` configures this to be auto-detected
+    // (warning: not recommended to change this)
+    useWebkitPrefix: undefined,
+
+    // overflowX: String
+    // CSS overflow-x setting for the component;
+    // falsy specifies the default browser behavior
+    // (warning: to configure both settings together, use `overflow`)
+    overflowX: null,
+
+    // overflowY: String
+    // CSS overflow-x setting for the component;
+    // falsy specifies the default browser behavior
+    // (warning: to configure both settings together, use `overflow`)
+    overflowY: null,
+
+    // overflow: String
+    // CSS overflow setting for the component;
+    // falsy specifies the default browser behavior
+    // (warning: this will override both `overflowX` and `overflowY` if set)
+    overflow: null
   }}/>
+```
+<br>
+
+**Passing in children &amp; using "placeholders"**
+
+You can pass child elements into your `<MyHaiku>` element to be inserted in place of elements that you have composed and orchestrated on stage. This is a great way to use Haiku to animate dynamic content.
+
+In [Haiku for Mac](https://haiku.ai), use the Timeline to add a `controlFlow.placeholder` property to any element on stage. Set the field's value to a CSS id selector, such as `#some-content`. Then, when embedding your `<MyHaiku>` in a React component, pass it a child element whose id matches that selector.
+
+```
+<MyHaiku>
+  <div id="some-content">
+    I will be inserted in place of the element
+    where controlFlow.placeholder was set to #some-content
+  </div>
+</MyHaiku>
 ```
 
 <br>
