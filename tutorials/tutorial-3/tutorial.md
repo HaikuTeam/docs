@@ -1,5 +1,5 @@
 ---
-description: SEO TUT
+description: Learn how to use Haiku to create a small practical component and embed it a real web app.
 ---
 
 # Tutorial 3: Progress Bar
