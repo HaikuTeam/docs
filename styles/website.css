@@ -38,7 +38,7 @@ body {
 
 .book-summary ul.summary li.header {
   font-weight: bold;
-  color: #224048;
+  color: rgb(255, 255, 255);
 }
 
 .book.font-family-1, .book-summary {
@@ -49,8 +49,12 @@ body {
   display: none !important;
 }
 
+.book-summary ul.summary li.chapter a {
+ color: rgb(194, 204, 205);
+}
+
 .markdown-section a, .book-summary ul.summary li.active>a {
-  color: rgb(38,145,173);
+  color: rgb(128, 224, 226);
   font-weight: bold;
 }
 
@@ -63,15 +67,34 @@ body {
 }
 
 .book-summary {
-  background-color: rgba(85, 176, 199, 0.04);
+  background-color: rgb(36, 45, 49);
 }
 
 #book-search-input {
-  background-color: rgba(85, 176, 199, 0.04);
+  background-color: rgb(36, 45, 49);
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   position: relative;
 }
 
+input::placeholder {
+  color: rgb(194, 204, 205);
+}
+
+.book-body {
+  background-color: rgb(247, 247, 247);
+}
+
+.book-body a {
+  color: rgb(58, 188, 202);
+}
+
+.book-header {
+  background-color: rgb(247, 247, 247);
+}
+
 .fa-search {
+  color: rgb(194, 204, 205);
   position: absolute;
   top: 17px;
   right: 14px;
