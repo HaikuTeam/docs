@@ -109,3 +109,14 @@ input::placeholder {
   width: 179px;
   margin: 20px 0 0 14px;
 }
+
+.go-to-www {
+  width: 179px;
+  margin: 20px 0 0 14px;
+  color: rgb(194, 204, 205);
+}
+
+.exit-left {
+  width: 20px;
+  padding-right: 4px;
+}
