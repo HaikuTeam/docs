@@ -30,7 +30,7 @@ Lottie does not support all features of After Effects; please refer to the [list
 
 Dynamic Haiku features including [Expressions](../using-haiku/writing-expressions.md), [Actions](../using-haiku/defining-states.md), [Summonables](../using-haiku/summonables.md), or [Actions](../using-haiku/actions.md) will not translate to dynamic Lottie animations. Additionally, because Haiku components are typically created from scalable vector graphics (SVGs), which use many different conventions than After Effects shapes, you may notice some discrepancies between your Haiku rendered in a browser vs. Lottie. We are working closely with the Lottie team to bring our products closer together.
 
-If you encounter any issues, or if you have any questions about Lottie, please contact us on [our community Slack](https://join.slack.com/t/haiku-community/shared_invite/enQtMjU0NzExMzQzMjIxLTA3NjgzZDYzYmNjYzcxNmUwY2NhMTE0YTE2OGVjZGE0MDhmNGIxOWUzOTk5OTI5MmQ0ZjA5MDAwNGY1Yjk1OTg) or [by email](mailto:contact@haiku.ai).
+If you encounter any issues, or if you have any questions about Lottie, please contact us on [our community Slack](https://www.haiku.ai/slack-community) or [by email](mailto:contact@haiku.ai).
 
 <br>
 

@@ -2,11 +2,11 @@
 description: Haiku integrates with the tools you already love. Draw in Sketch, bring to life in Haiku. Let's start by covering how to get your Sketch design into Haiku.
 ---
 
-# Sketch and Image Assets
+# Sketch and Other Image Assets
 
-Haiku doesn't _yet_ provide its own drawing tools. Though we plan to add some in the future, this was an intentional decision.  Designers told us resoundingly that they don't want _yet another drawing tool_, so we simply integrated with existing ones.  Think of it this way:  **draw in Sketch, bring to life in Haiku.**
+Haiku doesn't _yet_ provide its own drawing tools. Though we plan to add some in the future, this was an intentional decision.  Designers told us resoundingly that they don't want _yet another drawing tool_, so we simply integrated with existing ones.  Think of it this way:  **draw in your favorite drawing tool, bring to life in Haiku.**
 
-Let's start by covering how to get your Sketch design into Haiku:
+Let's first cover how to get your Sketch design into Haiku:
 
 <br>
 
@@ -40,6 +40,12 @@ When you import a Sketch file, we automatically make a copy of that file and sta
 
 ![](/assets/open-sketch.gif)
 
+#### Other Image Assets
+
+Haiku also supports SVG files. If you want to work with an .svg file, just click "IMPORT" in your library as we did above for a .sketch file.
+
+If you want to work with raster assets (JPEG, PNG, etc) the best way to currently do that is to paste your asset into a .sketch file, and mark that Sketch layer for export or as a slice.
+
 <br>
 
-[Next: Editing Elements on Stage](/using-haiku/editing-elements-on-the-stage.md) &rarr;
+[Next: Importing Figma Projects](/using-haiku/importing-figma-projects.md) &rarr;

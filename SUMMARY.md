@@ -3,18 +3,14 @@
 * [Welcome](README.md)
 * [What Is Haiku?](what-is-haiku.md)
 * [Getting Started](getting-started.md)
-* [FAQ's &amp; Troubleshooting](faqs.md)
-
-## Lessons &amp; Tutorials
-
-* [Tutorial 1: Motion Design basics](https://medium.com/haiku-blog/getting-started-with-animations-for-the-web-ios-android-with-haiku-568184eb31fa)
-* [Tutorial 2: Interactivity with Actions](https://medium.com/haiku-blog/designing-the-real-thing-with-haiku-actions-a80ccddfcb1)
-* [Tutorial 3: Embedding in a web app](tutorials/tutorial-3/tutorial.md)
+* [Help & Troubleshooting](help.md)
+* [Lessons & Tutorials](lessons-and-tutorials.md)
 
 ## Creating Content with Haiku
 
 * [Starting Haiku](using-haiku/starting-haiku.md)
-* [Importing Sketch and Image Assets](using-haiku/sketch-and-image-assets.md)
+* [Importing Sketch & Other Image Assets](using-haiku/sketch-and-image-assets.md)
+* [Importing Figma Projects](using-haiku/importing-figma-projects.md)
 * [Editing Elements on the Stage](using-haiku/editing-elements-on-the-stage.md)
 * [Creating Animations with the Timeline](using-haiku/creating-an-animation.md)
 * [Keyboard shortcuts &amp; Input](using-haiku/keyboard-shortcuts-and-input.md)
@@ -31,6 +27,7 @@
 
 * [Haiku Core Overview](embedding-and-using-haiku/haiku-core-overview.md)
 * [Publishing and Embedding](embedding-and-using-haiku/publishing-and-embedding.md)
+* [Progress Bar Tutorial](embedding-and-using-haiku/progress-bar-tutorial.md)
 * [iOS & Android powered by Lottie](embedding-and-using-haiku/lottie.md)
 
 ## Haiku for Developers
