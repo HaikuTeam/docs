@@ -43,4 +43,4 @@ OR
 
 <br>
 
-[Next: FAQ's](faqs.md) &rarr;
+[Next: Help & Troubleshooting](help.md) &rarr;

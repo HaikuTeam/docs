@@ -67,4 +67,4 @@ You can also clone down a project directly to any location of your choosing.  Yo
 
 <br>
 
-[Next: iOS & Android rendering powered by Lottie](/using-haiku/lottie.md) &rarr;
+[Next: Progress Bar Tutorial](/embedding-and-using-haiku/progress-bar-tutorial.md) &rarr;

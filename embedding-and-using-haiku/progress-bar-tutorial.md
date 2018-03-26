@@ -2,9 +2,9 @@
 description: Learn how to use Haiku to create a small practical component and embed it a real web app.
 ---
 
-# Tutorial 3: Progress Bar
+# Progress Bar Tutorial
 
-Welcome to the third Haiku tutorial! Here we'll show how to use Haiku to create a small, practical component — **file upload progress bar** — and get it running in a real web app.
+Here we'll show how to use Haiku to create a small, practical component — **file upload progress bar** — and get it running in a real web app.
 
 <p data-height="208" data-theme-id="0" data-slug-hash="MvrZyM" data-default-tab="result" data-user="Haiku" data-embed-version="2" data-pen-title="Tutorial 1" class="codepen">See the Pen <a href="https://codepen.io/Haiku/pen/MvrZyM/">Tutorial 1</a> by Haiku (<a href="https://codepen.io/Haiku">@Haiku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
@@ -180,6 +180,8 @@ Now that your app is published and embedded, it's up to you to refine it and tak
 
 ### In Closing
 
-There's a lot more you can do with Haiku — this is just an introductory tutorial to give you the sense of the kind of things you can create. If you have questions or suggestions about other lessons/tutorials we could add, please [contact us](mailto:contact@haiku.ai).
+There's a lot more you can do with Haiku — this is just an introductory tutorial to give you the sense of the kind of things you can create.
 
 <br>
+
+[Next: iOS & Android rendering powered by Lottie](/embedding-and-using-haiku/lottie.md) &rarr;
