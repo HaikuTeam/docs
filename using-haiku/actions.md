@@ -32,6 +32,22 @@ Frame Actions are triggered every time a frame is crossed. To add a Frame Action
 
 To add an Event Action, `Right click` (or select the settings button next to) an element on the stage and select **Edit Element Actions**.
 
+#### ACTIONS API
+
+Inside an action, the `this`-binding of the listener function's scope is an instance of your component, which is represented as a `HaikuComponent`. You can read more about this in the [Haiku Core section](/embedding-and-using-haiku/haiku-core-api.md). Here is a quick example:
+
+```
+// click action
+function (target, event) {
+  var starX = this.querySelector('Star').getPositionX();
+  if (starX > 100) {
+    this.setState({
+      opacity: this.state.opacity - 0.1;
+    });
+  }
+}
+```
+
 <br>
 
 [Next: Just-in-time Properties](/using-haiku/just-in-time-properties.md) &rarr;

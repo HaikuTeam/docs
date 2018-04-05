@@ -10,7 +10,6 @@ Haiku supports an array of keyboard shortcuts to help expedite your workflow:
 | Keyboard Input (macOS) | Shortcut |
 | -- | -- |
 | `CMD ⌘` + `T` | Opens current project in Terminal |
-| `CMD ⌘` + `S` | Publishes current project |
 | `CMD ⌘` + `Z` | Undo |
 | `CMD ⌘` + `SHIFT` + `Z` | Redo |
 | `CMD ⌘` + `X` | Cut |

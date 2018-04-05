@@ -55,95 +55,94 @@ Haiku Core's behavior can be controlled by passing in lifecycle event handlers a
   // Fired when the component is about to detach from the DOM
   onHaikuComponentWillUnmount: null,
 
-  haikuOptions={{
-    // contextMenu: String
-    // Whether the Haiku menu will display when the component is right-clicked;
-    // value may be 'enabled' or 'disabled'
-    contextMenu: 'enabled',
+  // contextMenu: String
+  // Whether the Haiku menu will display when the component is right-clicked;
+  // value may be 'enabled' or 'disabled'
+  contextMenu: 'enabled',
 
-    // mixpanel: String|Boolean
-    // If provided, the component will transmit metadata to Mixpanel;
-    // specify your own token here, or set to falsy to disable tracking altogether.
-    // We send only public information: your component's name, its Haiku account username,
-    // the software version it was built with, and its share identifier.
-    mixpanel: '{mixpanel api token}',
+  // mixpanel: String|Boolean
+  // If provided, the component will transmit metadata to Mixpanel;
+  // specify your own token here, or set to falsy to disable tracking altogether.
+  // We send only public information: your component's name, its Haiku account username,
+  // the software version it was built with, and its share identifier.
+  mixpanel: '{mixpanel api token}',
 
-    // seed: String
-    // Random seed used for deterministic randomness
-    seed: '{will be auto-generated if not supplied}',
+  // seed: String
+  // Random seed used for deterministic randomness
+  seed: '{will be auto-generated if not supplied}',
 
-    // automount: Boolean
-    // Whether we should mount the given context to the mount element automatically
-    automount: true,
+  // automount: Boolean
+  // Whether we should mount the given context to the mount element automatically
+  automount: true,
 
-    // autoplay: Boolean
-    // Whether to start playing the animation immediately
-    autoplay: true,
+  // autoplay: Boolean
+  // Whether to start playing the animation immediately
+  autoplay: true,
 
-    // loop: Boolean
-    // Whether to continuously loop the animation
-    loop: true,
+  // loop: Boolean
+  // Whether to continuously loop the animation
+  loop: true,
 
-    // sizing: String
-    // Configures the sizing mode of the component;
-    // controls how it sizes to fill its container;
-    // values may be 'normal', 'stretch', 'contain', or 'cover';
-    // the behavior matches CSS' behavior
-    sizing: 'normal',
+  // sizing: String
+  // Configures the sizing mode of the component;
+  // controls how it sizes to fill its container;
+  // values may be 'normal', 'stretch', 'contain', or 'cover';
+  // the behavior matches CSS' behavior
+  sizing: 'normal',
 
-    // forceFlush: Boolean
-    // If true, the renderer will not cache properties nor patch updates;
-    // it will fully render the component on every animation frame
-    // (wraning: not recommended, as this can severely deoptimize animation)
-    forceFlush: false,
+  // forceFlush: Boolean
+  // If true, the renderer will not cache properties nor patch updates;
+  // it will fully render the component on every animation frame
+  // (wraning: not recommended, as this can severely deoptimize animation)
+  forceFlush: false,
 
-    // freeze: Boolean
-    // Whether to prevent the global clock from updating the timelines
-    // (warning: only use if you know what you're doing)
-    freeze: false,
+  // freeze: Boolean
+  // Whether to prevent the global clock from updating the timelines
+  // (warning: only use if you know what you're doing)
+  freeze: false,
 
-    // frame: Function
-    // Optional function that we will call before every frame renders
-    frame: null,
+  // frame: Function
+  // Optional function that we will call before every frame renders
+  frame: null,
 
-    // clock: Object
-    // Configuration options that will be passed to the HaikuClock instance
-    clock: {},
+  // clock: Object
+  // Configuration options that will be passed to the HaikuClock instance
+  clock: {},
 
-    // alwaysComputeSizing: Boolean
-    // Whether we should always assume the size of the mount element will change on every tick;
-    // This boosts performance when not using an explicit `sizing` option
-    alwaysComputeSizing: true,
+  // alwaysComputeSizing: Boolean
+  // Whether we should always assume the size of the mount element will change on every tick;
+  // This boosts performance when not using an explicit `sizing` option
+  alwaysComputeSizing: true,
 
-    // position: String
-    // CSS position setting for the root of the component in DOM;
-    // (warning: not recommended to change this, as it may affect layout behavior)
-    position: 'relative',
+  // position: String
+  // CSS position setting for the root of the component in DOM;
+  // (warning: not recommended to change this, as it may affect layout behavior)
+  position: 'relative',
 
-    // useWebkitPrefix: Boolean
-    // Whether to prepend a webkit prefix to transform properties;
-    // `undefined` configures this to be auto-detected
-    // (warning: not recommended to change this)
-    useWebkitPrefix: undefined,
+  // useWebkitPrefix: Boolean
+  // Whether to prepend a webkit prefix to transform properties;
+  // `undefined` configures this to be auto-detected
+  // (warning: not recommended to change this)
+  useWebkitPrefix: undefined,
 
-    // overflowX: String
-    // CSS overflow-x setting for the component;
-    // falsy specifies the default browser behavior
-    // (warning: to configure both settings together, use `overflow`)
-    overflowX: null,
+  // overflowX: String
+  // CSS overflow-x setting for the component;
+  // falsy specifies the default browser behavior
+  // (warning: to configure both settings together, use `overflow`)
+  overflowX: null,
 
-    // overflowY: String
-    // CSS overflow-x setting for the component;
-    // falsy specifies the default browser behavior
-    // (warning: to configure both settings together, use `overflow`)
-    overflowY: null,
+  // overflowY: String
+  // CSS overflow-x setting for the component;
+  // falsy specifies the default browser behavior
+  // (warning: to configure both settings together, use `overflow`)
+  overflowY: null,
 
-    // overflow: String
-    // CSS overflow setting for the component;
-    // falsy specifies the default browser behavior
-    // (warning: this will override both `overflowX` and `overflowY` if set)
-    overflow: null
-  }}/>
+  // overflow: String
+  // CSS overflow setting for the component;
+  // falsy specifies the default browser behavior
+  // (warning: this will override both `overflowX` and `overflowY` if set)
+  overflow: null
+/>
 ```
 <br>
 
@@ -183,56 +182,181 @@ Assuming you have a variable with an instance of your component (see above), a p
 
 <br>
 
-##### HaikuComponent
+##### HaikuBase
 
-Manages the behavior of your component at the top level.
+Base class for all the core Haiku classes. Encapsulates common logic for eventing and data caching.
+
+**.on(eventName: string, eventHandler: function): void**
+
+Listen for an event emitted by the instance. Example:
+
+```
+// Listen to a specific event.
+base.on('some:event', (...args) => {
+  // Respond to event here
+});
+```
+
+Please see subclasses for more detail about available events.
+
+**.emit(eventName: string, payload: any): void**
+
+Emit an event of a given name, dispatching to all matching listeners. Example:
+
+```
+// Emit a specific event.
+base.emit('some:event', { my: 'data' });
+```
+
+##### HaikuElement
+
+Represents a single rendered node in the component tree. Can be used to read information about the node, such as its position. The entry point to access any `HaikuElement` in your tree is your `HaikuComponent` (see below). `HaikuElement` is a subclass of `HaikuBase`.
+
+###### PROPERTIES
+
+* `attributes` (object) - An object containing all HTML/SVG attribute values of the element.
+* `type` (string|object) - The type of rendered element this is. In case of normal renderable elements, it is a string like `'svg'`. In case of embedded components, it is an object descriptor of the component. (If you definitely want a string, use `tagName` instead.)
+* `tagName` (string) - The element's tag name, e.g. `'svg'` or `'div'`. For embedded components, it is always `'div'`.
+* `title` (string) - The element's title.
+* `source` (string) - The design source file from which the element was derived, if any.
+* `id` (string) - The element's `id` attribute value.
+* `className` (string) - The element's `class` attribute value.
+* `parentNode` (object) - The simplified renderable node object used for this element. (If you want a `HaikuElement`, use `parent` instead.)
+* `childNodes` (array) - Returns an array of simplified renderable node objects used for the children of this element. (If you want a collection of `HaikuElement` instances, use `children` instead.)
+* `children` (array) - Returns an array of `HaikuElement` instances representing the children of this node.
+* `parent` (HaikuElement) - The parent `HaikuElement` of this element, if any.
+* `instance` (HaikuComponent) - If the element represents a component, it will return this object.
+* `host` (HaikuComponent) - The instance of `HaikuComponent` that hosts/controls this element, which may belong to an ancestor of this element.
+* `context` (HaikuContext) - The instance of `HaikuContext` that manages this element, its host component, clock, etc.
+* `layout` (object) - The computed layout of the element. Includes its `rotation`, `scale`, `size`, `matrix`, etc.
+* `target` (object) - Returns the live DOM node rendered by this element.
 
 ###### METHODS
 
-**.on(eventName: string, eventHandler: function) -> void**
+**.getComponentId(): string**
 
-Listen for an event emitted by the instance. Events available are:
+Returns the Haiku identifier of the element.
 
-* `'haikuComponentWillInitialize'` - Before the instance constructor runs
-* `'haikuComponentDidInitialize'` - After the instance constructor runs
-* `'haikuComponentDidMount'` - When the instance is (re)added to the DOM
-* `'haikuComponentWillUnmount'` - When the instance is removed from the DOM
+**.querySelector(selector: string): HaikuElement**
 
-**.assignConfig(configObject: object) -> void**
+Query the subtree of this element and return the first element found that matches the given CSS selector. Example: `element.querySelector('#Slice1')`. Also, please see the section at the bottom called "CSS selection in Haiku."
+
+**.querySelectorAll(selector: string): []<HaikuElement>**
+
+Like `.querySelector()`, but returns the collection of all matching elements. Also, please see the section at the bottom called "CSS selection in Haiku."
+
+**Layout Methods:**
+
+* **getRotationX(): number**
+* **getRotationY(): number**
+* **getRotationZ(): number**
+* **getScaleX(): number**
+* **getScaleY(): number**
+* **getScaleZ(): number**
+* **getPositionX(): number**
+* **getPositionY(): number**
+* **getPositionZ(): number**
+* **getSizeX(): number**
+* **getSizeY(): number**
+* **getSizeZ(): number**
+
+##### HaikuComponent
+
+Manages the behavior of your component at the top level. Subclass of `HaikuElement` (see above), representing both the root element of your component tree, and the controller for the behavior of all descendants.
+
+###### EVENTS
+
+* `'component:will-initialize'` - Fires before the instance constructor runs.
+* `'component:did-initialize'` - Fires after the instance constructor runs.
+* `'component:did-mount'` - Fires when the instance is added to the DOM.
+* `'component:will-unmount'` - Fires when the instance is removed from the DOM.
+
+You can subscribe to frame events:
+
+* `'timeline:{name}:{frame}'` - For example, `'timeline:Default:22'` would subscribe to an event that fires any time the timeline animation triggers frame 22.
+
+You can subscribe to any UI event:
+
+* `'{dom event name}'` - For example, `'click'` would subscribe to an event that fires any time an element within the component is clicked. The targeted element is passed as the first argument to the handler, and the event payload itself is passed as the second. (See the [list of all available web events](https://developer.mozilla.org/en-US/docs/Web/Events).)
+
+You can also subscribe to custom events:
+
+* `'wow-custom-event'` - Custom elements and embedded components may emit events with custom names, outside of the default UI events triggered by browsers. To subscribe to those, just listen to the event by name.
+
+###### PROPERTIES
+
+* `state` (object) - An object of the state values held by this instance of your component. (These states are the same states you configure visually using the State Inspector in Haiku for Mac.)
+* `CORE_VERSION` (string) - The semver-based version of Haiku Core that is running this instance.
+* `config` (object) - The configuration settings for this instance.
+
+###### METHODS
+
+**.setState(states: object): void**
+
+Similar to React's API, `.setState` updates the states defined in the instance of your component. (These states are the same states you configure visually using the State Inspector in Haiku for Mac.) A state can be a `number`, `string`, `array`, `object`, or `null`. Example:
+
+```
+this.setState({
+  numClicks: this.state.numClicks + 2,
+  opacityVal: 0.23
+});
+```
+
+Changing states cause any expressions that depend on those values to re-evaluate.
+
+**.set(key: string, value: any): void**
+
+Set a single state value.
+
+**.get(key: string): any**
+
+Get a single state value. You can also equivalently use `this.state.*`.
+
+**.getAddressableProperties(): object**
+
+Return a schema object describing all of the public states defined by this component. Can be used to discover the expected values and types that can be passed into this component as props or via the `.setState()` API.
+
+**.getTimeline(name: string): HaikuTimeline**
+
+Returns the `HaikuTimeline` instance of the given name hosted by this component. See the `HaikuTimeline` API for more details.
+
+**.getDefaultTimeline(): HaikuTimeline**
+
+Returns the `HaikuTimeline` named `'Default'`, which is the default timeline for all HaikuComponent instances. See the `HaikuTimeline` API for more details.
+
+**.deactivate(): void**
+
+Permanently stop animating and performing any updates on this component. Useful if you are completely finished rendering this component and want to reduce CPU workload.
+
+**.assignConfig(configObject: object): void**
 
 Dynamically reconfigure your component instance. Valid fields are the same as those that may be passed to embedded React components:
 
 ```
 component.assignConfig({
-  options: {
-    seed: '{random}', // (String) - Random seed used for deterministic randomness
-    autoplay: true, // (boolean) - Whether to start playing the animation immediately
-    loop: true, // (boolean) - Whether to continuously loop the animation
-    sizing: 'normal' // (String) - The sizing mode, either "cover" or "contain"
-  },
+  seed: '{random}', // (String) - Random seed used for deterministic randomness
+  autoplay: true, // (boolean) - Whether to start playing the animation immediately
+  loop: true, // (boolean) - Whether to continuously loop the animation
+  sizing: 'normal' // (String) - The sizing mode, either "cover" or "contain"
   states: {
     clicks: { "value": 0 }  // Overrides (or sets) a state named "clicks"
   }
 })
 ```
 
-**.getClock() -> HaikuClock**
+**.getClock(): HaikuClock**
 
 Returns an instance of the `HaikuClock` that manages time for this instance (see below).
-
-**.getTimeline(timelineName: string) -> HaikuTimeline**
-
-Returns an instance of the `HaikuTimeline` of the given name `timelineName` (see below).
 
 <br>
 
 ##### HaikuClock
 
-Manages the apparent progression of time in your component's _context_, including all of its descendants.
+Manages the apparent progression of time in your component's _context_, including all of its descendants. Subclass of `HaikuBase`.
 
 ###### METHODS
 
-**.assignOptions(optionsObject: object) -> void**
+**.assignOptions(optionsObject: object): void**
 
 Configure the clock's internal options settings.
 
@@ -243,23 +367,23 @@ clock.assignOptions({
 })
 ```
 
-**.getTime() -> number**
+**.getTime(): number**
 
 Return the current time (in milliseconds) held by this clock.
 
-**.getFrameDuration() -> number**
+**.getFrameDuration(): number**
 
 Return the value of the apparent duration of a single frame.
 
-**.isRunning() -> boolean**
+**.isRunning(): boolean**
 
 Return whether or not the clock is currently running.
 
-**.start() -> void**
+**.start(): void**
 
 Start the clock. Warning: This will (re)start _all_ components that are managed by this clock!
 
-**.stop() -> void**
+**.stop(): void**
 
 Stop the clock. Warning: This will stop _all_ components that are managed by this clock!
 
@@ -267,11 +391,20 @@ Stop the clock. Warning: This will stop _all_ components that are managed by thi
 
 ##### HaikuTimeline
 
-An instance of a timeline, which controls animation for a specific set of elements, as well as their properties.
+An instance of a timeline, which controls animation for the properties of a specific, targeted set of elements within the host component tree. Subclass of `HaikuBase`.
+
+###### EVENTS
+
+* `'play'` - Fired when the timeline is played. Always preceded by `'start'`.
+* `'start'` - Fired when the timeline is started.
+* `'pause'` - Fired when the the timeline is paused. Always preceded by `'stop'`.
+* `'stop'` - Fired when the timeline is stopped.
+* `'seek'` - Fired when a timeline _seek_ occurs. Always preceded by `'start'`. The time value (`number`) is passed as the first argument to the handler.
+* `'frame'` - Fired when the timeline clock is updated in preparation for rendering an animation frame. Use with care, as under normal conditions this event is fired 60 times per second. The current frame value (`number`) is passed as the first argument to the handler.
 
 ###### METHODS
 
-**.assignOptions(optionsObject: object) -> void**
+**.assignOptions(optionsObject: object): void**
 
 Assign the configuration options for this timeline instance:
 
@@ -281,75 +414,75 @@ timeline.assignOptions({
 })
 ```
 
-**.getMaxTime() -> number**
+**.getMaxTime(): number**
 
 Returns the maximum time (in milliseconds) that any modification occurs from this timeline. This number is the same as the millisecond value of the max keyframe. Same as `.getDuration()`.
 
-**.getClockTime() -> number**
+**.getClockTime(): number**
 
 Returns the time of held by the clock (`HaikuClock`) that manages this timeline instance.
 
-**.getElapsedTime() -> number**
+**.getElapsedTime(): number**
 
 Returns how much time has elapsed since this timeline started playing, regardless of what its max time is.
 
-**.getBoundedTime() -> number**
+**.getBoundedTime(): number**
 
 Returns the current time (in milliseconds) since this timeline began playing, unless that number is larger than the max time, in which case, returns the max. Same as `.getTime()`.
 
-**.getTime() -> number**
+**.getTime(): number**
 
 Same as `.getBoundedTime()`.
 
-**.getDuration() -> number**
+**.getDuration(): number**
 
 Same as `.getMaxTime()`.
 
-**.getBoundedFrame() -> number**
+**.getBoundedFrame(): number**
 
 Returns the current frame number, unless that frame is larger than the max keyframe, in which case, returns the max. Same as `.getFrame()`.
 
-**.getUnboundedFrame() -> number**
+**.getUnboundedFrame(): number**
 
 Returns the current frame number as if the timeline would continue elapsing frames after its max value. Useful if you need to know what the frame _would be_ in either case.
 
-**.getFrame() -> number**
+**.getFrame(): number**
 
 Same as `.getBoundedFrame()`.
 
-**.isPlaying() -> boolean**
+**.isPlaying(): boolean**
 
 Returns whether or not this timeline is currently playing.
 
-**.isFinished() -> boolean**
+**.isFinished(): boolean**
 
 Returns whether or not this timeline has gone past its max frame.
 
-**.setRepeat(doRepeat: boolean) -> void**
+**.setRepeat(doRepeat: boolean): void**
 
 Set the looping behavior of this timeline instance. Setting `true` instructs this timeline to `loop`. This is the same as setting the `loop` option.
 
-**.getRepeat() -> boolean**
+**.getRepeat(): boolean**
 
 Returns whether or not this timeline is configured to loop.
 
-**.start() -> void**
+**.start(): void**
 
 Start this timeline from frame 0.
 
-**.stop() -> void**
+**.stop(): void**
 
 Stop this timeline. (This pauses the timeline and resets to 0.)
 
-**.pause() -> void**
+**.pause(): void**
 
 Pause this timeline at the current frame.
 
-**.play() -> void**
+**.play(): void**
 
 Play this timeline at whatever frame it is currently at. (This does _not_ reset the playhead to 0.)
 
-**.seek(milliseconds: Number) -> void**
+**.seek(milliseconds: number): void**
 
 Jump to a specific time (in milliseconds) in the timeline.
 
@@ -357,13 +490,35 @@ Note that since common values for milliseconds and frames don't precisely line u
 
 Also, note that this _locks playback to the specified frame_. Use `.gotoAndPlay` if you want it to continue playing from the new point.
 
-**.gotoAndPlay(milliseconds: Number) -> void**
+**.gotoAndPlay(milliseconds: number): void**
 
 Seek to a specific frame, and play from that point.
 
-**.gotoAndStop(milliseconds: Number) -> void**
+**.gotoAndStop(milliseconds: number): void**
 
 Seek to a specific frame, and stop the timeline at that point.
+
+<br>
+
+### CSS selection in Haiku
+
+Haiku Core's API currently offers a familiar CSS-like querying system for locating and targeting elements inside your component tree. However, it has some limitations; it doesn't support the full feature set of major CSS selector engines.
+
+**We currently support:**
+
+* By tag name, e.g. `.querySelector('div')`
+* By id, e.g. `.querySelector('#foo')`
+* By class name, e.g. `.querySelector('.bar')`
+* Comma-separated lists of the above, .e.g `div, #foo, .bar`
+* By Haiku identifier, e.g. `.querySelector('haiku:abcde12345')`. (Note: this Haiku-specific extension is subject to revision in the future. As Haiku elements' identifiers are autogenerated in Haiku for Mac, use with care.)
+
+**Not yet supported:**
+
+* Attributes selectors such as `[foo="bar"]`
+* Descendant combinators such as `>`, `~`, ` ` (space), `+`
+* Pseudo-classes such as `:focus`
+
+We may support more CSS selector features if we hear from the community that they would be useful.
 
 <br>
 
