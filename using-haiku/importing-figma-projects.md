@@ -32,9 +32,9 @@ If you're not logged in to Figma already, you'll be prompted to do so. Once logg
 
 <br>
 
-#### WORKING WITH SLICES & FRAMES
+#### WORKING WITH SLICES & GROUPS
 
-Similar to [Sketch file support](/using-haiku/sketch-and-image-assets.md), Haiku only imports slices & frames from Figma. The easiest way to use slices in Figma is to use the slice tool to draw around the elements you want to work with in Haiku:
+Similar to [Sketch file support](/using-haiku/sketch-and-image-assets.md), Haiku imports slices, frames & groups from Figma. The easiest way to import assets from Figma to Haiku is to simply create a group. Alternatively, you can use the slice tool to draw around elements you want to work with:
 
 ![](/assets/figma-slice.gif)
 
@@ -49,6 +49,8 @@ This one's self-explanatory:  to get an item from the Library to the Stage, simp
 #### RE-SYNCING CHANGES
 
 Haiku never breaks it's connection to your Figma source project. At any time, you can press the "REFRESH" button in your Haiku library to pull the latest changes from your Figma project.
+
+![](/assets/figma-refresh.gif)
 
 <br>
 
