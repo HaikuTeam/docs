@@ -26,7 +26,7 @@ Name your project on the create project screen, shown below. Note that project n
 
 ![](/assets/new-project-settings.jpg)
 
-**Public Projects** are published to public pages that can be discovered on [Haiku Community](https://share.haiku.ai) and from your profile. <br>
+**Public Projects** are published to public pages that can be discovered on [Haiku Community](https://share.haiku.ai) and from your profile. They are also able to be [forked](../embedding-and-using-haiku/publishing-and-embedding.md#forking) by other users.<br>
 
 **Private Projects** are published to private pages with obfuscated URL's that are extremely difficult to guess, making them a secure way to publish projects you wish to keep private from the wider web.
 
