@@ -39,14 +39,14 @@ Here you can also explore embed options for your Haiku, which are also mirrored 
 The Share Page is your entry point for sharing Haiku.  You can see and interact with your Haiku, share the link and explore embed options.
 
 
-#### How to Use
+#### HOW TO USE
 
-Key on the Share Page is the "Get the Code" button on the bottom-right.  If you click that button, the bottom panel expands and explains exactly how to use your Haiku in a number of different codebases, including vanilla HTML (embed,) vanilla JS, React, Vue, and more.
+The key to the Share Page is the "Get the Code" button on the bottom-right.  If you click that button, the bottom panel expands and explains exactly how to use your Haiku in a number of different codebases, including vanilla HTML (embed,) vanilla JS, React, Vue, and more.
 
 ![](/assets/share-page-get-the-code.png)
 
 
-#### Embed in any webpage or web app
+#### EMBED IN ANY WEBPAGE OR WEB APP
 
 **HTML Embed**
 
@@ -62,6 +62,21 @@ Then from the command line, inside your React project, run `haiku install YourPr
 > _Important_: the `haiku install` command will create or modify a file called `.npmrc` in your project.  It's important that you check this into your version control, otherwise other teammates will not be able to install your Haiku components.
 
 <br>
+
+#### FORKING
+
+![](/assets/forking.gif)
+
+Forks are a unique copy of a project, which can be freely experimented on without affecting the original project. Forks can be a fun and interesting way to build upon other people's work, using their project as a starting point for your own idea.
+
+With Haiku for Mac installed, public projects can be forked by selecting **Fork this component** on their share page. Private projects cannot be forked.
+
+[Read more about Public & Private projects](../using-haiku/starting-haiku.md#public--private-projects)
+
+> _Note_: Projects containing source design assets are included with projects when forked. Sketch & SVG files are bundled with Haiku projects, and Figma project URL’s are viewable but not editable (unless specified otherwise in Figma).
+
+<br>
+
 
 #### ACCESSING THE RAW CODE
 

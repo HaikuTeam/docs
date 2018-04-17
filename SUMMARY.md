@@ -26,7 +26,7 @@
 ## Embedding Haiku Components
 
 * [Haiku Core Overview](embedding-and-using-haiku/haiku-core-overview.md)
-* [Publishing and Embedding](embedding-and-using-haiku/publishing-and-embedding.md)
+* [Publishing, Embedding and Forking](embedding-and-using-haiku/publishing-and-embedding.md)
 * [Progress Bar Tutorial](embedding-and-using-haiku/progress-bar-tutorial.md)
 * [iOS & Android powered by Lottie](embedding-and-using-haiku/lottie.md)
 
