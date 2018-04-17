@@ -11,13 +11,21 @@ The first step to getting your Haiku out into the world is to _publish_ it.
 
 You'll find a button on the top-right of project editor that does just that.
 
-![](/assets/publish-button.png)
+![](/assets/publish-button.jpg)
 
-Simply press PUBLISH and your up-to-the-moment work will be shuttled out to the cloud and packaged up for use in any codebase.  We then give you a unique link (think of it like a Google Docs link) that you can share with colleagues.
+Simply press PUBLISH and your up-to-the-moment work will be shuttled out to the cloud and packaged up for use in any codebase.  Depending on the project settings configured when creating the project, you'll be given a private or a public link. 
 
-![](/assets/publish-button-done.png)
+[Read more about Project Settings](../using-haiku/starting-haiku.md#public--private-projects)
 
-That link will take you to your Haiku's Share Page: see below.
+<br>
+
+#### PUBLISH AND EMBED OPTIONS
+
+![](/assets/publish-options.jpg)
+
+The shareable link will take you to your Haiku's Share Page: see below.
+
+Here you can also explore embed options for your Haiku, which are also mirrored on your Share page.
 
 > _Note on publish speed_: Depending on your connection speed and place in the world, publishing can currently take a little while, between 5 seconds and 2 minutes.  We're working on making this faster.  Once when we have realtime collaboration hooked up, publishing should be seamless and nearly immediate.
 
@@ -25,17 +33,17 @@ That link will take you to your Haiku's Share Page: see below.
 
 #### SHARE PAGE
 
-![](/assets/sharepage.png)
+![](/assets/share-page.png)
 
 
-The Share Page is your entry point for sharing Haiku.  You can see and interact with your Haiku, share it with your colleagues, and even share it easily on social media.
+The Share Page is your entry point for sharing Haiku.  You can see and interact with your Haiku, share the link and explore embed options.
 
 
 #### How to Use
 
-Key on the Share Page is the "How to Use" button on the bottom-right.  If you click that button, the bottom panel expands and explains exactly how to use your Haiku in a number of different codebases, including vanilla HTML (embed,) vanilla JS, React, and more.
+Key on the Share Page is the "Get the Code" button on the bottom-right.  If you click that button, the bottom panel expands and explains exactly how to use your Haiku in a number of different codebases, including vanilla HTML (embed,) vanilla JS, React, Vue, and more.
 
-![](/assets/how-to-use.png)
+![](/assets/share-page-get-the-code.png)
 
 
 #### Embed in any webpage or web app

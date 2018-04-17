@@ -14,22 +14,27 @@ When you first open Haiku, you will be prompted to log in.  Enter the username a
 
 #### CREATING A PROJECT
 
-Simply click the (+) button next to Projects on the top-left of the Project screen.
+Simply click the (+) button on the top-corner of the Project dashboard.
 
-![](/assets/new-project.png)
+![](/assets/new-project.jpg)
 
-Note that project names can only contain letters and numbers—no other characters, not even spaces, hyphens, or underscores.
+Name your project on the create project screen, shown below. Note that project names can only contain letters and numbers—no other characters, not even spaces, hyphens, or underscores.
 
-Also note:  Currently there's a limit of 15 projects per account.  Please contact [Haiku support](mailto:support@haiku.ai) if you need to raise this limit.
+<br>
+
+#### PUBLIC & PRIVATE PROJECTS
+
+![](/assets/new-project-settings.jpg)
+
+**Public Projects** are published to public pages that can be discovered on [Haiku Community](https://share.haiku.ai) and from your profile. <br>
+
+**Private Projects** are published to private pages with obfuscated URL's that are extremely difficult to guess, making them a secure way to publish projects you wish to keep private from the wider web.
 
 <br>
 
 #### SHARING A PROJECT WITH TEAMMATES
 
-Every project is shared with all of your teammates by default!  Simply press "Publish" to share your changes.  [Read more about Publishing.](../embedding-and-using-haiku/publishing-and-embedding.md)  New changes your teammates have made will be brought in every time you open a project or Publish.
-
-> Coming soon:  we plan to add support for realtime collaborative editing in the near future.  In the meantime, you must "Publish" to synchronize changes with teammates.
-
+Every project is shared with all of your teammates by default! Simply press "Publish" to share your changes. [Read more about Publishing.](../embedding-and-using-haiku/publishing-and-embedding.md) New changes your teammates have made will be brought in every time you open a project or Publish.
 
 <br>
 
