@@ -245,21 +245,6 @@ Query the subtree of this element and return the first element found that matche
 
 Like `.querySelector()`, but returns the collection of all matching elements. Also, please see the section at the bottom called "CSS selection in Haiku."
 
-**Layout Methods:**
-
-* **getRotationX(): number**
-* **getRotationY(): number**
-* **getRotationZ(): number**
-* **getScaleX(): number**
-* **getScaleY(): number**
-* **getScaleZ(): number**
-* **getPositionX(): number**
-* **getPositionY(): number**
-* **getPositionZ(): number**
-* **getSizeX(): number**
-* **getSizeY(): number**
-* **getSizeZ(): number**
-
 ##### HaikuComponent
 
 Manages the behavior of your component at the top level. Subclass of `HaikuElement` (see above), representing both the root element of your component tree, and the controller for the behavior of all descendants.
@@ -400,7 +385,7 @@ An instance of a timeline, which controls animation for the properties of a spec
 * `'pause'` - Fired when the the timeline is paused. Always preceded by `'stop'`.
 * `'stop'` - Fired when the timeline is stopped.
 * `'seek'` - Fired when a timeline _seek_ occurs. Always preceded by `'start'`. The time value (`number`) is passed as the first argument to the handler.
-* `'frame'` - Fired when the timeline clock is updated in preparation for rendering an animation frame. Use with care, as under normal conditions this event is fired 60 times per second. The current frame value (`number`) is passed as the first argument to the handler.
+* `'tick'` - Fired when the timeline clock is updated in preparation for rendering an animation frame. Use with care, as under normal conditions this event is fired 60 times per second. The current frame value (`number`) is passed as the first argument to the handler.
 
 ###### METHODS
 
