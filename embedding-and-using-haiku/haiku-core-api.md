@@ -93,7 +93,7 @@ Haiku Core's behavior can be controlled by passing in lifecycle event handlers a
   // forceFlush: Boolean
   // If true, the renderer will not cache properties nor patch updates;
   // it will fully render the component on every animation frame
-  // (wraning: not recommended, as this can severely deoptimize animation)
+  // (warning: not recommended, as this can severely deoptimize animation)
   forceFlush: false,
 
   // freeze: Boolean
