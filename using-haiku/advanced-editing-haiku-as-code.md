@@ -171,3 +171,7 @@ _Expressions are one of the most powerful features in Haiku_, and we'll only scr
 - **Could the code.js format be nicer?** Yes. We plan to improve this in the near future. We welcome ideas for ways that it could be more concise to write and more clear to read.
 
 - **Why not use an HTML string or JSX or [etc] for the template?:** We plan to support a more readable template format in the near future. For that reason, our template object format is intentionally kept quite similar to the format of compiled JSX.
+
+<br>
+
+[Next: Version Control](/using-haiku/advanced-version-control.md) &rarr;

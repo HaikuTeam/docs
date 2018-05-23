@@ -35,3 +35,4 @@
 * [Using the Haiku CLI](using-haiku/using-the-cli.md)
 * [Haiku Developer API](embedding-and-using-haiku/haiku-core-api.md)
 * [Editing Haiku as Code](using-haiku/advanced-editing-haiku-as-code.md)
+* [Version Control](using-haiku/advanced-version-control.md)
