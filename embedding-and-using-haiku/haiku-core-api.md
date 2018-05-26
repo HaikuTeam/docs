@@ -467,21 +467,21 @@ Pause this timeline at the current frame.
 
 Play this timeline at whatever frame it is currently at. (This does _not_ reset the playhead to 0.)
 
-**.seek(milliseconds: number): void**
+**.seek(amount: number, unit: 'ms'|'fr' = 'fr'): void**
 
-Jump to a specific time (in milliseconds) in the timeline.
+Jump to a specific frame or millisecond time. If no unit is specified in the second argument, frames are used.
 
-Note that since common values for milliseconds and frames don't precisely line up (frame 5 is at 83.3 milliseconds), a small amount of rounding occurs.
+Note that since common values for milliseconds and frames don't precisely line up (frame 5 is at 83.3 milliseconds), a small amount of rounding occurs when milliseconds are specified.
 
 Also, note that this _locks playback to the specified frame_. Use `.gotoAndPlay` if you want it to continue playing from the new point.
 
-**.gotoAndPlay(milliseconds: number): void**
+**.gotoAndPlay(amount: number, unit: 'ms'|'fr' = 'fr'): void**
 
-Seek to a specific frame, and play from that point.
+Seek to a specific frame or millisecond time, and play from that point.
 
-**.gotoAndStop(milliseconds: number): void**
+**.gotoAndStop(amount: number, unit: 'ms'|'fr' = 'fr'): void**
 
-Seek to a specific frame, and stop the timeline at that point.
+Seek to a specific frame or millisecond time, and stop the timeline at that point.
 
 <br>
 
