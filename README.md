@@ -1,5 +1,5 @@
 ---
-description: The Haiku docs are your one stop shop for everything you need to know about Haiku. Learn about what Haiku is, who it's for and why you or your time might use it. 
+description: The Haiku docs are your one stop shop for everything you need to know about Haiku. Learn about what Haiku is, who it's for and why you or your time might use it.
 ---
 
 <br>
@@ -35,7 +35,7 @@ Here are some good places to explore Haiku in more detail:
 
 ## I'm not sure / None of the above
 
-If you're confused about something or don't see the information you're looking for, we recommend reading the [FAQ's](faqs.md) first.
+If you're confused about something or don't see the information you're looking for, we recommend reading the [FAQ's](http://help.haiku.ai/faqs) first.
 
 If you want to reach out to us, the best way to do that is on [our community Slack](https://www.haiku.ai/slack-community) or [by email](mailto:contact@haiku.ai). We're a small team, but we'll try our best to respond to emails within 1-2 business days.
 
