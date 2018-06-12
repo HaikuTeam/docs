@@ -18,9 +18,9 @@
 ## Dynamic Components
 
 * [Writing Expressions](using-haiku/writing-expressions.md)
-* [Defining States](using-haiku/defining-states.md)
 * [Summonables](using-haiku/summonables.md)
 * [Actions](using-haiku/actions.md)
+* [Defining States](using-haiku/defining-states.md)
 * [Just-in-time Properties](using-haiku/just-in-time-properties.md)
 
 ## Embedding Haiku Components
