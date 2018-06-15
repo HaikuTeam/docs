@@ -2,7 +2,7 @@
     "styles": {
         "website": "styles/website.css"
     },
-    "plugins": [ "theme-api"],
+    "plugins": [ "theme-api", "anchors"],
     "pluginsConfig": {
         "theme-api": {
             "languages": [
