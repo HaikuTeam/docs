@@ -3,6 +3,7 @@ description: The best resources to learn how to use Haiku, including video tutor
 ---
 
 <br>
+
 # Lessons & Tutorials
 
 We collect resources for learning how to use Haiku on our website on our [learn page](https://www.haiku.ai/learn/), including video tutorials and blog posts.
