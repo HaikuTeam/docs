@@ -3,7 +3,7 @@ description: The Haiku docs are your one stop shop for everything you need to kn
 ---
 
 <br>
-# Welcome to Haiku!
+# Welcome to Haiku Docs ! 
 
 These docs are your one-stop shop for everything you need to know about [Haiku](https://haiku.ai).
 
