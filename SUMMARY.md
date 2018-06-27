@@ -1,11 +1,7 @@
 # Table of Contents
 
 * [Welcome](README.md)
-* [What Is Haiku?](what-is-haiku.md)
 * [Getting Started](getting-started.md)
-* [Help & Troubleshooting](help.md)
-* [Lessons & Tutorials](lessons-and-tutorials.md)
-* [Figma Tutorial](figma-to-react.md)
 
 ## Creating Content with Haiku
 
