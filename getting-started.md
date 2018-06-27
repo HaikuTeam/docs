@@ -2,13 +2,16 @@
 description: Get started with Haiku. Learn about Haiku, download the software for Mac, and start designing.
 ---
 
-<br>
-<br>
+
+
 # Getting Started with Haiku
+<br>
 
 #### HAIKU OVERVIEW
 
-Welcome to Haiku! Haiku is a design tool for teams that allows you to bring your designs to life with animation and interactivity and then easily publish them as web-ready components. If you want to learn more about all Haiku can do go [here](what-is-haiku.md) and if you want to get started with Haiku - read on!
+Haiku is a design tool for teams where you can bring your designs to life with animation and interactivity. You can then easily publish them as web-ready components. If you want to learn more about all Haiku can do go [here](what-is-haiku.md) and if you want to get started with Haiku - read on!
+
+<br>
 
 #### DOWNLOADING HAIKU
 
@@ -30,7 +33,7 @@ If you don't use Figma, you can access it for free for individuals at [https://f
 
 If you don't have illustrator, you can learn more here [https://adobe.com/illustrator] (https://www.adobe.com/products/illustrator.html)
 
-> _Coming soon:_ We plan to support other drawing tools like Adobe Photoshop and Illustrator, plus eventually we'll have some of our own.
+> _Coming soon:_ We plan to support other drawing tools like Adobe Photoshop and eventually we'll have some of our own.
 
 <br>
 
@@ -49,15 +52,24 @@ OR
 
 #### START DESIGNING
 
-Now that you have Haiku downloaded you can start brining your designs to life. Watch the following short intro video for a great introduction to motion animation in Haiku.
+Now that you have Haiku downloaded you can start bringing your designs to life. Before you jump in, learn the basics with the following short intro videos (<5min each) on adding motion animation and interactivity to your Haiku projects:
 
-https://www.youtube.com/watch?v=Gs5YG_uf5UQ
+Click on the video below to get started with Motion Animation:
+[![Motion Animation Video](https://img.youtube.com/vi/Gs5YG_uf5UQ/0.jpg)](https://www.youtube.com/watch?v=Gs5YG_uf5UQ)
 
-^I want this to show up inline with the text
+(or, read our [blog post on motion animation](https://medium.com/haiku-blog/getting-started-with-animations-for-the-web-ios-android-with-haiku-568184eb31fa))
 
-Dive into our resources on the Learn page where you can watch [tutorials](http://haiku.ai/learn/tutorials), read the [docs](http://docs.haiku.ai), read the [blog](http://haiku.ai/blog), and get [help](http://haiku.ai/help)
+Click on the video below to get started with Interactivity:
+[![Motion Animation Video](https://img.youtube.com/vi/S376xLw7RUE/0.jpg)](https://www.youtube.com/watch?v=S376xLw7RUE)
 
+(or, read our [blog post on interactivity](https://www.haiku.ai/blog/designing-the-real-thing-with-haiku-actions))
 
+<hr>
+#### LEARN MORE
+
+For more comprehensive tutorials check out our blog posts on [Turning a Figma Element into an Animated React Component](http://thisdoesnotexistyetbutitwilloneday.com) or [Mimicking the Medium Clap in Sketch and Publishing in React with Haiku](https://www.haiku.ai/blog/mimicking-the-medium-clap/).
+
+Now, get started with Haiku or continue to dive into our resources on the [Learn page](http://haiku.ai/learn) where you can watch [tutorials](http://haiku.ai/learn/tutorials), read the [docs](http://docs.haiku.ai), read the [blog](http://haiku.ai/blog), and get [help](http://haiku.ai/help)
 
 
 
