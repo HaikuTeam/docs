@@ -2,7 +2,7 @@
     "styles": {
         "website": "styles/website.css"
     },
-    "plugins": [ "theme-api"], [ "ga" ],
+    "plugins": [ "theme-api", "ga"],
 
     "pluginsConfig": {
         "theme-api": {
@@ -25,11 +25,10 @@
                     "name": "Angular"
                 }
             ]
-        }
-        "pluginsConfig": {
+          },
+
         "ga": {
             "token": "UA-90094131-3"
         }
-    }
     }
 }
