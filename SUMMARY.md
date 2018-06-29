@@ -3,6 +3,7 @@
 * [Welcome](README.md)
 * [Getting Started](getting-started.md)
 
+
 ## Creating Content with Haiku
 
 * [Starting Haiku](using-haiku/starting-haiku.md)
@@ -19,6 +20,7 @@
 * [Summonables](using-haiku/summonables.md)
 * [Actions](using-haiku/actions.md)
 * [Just-in-time Properties](using-haiku/just-in-time-properties.md)
+* [Reusable Components](/using-haiku/reusable-components.md)
 
 ## Embedding Haiku Components
 
