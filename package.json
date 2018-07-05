@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/HaikuTeam/docs#readme",
   "dependencies": {
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-ga": "^2.0.0"
   }
 }

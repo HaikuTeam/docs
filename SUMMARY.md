@@ -1,10 +1,8 @@
 # Table of Contents
 
 * [Welcome](README.md)
-* [What Is Haiku?](what-is-haiku.md)
 * [Getting Started](getting-started.md)
-* [Help & Troubleshooting](help.md)
-* [Lessons & Tutorials](lessons-and-tutorials.md)
+
 
 ## Creating Content with Haiku
 
@@ -22,6 +20,7 @@
 * [Summonables](using-haiku/summonables.md)
 * [Actions](using-haiku/actions.md)
 * [Just-in-time Properties](using-haiku/just-in-time-properties.md)
+* [Reusable Components](/using-haiku/reusable-components.md)
 
 ## Embedding Haiku Components
 
