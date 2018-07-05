@@ -67,9 +67,7 @@ Click on the video below to get started with Interactivity:
 <hr>
 #### LEARN MORE
 
-For more comprehensive tutorials check out our blog posts on [Turning a Figma Element into an Animated React Component](http://thisdoesnotexistyetbutitwilloneday.com) or [Mimicking the Medium Clap in Sketch and Publishing in React with Haiku](https://www.haiku.ai/blog/mimicking-the-medium-clap/).
-
-Now, get started with Haiku or continue to dive into our resources on the [Learn page](http://haiku.ai/learn) where you can watch [tutorials](http://haiku.ai/learn/tutorials), read the [docs](http://docs.haiku.ai), read the [blog](http://haiku.ai/blog), and get [help](http://haiku.ai/help)
+Continue to dive into our resources on the [Learn page](http://haiku.ai/learn) where you can watch and read comprehensive [tutorials](http://haiku.ai/learn/tutorials), read the [docs](http://docs.haiku.ai), and get [help & support.](http://haiku.ai/help)
 
 
 
