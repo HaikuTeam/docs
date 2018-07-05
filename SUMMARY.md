@@ -9,6 +9,7 @@
 * [Starting Haiku](using-haiku/starting-haiku.md)
 * [Importing Sketch & Other Image Assets](using-haiku/sketch-and-image-assets.md)
 * [Importing Figma Projects](using-haiku/importing-figma-projects.md)
+* [Figma Element to React Component](using-haiku/figma-to-react.md)
 * [Editing Elements on the Stage](using-haiku/editing-elements-on-the-stage.md)
 * [Creating Animations with the Timeline](using-haiku/creating-an-animation.md)
 * [Keyboard shortcuts &amp; Input](using-haiku/keyboard-shortcuts-and-input.md)
