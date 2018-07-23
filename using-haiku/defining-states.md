@@ -48,7 +48,7 @@ All you need to do to update states dynamically as your component animates is to
 
 ```
 <MyComponent
-  haikuStates={{
+  states={{
     foo: { value: 2 },        // Overrides the default value 1
     bar: { value: "howdy" },  // Overrides the default value "hello"
     baz: { value: 0.98 }      // Overrides the default value 0.98
