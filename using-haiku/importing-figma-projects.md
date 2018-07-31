@@ -32,9 +32,9 @@ If you're not logged in to Figma already, you'll be prompted to do so. Once logg
 
 <br>
 
-#### WORKING WITH SLICES & GROUPS
+#### IMPORTING FROM FIGMA
 
-Similar to [Sketch file support](/using-haiku/sketch-and-image-assets.md), Haiku imports slices, frames & groups from Figma. The easiest way to import assets from Figma to Haiku is to simply create a group. Alternatively, you can use the slice tool to draw around elements you want to work with:
+Haiku imports groups, frames, slices, components, and elements with the "Mark for Export" option. The easiest way to import assets from Figma to Haiku is to simply create a group. Alternatively, you can use the slice tool to draw around elements you want to work with:
 
 ![](/assets/figma-slice.gif)
 
@@ -43,6 +43,8 @@ Similar to [Sketch file support](/using-haiku/sketch-and-image-assets.md), Haiku
 #### DRAGGING AND DROPPING ITEMS ON STAGE
 
 This one's self-explanatory:  to get an item from the Library to the Stage, simply drag and drop.  The new element will show up on the stage where you drop it, and a new row will show up in the Timeline representing the new element.
+
+You can also ungroup your elements in Haiku by pressing Cmd+Shift+G or right-clicking and choosing "ungroup". 
 
 <br>
 
