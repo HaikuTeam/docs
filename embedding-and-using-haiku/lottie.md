@@ -4,18 +4,18 @@ description: Use Haiku to author animations for Lottie, an open source iOS, Andr
 
 # iOS & Android Rendering powered by Lottie
 
-#### OVERVIEW
+#### OVERVIEW {#overview}
 
 Lottie is an [open source](https://github.com/airbnb/lottie-ios) iOS, Android, and React Native library [from Airbnb](https://airbnb.design/lottie/) that renders animations, allowing apps to use animations as easily as they use static images. Using Haiku, you can author Lottie compatible animations.
 
 
-#### USING LOTTIE
+#### USING LOTTIE {#usage}
 
 ![](/assets/lottie-json.png)
 
 After [publishing](/embedding-and-using-haiku/publishing-and-embedding.md), go to to the share page and select iOS/Android under "Get the code". Download _lottie.json_ and follow the linked instructions.
 
-#### SUPPORTED VERSIONS
+#### SUPPORTED VERSIONS {#versions}
 
 Haiku has been tested with the following versions of Lottie:
 
@@ -24,7 +24,7 @@ Haiku has been tested with the following versions of Lottie:
 - **lottie-android**: 2.2.5+
 - **lottie-react-native**: 2.2.5+
 
-#### LIMITATIONS
+#### LIMITATIONS {#limitations}
 
 Lottie does not support all features of After Effects; please refer to the [list of supported features](http://airbnb.io/lottie/supported-features.html) for details.
 

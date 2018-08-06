@@ -14,7 +14,7 @@ The file _code/main/code.js_ (within the project folder) is the code for your Ha
 
 <br>
 
-#### EXAMPLE CODE
+#### EXAMPLE CODE {#examplecode}
 
 Below is an example of the code for a simple interactive component, using Haiku's static definition format. This should look similar to the content you will see in your project's _code/main/code.js_ file.
 
@@ -66,7 +66,7 @@ Let's explore how this works.
 
 <br>
 
-#### CODE.JS — GUIDED TOUR
+#### CODE.JS — GUIDED TOUR {#codejs}
 
 ##### template
 
@@ -82,7 +82,7 @@ Note that the _template_ is just a plain, static object. That's because adding d
 
 <br>
 
-##### states
+##### states {#states}
 
 The **states** property describes your Haiku's internal state. States are key/descriptor pairs. The key is the name of the state, and the descriptor is an object with a `value` field. The `value` field contains the value of the state.
 
@@ -96,7 +96,7 @@ Now let's look at how to modify this state using _eventHandlers_.
 
 <br>
 
-##### eventHandlers
+##### eventHandlers {#eventHandlers}
 
 The **eventHandlers** object describes how you want your Haiku to respond to events such as UI events (e.g., a user's mouse click) and lifecycle events (e.g., the component's instantiation).
 
@@ -113,7 +113,7 @@ Within the context of a handler function, `this` is bound to your component's in
 
 <br>
 
-##### timelines
+##### timelines {#timelines}
 
 The **timelines** object is where _states_, _eventHandlers_, and _template_ come together to create a dynamic UI. The Haiku Core processes your timeline definitions and applies their _outputs_ to the appropriate elements in your scene.
 
@@ -164,7 +164,7 @@ _Expressions are one of the most powerful features in Haiku_, and we'll only scr
 
 <br>
 
-#### FAQ
+#### FAQ {#faq}
 
 - **How do I edit my project's code?:** Just fire up a text editor and make a change to the _code/main/code.js_ file. If the Haiku app is running, your changes should appear instantly on stage.
 

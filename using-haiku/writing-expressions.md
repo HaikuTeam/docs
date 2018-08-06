@@ -14,7 +14,7 @@ _Expressions_ are just small snippets of code that add dynamic behavior to the p
 
 <br>
 
-#### WRITING AN EXPRESSION IN THE TIMELINE
+#### WRITING AN EXPRESSION IN THE TIMELINE {#timeline}
 
 In the [Timeline guide](/using-haiku/creating-an-animation.md), we cover how to use the property inputs on the timeline to create keyframes. But those inputs can contain more than just simple values — they can also contain expressions!
 
@@ -34,7 +34,7 @@ To save a multi-line expression, press `Cmd + Enter`.
 
 <br>
 
-#### DYNAMIC EXPRESSIONS
+#### DYNAMIC EXPRESSIONS {#dynamic}
 
 Expressions like the one shown in the first example (`Math.sin(Math.PI)`) aren't incredibly useful. (At least, not for much other than making the meaning of your input numbers more obvious.) However, you can also use expressions to compute _dynamic values_ based on _dynamic data_.
 
@@ -44,7 +44,7 @@ But where does the dynamic data come from in the first place? And how do you ref
 
 <br>
 
-#### DYNAMIC DATA PART I: STATES
+#### DYNAMIC DATA PART I: STATES {#dyanmicdatapt1}
 
 The basic kind of dynamic data in Haiku is called a _state_. You can manage your state values using the State Inspector which is accessible via a tab next to the Library:
 
@@ -56,7 +56,7 @@ The basic kind of dynamic data in Haiku is called a _state_. You can manage your
 
 <br>
 
-#### SUMMONING STATES
+#### SUMMONING STATES {#summonstates}
 
 To access a state value in an expression, simply **type its name**. Haiku will automatically match the word you type to the state you are referencing. Haiku will keep track of the state value and pass it to your expression whenever it is calculated.
 
@@ -72,7 +72,7 @@ If you toggle multi-line mode, you can see the entire expression function. As yo
 
 <br>
 
-#### DYNAMIC DATA PART II: BUILT-INS
+#### DYNAMIC DATA PART II: BUILT-INS (#dynamicdatapt2)
 
 In addition to _states_, Haiku also provides a collection of built-in pieces of dynamic data that you can summon into your expression function, for example:
 
@@ -84,7 +84,7 @@ In addition to _states_, Haiku also provides a collection of built-in pieces of 
 
 <br>
 
-#### SUMMONING BUILT-INS
+#### SUMMONING BUILT-INS {#summonbuiltins}
 
 Just like with states, you can summon any dynamic built-in data point if you simply **type its name**. For example:
 
@@ -94,7 +94,7 @@ Just like with states, you can summon any dynamic built-in data point if you sim
 
 <br>
 
-#### ADVANCED: EXPRESSIONS IN CODE
+#### ADVANCED: EXPRESSIONS IN CODE {#advanced}
 
 Expressions that you write [manually in your code](/using-haiku/advanced-editing-haiku-as-code.md) are the same as expressions you create visually using the Haiku app. _When you write an expression in the Haiku app, it gets written to your code file as an expression function, just as if you had written it manually!_
 

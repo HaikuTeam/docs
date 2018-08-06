@@ -2,13 +2,13 @@
 
 <br>
 
-#### OVERVIEW
+#### OVERVIEW {#overview}
 
 A programmatic interface to the Haiku Core (and your published Haiku) is available for those who need more control. With the programmatic API, you can access your Haiku's internal content and create fine-grained behavior that responds to user and page events.
 
 <br>
 
-#### EMBED API
+#### EMBED API {#embedapi}
 
 The first interface to control your Haiku is via its declarative embedding API. (Getting your embed snippet is covered in the [embedding section](/embedding-and-using-haiku/publishing-and-embedding.md).)
 
@@ -176,13 +176,13 @@ The Haiku Core also exposes lifecycle hooks for embedded components, which you c
 
 <br>
 
-#### PROGRAMMATIC API
+#### PROGRAMMATIC API {#programmaticapi}
 
 Assuming you have a variable with an instance of your component (see above), a programmatic API is available that allows you to control the precise behavior of your component on a frame-by-frame basis.
 
 <br>
 
-##### HaikuBase
+##### HaikuBase {#haikubase}
 
 Base class for all the core Haiku classes. Encapsulates common logic for eventing and data caching.
 
@@ -208,11 +208,11 @@ Emit an event of a given name, dispatching to all matching listeners. Example:
 base.emit('some:event', { my: 'data' });
 ```
 
-##### HaikuElement
+##### HaikuElement {#haikuelement}
 
 Represents a single rendered node in the component tree. Can be used to read information about the node, such as its position. The entry point to access any `HaikuElement` in your tree is your `HaikuComponent` (see below). `HaikuElement` is a subclass of `HaikuBase`.
 
-###### PROPERTIES
+###### PROPERTIES {#properties}
 
 * `attributes` (object) - An object containing all HTML/SVG attribute values of the element.
 * `type` (string|object) - The type of rendered element this is. In case of normal renderable elements, it is a string like `'svg'`. In case of embedded components, it is an object descriptor of the component. (If you definitely want a string, use `tagName` instead.)
@@ -231,7 +231,7 @@ Represents a single rendered node in the component tree. Can be used to read inf
 * `layout` (object) - The computed layout of the element. Includes its `rotation`, `scale`, `size`, `matrix`, etc.
 * `target` (object) - Returns the live DOM node rendered by this element.
 
-###### METHODS
+###### METHODS {#methods}
 
 **.getComponentId(): string**
 
@@ -245,7 +245,7 @@ Query the subtree of this element and return the first element found that matche
 
 Like `.querySelector()`, but returns the collection of all matching elements. Also, please see the section at the bottom called "CSS selection in Haiku."
 
-##### HaikuComponent
+##### HaikuComponent {#HaikuComponent}
 
 Manages the behavior of your component at the top level. Subclass of `HaikuElement` (see above), representing both the root element of your component tree, and the controller for the behavior of all descendants.
 
@@ -335,7 +335,7 @@ Returns an instance of the `HaikuClock` that manages time for this instance (see
 
 <br>
 
-##### HaikuClock
+##### HaikuClock {#clock}
 
 Manages the apparent progression of time in your component's _context_, including all of its descendants. Subclass of `HaikuBase`.
 
@@ -374,7 +374,7 @@ Stop the clock. Warning: This will stop _all_ components that are managed by thi
 
 <br>
 
-##### HaikuTimeline
+##### HaikuTimeline {#timeline}
 
 An instance of a timeline, which controls animation for the properties of a specific, targeted set of elements within the host component tree. Subclass of `HaikuBase`.
 
@@ -485,7 +485,7 @@ Seek to a specific frame or millisecond time, and stop the timeline at that poin
 
 <br>
 
-### CSS selection in Haiku
+### CSS selection in Haiku {#css}
 
 Haiku Core's API currently offers a familiar CSS-like querying system for locating and targeting elements inside your component tree. However, it has some limitations; it doesn't support the full feature set of major CSS selector engines.
 

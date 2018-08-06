@@ -1,10 +1,10 @@
 ---
-description: When you first open Haiku, you will be prompted to log in.  Enter the username and password you used when you created your account.  If you forgot your password, you can reset it with this link. 
+description: When you first open Haiku, you will be prompted to log in.  Enter the username and password you used when you created your account.  If you forgot your password, you can reset it with this link.
 ---
 
 # Starting Haiku
 
-#### LOGGING IN
+#### LOGGING IN {#login}
 
 When you first open Haiku, you will be prompted to log in.  Enter the username and password you used when you created your account.  If you forgot your password, you can reset your password [here](https://www.haiku.ai/account/reset-password).
 
@@ -12,7 +12,7 @@ When you first open Haiku, you will be prompted to log in.  Enter the username a
 
 <br>
 
-#### CREATING A PROJECT
+#### CREATING A PROJECT {#create}
 
 Simply click the (+) button on the top-corner of the Project dashboard.
 
@@ -22,7 +22,7 @@ Name your project on the create project screen, shown below. Note that project n
 
 <br>
 
-#### PUBLIC & PRIVATE PROJECTS
+#### PUBLIC & PRIVATE PROJECTS {#publicandprivate}
 
 ![](/assets/new-project-settings.jpg)
 
@@ -32,7 +32,7 @@ Name your project on the create project screen, shown below. Note that project n
 
 <br>
 
-#### SHARING A PROJECT WITH TEAMMATES
+#### SHARING A PROJECT WITH TEAMMATES {#share}
 
 Every project is shared with all of your teammates by default! Simply press "Publish" to share your changes. [Read more about Publishing.](../embedding-and-using-haiku/publishing-and-embedding.md) New changes your teammates have made will be brought in every time you open a project or Publish.
 
