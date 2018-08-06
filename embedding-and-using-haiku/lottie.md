@@ -4,18 +4,18 @@ description: Use Haiku to author animations for Lottie, an open source iOS, Andr
 
 # iOS & Android Rendering powered by Lottie
 
-#### OVERVIEW
+#### OVERVIEW {#overview}
 
 [Lottie](https://airbnb.design/lottie/) is an open source iOS, Android, and React Native library from Airbnb that renders animations, allowing apps to use animations as easily as they use static images. Using Haiku, you can author Lottie compatible animations.
 
 
-#### USING LOTTIE
+#### USING LOTTIE {#usage}
 
 ![](/assets/lottie-json.png)
 
 After [publishing](/embedding-and-using-haiku/publishing-and-embedding.md), select iOS/Android. Download _lottie.json_ and follow the linked instructions.
 
-#### SUPPORTED VERSIONS
+#### SUPPORTED VERSIONS {#versions}
 
 Haiku has been tested with the following versions of Lottie:
 
@@ -24,13 +24,14 @@ Haiku has been tested with the following versions of Lottie:
 - **lottie-android**: 2.2.5+
 - **lottie-react-native**: 2.2.5+
 
-#### RASTER IMAGES
+
+#### RASTER IMAGES {#rasterimages}
 
 Raster images are supported in **lottie-android** versions 2.5.5 and up.
 
 For **lottie-ios**, raster image support is available in the latest code checked in to GitHub, but has not yet made it into a CocoaPods release.
 
-#### LIMITATIONS
+#### LIMITATIONS {#limitations}
 
 Lottie does not support all features of After Effects; please refer to the [list of supported features](http://airbnb.io/lottie/supported-features.html) for details. Notable After Effects features lacking support on both Android and iOS include 3D rotation and shear.
 

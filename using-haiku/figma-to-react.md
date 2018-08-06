@@ -9,7 +9,7 @@ Haiku now allows you to easily bring your [Figma](/[http://figma.com](http://fig
 
 <br>
 
-#### Designing your element in Figma
+#### Designing your element in Figma {#figma}
 
 We're going to start by designing an animated button in Figma. To design a simple button in Figma navigate to [http://figma.com](http://figma.com/) and create an account if you haven’t already done so.
 ![](/assets/figma_home.png)
@@ -49,7 +49,7 @@ Once we have the eyes, we’ll need to draw the smile using the Pen tool. Fill i
 
 Now we’re ready to bring our button to life in Haiku! If you don’t have Haiku download already, you can do that [here](/https://www.haiku.ai/account/new).
 
-#### Getting set up in Haiku
+#### Getting set up in Haiku {#setup}
 
 Open up Haiku and create a new project by pressing the New Project button in the top right of Haiku.
 
@@ -60,7 +60,7 @@ Now give your project a name, set it as public or private, and press Name Projec
 ![](/assets/create_new_project.png)
 
 
-#### Importing your Figma element into Haiku
+#### Importing your Figma element into Haiku {#importfigma}
 
 Welcome to Haiku! The first thing we want to do is import your elements from Figma into Haiku. To do that, double click on the Figma file at the bottom of your Library window on the left side.
 
@@ -88,7 +88,7 @@ Do that for all of the elements you want to import into Haiku and then press the
 
 Congratulations - your Figma elements were successfully imported into Haiku. Haiku always keeps it's connection to your Figma source project. Press the refresh button any time to pull the latest changes from your Figma project. Now, let’s animate your design!
 
-#### Animating your design in Haiku
+#### Animating your design in Haiku {#animate}
 
  To animate our button in Haiku we want to make it so that the button does nothing until a user clicks on it. Once clicked, we want the ‘confirm’ text to shift from the center of the button to the left and have the smiley ‘jump out’ of the word and land on the right side of the button.
 
@@ -202,7 +202,7 @@ You should be able to press the button you designed and see it animate!
 
 Congratulations. We’re almost done - now we can publish our Haiku and import it as a component into a React project.
 
-#### Publish your Haiku
+#### Publish your Haiku {#publish}
 
 To publish your Haiku, simply press the ‘Publish’ button next to preview in the top right of Haiku.
 
@@ -211,7 +211,7 @@ To publish your Haiku, simply press the ‘Publish’ button next to preview in 
 
 Once you’ve shared it you can send your shareable link to anyone and they can view and even fork your Haiku. In addition, Haiku provides us with Install Options for a variety of Web and Mobile platforms. Let’s finish the tutorial by getting our Haiku into a React project and live in our browser.
 
-#### Import your Haiku into React
+#### Import your Haiku into React {#import}
 
 ![](/assets/publishmenu.png)
 

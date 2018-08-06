@@ -18,7 +18,7 @@ If you haven't already, check out [Tutorial 2: Interactivity with Actions](https
 
 <br>
 
-#### FRAME ACTIONS
+#### FRAME ACTIONS {#frameactions}
 
 ![](/assets/insert-frame-action.gif)
 
@@ -26,13 +26,13 @@ Frame Actions are triggered every time a frame is crossed. To add a Frame Action
 
 <br>
 
-#### EVENT ACTIONS
+#### EVENT ACTIONS {#eventactions}
 
 ![](/assets/insert-event-action.gif)
 
 To add an Event Action, `Right click` (or select the settings button next to) an element on the stage and select **Edit Element Actions**.
 
-#### ACTIONS API
+#### ACTIONS API {#actionsapi}
 
 Inside an action, the `this`-binding of the listener function's scope is an instance of your component, which is represented as a `HaikuComponent`. You can read more about this in the [Haiku Core section](/embedding-and-using-haiku/haiku-core-api.md). Here is a quick example:
 

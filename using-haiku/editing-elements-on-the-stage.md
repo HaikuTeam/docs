@@ -8,13 +8,13 @@ You can use the Haiku stage to position and transform your design elements. The 
 
 <br>
 
-#### ADDING ELEMENTS TO THE STAGE
+#### ADDING ELEMENTS TO THE STAGE {#addelements}
 
 To get an item from the Library to the Stage, simply drag and drop from the Library.  The new element will show up on the stage where you drop it, and a new row will show up in the Timeline representing the new element.  To learn more about getting elements into the Library, see [Sketch and Image Assets](/using-haiku/sketch-and-image-assets.md).
 
 <br>
 
-#### SELECTING, RESIZING, ROTATING, DELETING
+#### SELECTING, RESIZING, ROTATING, DELETING {#selecteditdelete}
 
 To select an element on stage, simply click it.
 
@@ -29,7 +29,7 @@ To *Delete,* once an element is selected, press `DELETE`.
 <br>
 
 
-#### ZOOMING AND PANNING
+#### ZOOMING AND PANNING {#zoomandpan}
 
 For precise control over elements on the stage, you can zoom and pan.
 
@@ -40,7 +40,7 @@ To *Pan*, hover over the stage with your mouse, hold the `Space Bar` and click a
 <br>
 
 
-#### RESIZING THE STAGE
+#### RESIZING THE STAGE {#resizestage}
 
 You can resize the stage (and thus default size for your Haiku component) in two ways:
 
@@ -55,19 +55,19 @@ Numerically, you can edit the Size X and Size Y of the top-most element in the t
 
 <br>
 
-#### CHANGING STACKING ORDER (Z-INDEX)
+#### CHANGING STACKING ORDER (Z-INDEX) {#zindex}
 
 To change the stacking order of an element on stage, right-click on it (or `CTRL` + click) and select Send Forward/Backward/To Front/To Back.
 
 <br>
 
-#### UNDO/REDO
+#### UNDO/REDO {#undoredo}
 
 To undo/redo changes, press `CMD + Z` (undo) or `CMD + SHIFT + Z` (redo.)  Alternatively, click the Undo/Redo buttons on the toolbar.
 
 <br>
 
-#### CUT/COPY/PASTE
+#### CUT/COPY/PASTE {#cutandpaste}
 
 To _Cut_, press `CMD + X`. To _Copy_, press `CMD + C`. To paste, press `CMD + V`. Alternately, click the Cut/Copy/Paste buttons on the toolbar. You can also right-click any on-stage element and Cut/Paste via the context menu.
 

@@ -2,7 +2,7 @@
     "styles": {
         "website": "styles/website.css"
     },
-    "plugins": [ "theme-api", "ga"],
+    "plugins": [ "theme-api", "ga", "anchors"],
 
     "pluginsConfig": {
         "theme-api": {
@@ -30,5 +30,6 @@
         "ga": {
             "token": "UA-90094131-3"
         }
+
     }
 }

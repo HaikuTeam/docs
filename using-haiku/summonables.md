@@ -14,7 +14,7 @@ They represent things such as the user's current mouse position or the dimension
 
 <br>
 
-#### SUMMONING BUILT-IN SUMMONABLES
+#### SUMMONING BUILT-IN SUMMONABLES {#builtin}
 
 Built-in summonables can be summoned in the same way as states. Just include them by **typing their names** in your expression function's signature. For example, if you want to access the injectable called `$user.mouse.x` (i.e., the x-position of the user's mouse), your expression would look like this:
 
@@ -34,7 +34,7 @@ To see what is happening under the hood, use `Shift + Enter` to toggle multi-lin
 
 <br>
 
-#### LIST OF BUILT-IN SUMMONABLES
+#### LIST OF BUILT-IN SUMMONABLES {#list}
 
 The following is a list of built-in summonables available to you within expressions. Each is shown here along with a brief annotation about its purpose.
 
