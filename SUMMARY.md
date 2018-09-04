@@ -36,3 +36,7 @@
 * [Haiku Developer API](embedding-and-using-haiku/haiku-core-api.md)
 * [Editing Haiku as Code](using-haiku/advanced-editing-haiku-as-code.md)
 * [Version Control](using-haiku/advanced-version-control.md)
+
+## Release Notes
+* [Version 4.0.0](using-haiku/version-4-0-0.md)
+* [Version 4.1.1](using-haiku/version-4-1-1.md)
