@@ -1,5 +1,5 @@
 ---
-description: Release date - August 20, 2018.
+description: Release Notes - Version 4.0.0
 ---
 
 # Release Notes: Version 4.0.0

@@ -1,5 +1,5 @@
 ---
-description: Release date - August 30, 2018.
+description: Release Notes - Version 4.1.1
 ---
 
 # Release Notes: Version 4.1.1
@@ -19,7 +19,7 @@ Release date - August 30, 2018.
 - Fixed an issue where the cancel button did not always close the action editor.
 - Fixed several issues where some elements might disappear, lose opacity, or become distored when ungrouped.
 - Fixed several issues that may have caused publishing a project to hang.
-@haiku/cli now uses configured proxy settings.
+- @haiku/cli now uses configured proxy settings.
 - In @haiku/core, fixed a regression affecting ID-based selectors in bytecode.
 - Fixed a regression where we no longer highlighted the stage title bar action button when a selected element has an action.
 - Made various improvements to the action editor autocompleter.
