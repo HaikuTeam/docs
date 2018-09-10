@@ -1,5 +1,5 @@
 ---
-description: The Haiku docs are your one stop shop for everything you need to know about Haiku. Learn about what Haiku is, who it's for and why you or your time might use it.
+description: The Haiku docs are your one stop shop for everything you need to know about Haiku. Learn about what Haiku is, who it's for and why you or your team might use it.
 ---
 
 <br>
@@ -14,7 +14,7 @@ Welcome! Everything new and advanced users want to know about Haiku should be av
 
 [Advanced: Editing Haiku as Code](http://docs.haiku.ai/using-haiku/advanced-editing-haiku-as-code.html)
 
-[Creating Animations with the Timeline](http://docs.haiku.ai/using-haiku/using-haiku/creating-an-animation.html)
+[Creating Animations with the Timeline](http://docs.haiku.ai/using-haiku/creating-an-animation.html)
 
 [Summonables in Haiku](http://docs.haiku.ai/using-haiku/summonables.html)
 
