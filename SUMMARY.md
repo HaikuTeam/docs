@@ -38,5 +38,7 @@
 * [Version Control](using-haiku/advanced-version-control.md)
 
 ## Release Notes
-* [Version 4.0.0](using-haiku/version-4-0-0.md)
+* [Version 4.2.0](using-haiku/version-4-2-0.md)
 * [Version 4.1.1](using-haiku/version-4-1-1.md)
+* [Version 4.0.0](using-haiku/version-4-0-0.md)
+
