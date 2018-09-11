@@ -5,7 +5,7 @@ description: Learn about publishing and embedding your Haiku. The first step to 
 # Publishing and Embedding
 
 
-#### PUBLISH BUTTON
+#### PUBLISH BUTTON {#button}
 
 The first step to getting your Haiku out into the world is to _publish_ it.
 
@@ -13,13 +13,13 @@ You'll find a button on the top-right of project editor that does just that.
 
 ![](/assets/publish-button.jpg)
 
-Simply press PUBLISH and your up-to-the-moment work will be shuttled out to the cloud and packaged up for use in any codebase.  Depending on the project settings configured when creating the project, you'll be given a private or a public link. 
+Simply press PUBLISH and your up-to-the-moment work will be shuttled out to the cloud and packaged up for use in any codebase.  Depending on the project settings configured when creating the project, you'll be given a private or a public link.
 
 [Read more about Project Settings](../using-haiku/starting-haiku.md#public--private-projects)
 
 <br>
 
-#### PUBLISH AND EMBED OPTIONS
+#### PUBLISH AND EMBED OPTIONS {#options}
 
 ![](/assets/publish-options.jpg)
 
@@ -31,7 +31,7 @@ Here you can also explore embed options for your Haiku, which are also mirrored 
 
 <br>
 
-#### SHARE PAGE
+#### SHARE PAGE {#share}
 
 ![](/assets/share-page.png)
 
@@ -39,14 +39,14 @@ Here you can also explore embed options for your Haiku, which are also mirrored 
 The Share Page is your entry point for sharing Haiku.  You can see and interact with your Haiku, share the link and explore embed options.
 
 
-#### HOW TO USE
+#### HOW TO USE {#howtouse}
 
 The key to the Share Page is the "Get the Code" button on the bottom-right.  If you click that button, the bottom panel expands and explains exactly how to use your Haiku in a number of different codebases, including vanilla HTML (embed,) vanilla JS, React, Vue, and more.
 
 ![](/assets/share-page-get-the-code.png)
 
 
-#### EMBED IN ANY WEBPAGE OR WEB APP
+#### EMBED IN ANY WEBPAGE OR WEB APP {#embed}
 
 **HTML Embed**
 
@@ -63,7 +63,7 @@ Then from the command line, inside your React project, run `haiku install YourPr
 
 <br>
 
-#### FORKING
+#### FORKING {#forking}
 
 ![](/assets/forking.gif)
 
@@ -78,7 +78,7 @@ With Haiku for Mac installed, public projects can be forked by selecting **Fork 
 <br>
 
 
-#### ACCESSING THE RAW CODE
+#### ACCESSING THE RAW CODE {#rawcode}
 
 **`~/.haiku` Folder**
 

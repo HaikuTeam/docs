@@ -16,7 +16,7 @@ But the Timeline may seem intimidating if you're new to animation. Don't be scar
 
 <br>
 
-#### THINKING LIKE AN ANIMATOR
+#### THINKING LIKE AN ANIMATOR {#animator}
 
 It's helpful, first of all — especially if you're just starting out — to try to get into the mindset of an animator.
 
@@ -28,7 +28,7 @@ Using the Timeline, you can precisely control the answer.
 
 <br>
 
-#### TIMELINE - OVERVIEW
+#### TIMELINE - OVERVIEW {#timeline-overview}
 
 The Timeline consists of a few fundamental pieces:
 
@@ -40,7 +40,7 @@ The Timeline consists of a few fundamental pieces:
 
 <br>
 
-#### TIMELINE - ANATOMY
+#### TIMELINE - ANATOMY {#timeline-anatomy}
 
 Stepping back and taking a wider view, this is the overall anatomy of the Timeline. (These terms are defined visually here for clarity when they're referenced elsewhere in the docs.)
 
@@ -48,7 +48,7 @@ Stepping back and taking a wider view, this is the overall anatomy of the Timeli
 
 <br>
 
-#### HOW TIMELINE AND STAGE INTERACT
+#### HOW TIMELINE AND STAGE INTERACT {#timeline-and-stage}
 
 To understand how the Timeline and Stage interact, let's look at how a simple design (a heart, as shown here) moves around on the stage when animations have already been defined on the timeline.
 
@@ -107,7 +107,7 @@ Once you've affected values at two such points in time (i.e., created _keyframes
 
 <br>
 
-#### USING THE STAGE TO CREATE KEYFRAMES
+#### USING THE STAGE TO CREATE KEYFRAMES {#stage-keyframes}
 
 If you drag an element across the stage *at a point in time*, keyframes will automatically be created at that time. That is, dragging an element on stage _is exactly the same as editing the `X Position` and `Y Position` properties in the at that point in time!_
 
@@ -117,7 +117,7 @@ In fact, both of these techniques also have exactly the same outcome as editing 
 
 <br>
 
-#### USING PROPERTY INPUTS TO CREATE KEYFRAMES
+#### USING PROPERTY INPUTS TO CREATE KEYFRAMES {#propertyinputs}
 
 
 First, move the ticker to frame 10, then double click the "rotation" value to focus the input:
@@ -130,7 +130,7 @@ Then, change the value to the desired rotation value, and press `Enter` to save 
 
 <br>
 
-##### Writing expressions in property inputs
+##### Writing expressions in property inputs {#expressions}
 
 Property inputs can contain more than just simple values. They can be little snippets of code that we call _expressions_. A la Microsoft Excel, just **begin your property input value with an _equals sign_**, and the input will recognize that you're typing in an expression.
 
@@ -140,7 +140,7 @@ Expressions are a powerful tool and there's a lot you can do with them, so we've
 
 <br>
 
-#### CREATING OR EDITING A KEYFRAME
+#### CREATING OR EDITING A KEYFRAME {#editingkeyframe}
 
 New keyframes are automatically created when you:
 
@@ -159,7 +159,7 @@ To edit the _value of a keyframe_, simply align the ticker over the keyframe, th
 
 <br>
 
-#### CREATING OR EDITING A TRANSITION/TWEEN
+#### CREATING OR EDITING A TRANSITION/TWEEN {#tweens}
 
 Once you've created two keyframes (there's always a keyframe at the first frame) you can create a Transition.  Haiku will then ease between the values of the two keyframes, along the Easing Curve that you specify.
 
@@ -171,13 +171,13 @@ To create a transition, right-click between two keyframes, then choose `"Create 
 
 <br>
 
-#### ZOOMING WITH THE TIMELINE
+#### ZOOMING WITH THE TIMELINE {#zooming}
 
 You can zoom in or out with the timeline by dragging either end of the horizontal scroll bar.  Notice the white vertical tick in the scrollbar — this shows you where the Ticker is along the timeline, while the width of the scrollbar shows how much of the timeline is currently visible in the viewport.
 
 <br>
 
-#### CHANGING TIMELINE UNITS
+#### CHANGING TIMELINE UNITS {#units}
 
 You can click the number in the "Ticker Position (Current Frame)" box on the top of the timeline to toggle between showing units in Seconds vs Frames.
 

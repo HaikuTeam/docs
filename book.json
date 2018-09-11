@@ -2,7 +2,8 @@
     "styles": {
         "website": "styles/website.css"
     },
-    "plugins": [ "theme-api"],
+    "plugins": [ "theme-api", "ga", "anchors"],
+
     "pluginsConfig": {
         "theme-api": {
             "languages": [
@@ -24,6 +25,11 @@
                     "name": "Angular"
                 }
             ]
+          },
+
+        "ga": {
+            "token": "UA-90094131-3"
         }
+
     }
 }

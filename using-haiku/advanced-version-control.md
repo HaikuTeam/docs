@@ -10,7 +10,7 @@ Every change made is tracked atomically as an individual commit. When publishing
 
 If you’re new to git, [this blog post](http://blog.teamtreehouse.com/git-for-designers-part-1) is a good starting point.
 
-### FAQ's
+### FAQ's {#faq}
 
 **What's happening behind the scenes?**
 

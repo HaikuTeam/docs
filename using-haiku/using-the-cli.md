@@ -9,7 +9,7 @@ description: The Haiku CLI is the Swiss army knife for developers using Haiku. Y
 The Haiku CLI is the "Swiss army knife" for developers using Haiku.  You can use it to import a Haiku into an existing codebase (essentially `npm install`,) or you can use the CLI to directly clone a Haiku project to your computer, to access and edit the code manually (essentially, `git clone`.)
 
 
-#### INSTALLATION
+#### INSTALLATION {#installation}
 
 To install, run the following command in your terminal:
 
@@ -22,7 +22,7 @@ To install, run the following command in your terminal:
 `yarn global add @haiku/cli`
 
 
-#### USAGE
+#### USAGE {#usage}
 
 ```
 NAME:

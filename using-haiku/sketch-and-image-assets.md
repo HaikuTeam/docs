@@ -10,7 +10,7 @@ Let's first cover how to get your Sketch design into Haiku:
 
 <br>
 
-#### HOW TO LINK A SKETCH FILE
+#### HOW TO LINK A SKETCH FILE {#linksketch}
 
 The first step to bringing your Sketch design to life is to import it.
 
@@ -24,13 +24,13 @@ To get an asset on stage, just drag and drop it!
 
 <br>
 
-#### DRAGGING AND DROPPING ITEMS ON STAGE
+#### DRAGGING AND DROPPING ITEMS ON STAGE {#draganddrop}
 
 This one's self-explanatory:  to get an item from the Library to the Stage, simply drag and drop.  The new element will show up on the stage where you drop it, and a new row will show up in the Timeline representing the new element.
 
 <br>
 
-#### CHANGING ASSETS FROM SKETCH
+#### CHANGING ASSETS FROM SKETCH {#changeassets}
 
 What if you need to make a change to the Sketch file? That's fine! We'll take care of bringing your new changes into Haiku and onto any assets you've placed on the stage.
 
@@ -40,7 +40,7 @@ When you import a Sketch file, we automatically make a copy of that file and sta
 
 ![](/assets/open-sketch.gif)
 
-#### Other Image Assets
+#### Other Image Assets {#other}
 
 Haiku also supports SVG files. If you want to work with an .svg file, just click "IMPORT" in your library as we did above for a .sketch file.
 

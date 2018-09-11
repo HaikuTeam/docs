@@ -3,7 +3,7 @@ description: Boost your productivity with keyboard shortcuts. Haiku supports an 
 ---
 # Keyboard shortcuts &amp; Input
 
-#### KEYBOARD SHORTCUTS
+#### KEYBOARD SHORTCUTS {#keyboard}
 
 Haiku supports an array of keyboard shortcuts to help expedite your workflow:
 
@@ -27,7 +27,7 @@ You can also:
 
 <br>
 
-#### MOUSE &amp; TRACKPAD INPUT
+#### MOUSE &amp; TRACKPAD INPUT {#trackpad}
 
 Trackpad:
 

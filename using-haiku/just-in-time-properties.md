@@ -16,4 +16,4 @@ Just-in-time Properties only accept strings, so be sure to wrap your input in si
 
 <br>
 
-[Next: Haiku Player Overview](/embedding-and-using-haiku/haiku-player-overview.md) &rarr;
+[Next: Reusable Components](/using-haiku/reusable-components.md) &rarr;

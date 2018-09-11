@@ -8,7 +8,7 @@ Every Haiku you create can have its own collection of internal state. These piec
 
 <br>
 
-#### DEFINING/EDITING STATES
+#### DEFINING/EDITING STATES {#defandedit}
 
 You can manage your Haiku's state values using the State Inspector, which is accessible via a tab next to the Library:
 
@@ -26,7 +26,7 @@ Press `Enter` to save the state value.
 
 <br>
 
-#### SUMMONING STATES IN EXPRESSIONS
+#### SUMMONING STATES IN EXPRESSIONS {#summoninexpressions}
 
 To access a state value in an [expression](/using-haiku/writing-expressions.md), simply **type its name**. Haiku will automatically detect the state you are referencing, and will send its current value to your expression whenever it is evaluated.
 
@@ -34,7 +34,7 @@ To access a state value in an [expression](/using-haiku/writing-expressions.md),
 
 <br>
 
-#### CHANGING STATE VALUES
+#### CHANGING STATE VALUES {#changevalues}
 
 You're probably thinking to yourself, "States aren't very useful unless you can change them." You're right!
 
@@ -48,7 +48,7 @@ All you need to do to update states dynamically as your component animates is to
 
 ```
 <MyComponent
-  haikuStates={{
+  states={{
     foo: { value: 2 },        // Overrides the default value 1
     bar: { value: "howdy" },  // Overrides the default value "hello"
     baz: { value: 0.98 }      // Overrides the default value 0.98
