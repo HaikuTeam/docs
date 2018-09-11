@@ -3,6 +3,7 @@ description: The Haiku docs are your one stop shop for everything you need to kn
 ---
 
 <br>
+
 # Welcome to the Haiku Docs !
 
 Welcome! Everything new and advanced users want to know about Haiku should be available in the Docs. If you're brand new to Haiku check out our [Getting Started](http://docs.haiku.ai/getting-started.html) page or the rest of our learning resources (like tutorials and support) on the [Learn page](http://haiku.ai/learn).
