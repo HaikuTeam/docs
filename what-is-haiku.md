@@ -3,6 +3,7 @@ description: Haiku is a desktop app backed by cloud services for creating intera
 ---
 
 <br>
+
 # What is Haiku?
 
 [Haiku](https://haiku.ai) is a desktop app for Mac for creating interactive, animated UI components.
