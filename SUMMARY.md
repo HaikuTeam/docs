@@ -38,6 +38,7 @@
 * [Version Control](using-haiku/advanced-version-control.md)
 
 ## Release Notes
-* [4.2.0 Release Notes](using-haiku/release-notes-4-2-0.md)
-* [4.1.1 Release Notes](using-haiku/release-notes-4-1-1.md)
-* [4.0.0 Release Notes](using-haiku/release-notes-4-0-0.md)
+* [Index](release-notes/index.md)
+* [4.2.0 Release Notes](release-notes/release-notes-4-2-0.md)
+* [4.1.1 Release Notes](release-notes/release-notes-4-1-1.md)
+* [4.0.0 Release Notes](release-notes/release-notes-4-0-0.md)
