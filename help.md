@@ -3,6 +3,7 @@ description: The best resources for getting help with issues in Haiku, and how t
 ---
 
 <br>
+
 # Help & Troubleshooting
 
 The best place to find information on and solutions to known issues is our [Help Center](https://help.haiku.ai/).
