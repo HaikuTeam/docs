@@ -10,7 +10,7 @@ Release date - September 10, 2018.
 - Elements now remain direct-selected through undo/redo.
 - You can now change the email address you use to sign in at [account.haiku.ai](https://account.haiku.ai/).
 - You can now find a link to your public profile when publishing a public project.
-- Added the ability to tween percent values (e.g. `\25%\` to `\50%\`).
+- Added the ability to tween percent values (e.g. `25%` to `50%`).
 
 
 #### FIXES
