@@ -1,9 +1,9 @@
 ---
-description: Release date - October 16, 2018.
+description: Release date - October 19, 2018.
 ---
 
 # Release Notes: Version 4.3.1
-Release date - October 16, 2018.
+Release date - October 19, 2018.
 
 
 #### WHAT'S NEW
