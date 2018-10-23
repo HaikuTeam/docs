@@ -50,4 +50,4 @@ function (target, event) {
 
 <br>
 
-[Next: Just-in-time Properties](/using-haiku/just-in-time-properties.md) &rarr;
+[Next: Defining States](/using-haiku/defining-states.md) &rarr;

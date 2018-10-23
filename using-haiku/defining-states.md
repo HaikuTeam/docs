@@ -36,7 +36,13 @@ To access a state value in an [expression](/using-haiku/writing-expressions.md),
 
 #### CHANGING STATE VALUES {#changevalues}
 
-You're probably thinking to yourself, "States aren't very useful unless you can change them." You're right!
+You're probably thinking to yourself, "States aren't very useful unless you can change them." You're right! 
+
+There are two ways to change state: Externally and programmatically from component itself. 
+
+
+##### Changing state externally
+
 
 Every Haiku component provides a way to change its states, available when the component is [embedded](/embedding-and-using-haiku/publishing-and-embedding.md) in production.
 
@@ -56,8 +62,30 @@ All you need to do to update states dynamically as your component animates is to
 ```
 <br>
 
+##### Changing state programmatically
+
+Another option to change states is inside [actions](/using-haiku/actions.md), as a response to a Haiku event (eg. On frame play, mouse click, mouse hover, etc). For example, imagine user want to change previous defined `baz` to `8` when user click on some element, the action contents of `click` should be:
+
+```
+this.setState({baz: 8})
+
+```
+
+Another useful option in addition to setting a state right away, is set a state transition. State transitions work just like as [animation transition/tween](/using-haiku/creating-an-animation.html), but with states instead. To to the same state change above, but in the time span of 3 seconds in a nicely incremental way:
+
+```
+this.setState({baz: 8}, {duration: 3000, curve: "linear"})
+```
+
+If `baz` value was 2 before user clicked the element, the transition will go linearly from `2` to `8` in a time span of 3 seconds (3000 ms). Be careful, as of version 3.5.0, state transition works only with state being transitioned from `number` to `number`.
+
+
+Another transition curves beyond `linear` and option to queue state transitions are detailed in our  [Haiku Core API section](/embedding-and-using-haiku/haiku-core-api.md), under `setState`.
+
+
+
 > Note: For more about how to interact with your component programmatically, see the [Haiku Core API section](/embedding-and-using-haiku/haiku-core-api.md).
 
 <br>
 
-[Next: All About "Summonables"](/using-haiku/summonables.md) &rarr;
+[Next: Just-in-time Properties](/using-haiku/just-in-time-properties.md) &rarr;

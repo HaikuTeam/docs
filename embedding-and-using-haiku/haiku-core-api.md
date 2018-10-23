@@ -278,6 +278,8 @@ You can also subscribe to custom events:
 
 **.setState(states: object): void**
 
+> Note: As known as immediate `setState`
+
 Similar to React's API, `.setState` updates the states defined in the instance of your component. (These states are the same states you configure visually using the State Inspector in Haiku for Mac.) A state can be a `number`, `string`, `array`, `object`, or `null`. Example:
 
 ```
@@ -288,6 +290,68 @@ this.setState({
 ```
 
 Changing states cause any expressions that depend on those values to re-evaluate.
+
+
+**.setState(states: object, transitionDefinition: {duration: number, curve?: string, queue?: boolean}): void**
+
+> Note: As known as transition `setState`
+
+
+In addition to immediate `setState`, user has the option to set a state transition similar to [animation transition/tween](/using-haiku/creating-an-animation.html). For example, lets queue a state transition of state `foo` to value `10`, using an exponential ease in curve in the time span of 1 second (1000 ms)
+
+
+```
+this.setState({foo: 10}, 
+{
+  duration: 1000, 
+  curve: "easeInExpo",
+  queue: true
+})
+```
+
+`duration` parameter means how long the transition should span. `curve` option allows user to define transition curve, defined in [Curve.ts](https://github.com/HaikuTeam/core/blob/master/src/api/Curve.ts)  (if none is provided, `linear` is automatically set). `queue` parameter enables queue transitions to be executed, by default set to `false` if not specified.
+
+Be careful, as of version 3.5.0, state transition works only with state being transitioned from `number` to `number`.
+
+
+*How state transition queue works*
+
+Each state has its individual state transition queue.
+
+A transition `setState` with multiple states is processed as several transition `setState` with same `transitionDefinition` parameter. Eg.
+
+```
+this.setState({foo: 4, baz: 8}, { duration: 3000, curve: "linear" })
+```
+is equivalent to
+```
+this.setState({foo: 4}, { duration: 3000, curve: "linear" })
+this.setState({baz: 8}, { duration: 3000, curve: "linear" })
+```
+
+If a immediate `setState` or a non-queued(`queue=false`) transition `setState` is called on one or more states, it will stop any running state transition and clear affected states queue.
+
+After a queued transition `setState` is completed, if queue has any other state transition, it wil set current state value (current as of state transition completion) as state start value and will transition up to `states` parameter. Eg. Imagine user set frame 0 action the following code, and initial value of state `positionx` is 5:
+
+```
+this.setState({positionx: 10}, { duration: 1000, curve: "linear", queue: true })
+this.setState({positionx: 20}, { duration: 2000, curve: "linear", queue: true })
+
+```
+
+Let's call first transition the one to `positionx: 10` and second the one to `positionx: 20`. The first state transition will be execution until 1000ms, then second state transition will start, using state `positionx: 10` as start value. At 3000ms timestamp, second state transition will be completed. In the below code, timestamps and value table would be
+
+
+
+| Timestamp (ms) | positionx value | Active state transition |
+| :------------- |:--------------- | :---------------------- |
+| 0              | 5               | first                   |
+| 500            | 7.5             | first                   |
+| 1000           | 10              | second                  |
+| 2000           | 15              | second                  |
+| 3000           | 20              | ------                  |
+
+
 
 **.set(key: string, value: any): void**
 
