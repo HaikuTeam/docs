@@ -52,6 +52,8 @@ The key to the Share Page is the "Get the Code" button on the bottom-right.  If 
 
 From the Share Page "How to Use" menu, select the HTML Embed option, then copy and paste the snippet anywhere you'd like.  Here's an example of an HTML embed in CodePen: [https://codepen.io/anon/pen/EXQZEb](https://codepen.io/anon/pen/EXQZEb)
 
+**Tip**: To learn more about how to make your Haiku responsive please read [this help article](https://help.haiku.ai/troubleshooting-and-help/once-my-haiku-is-on-a-web-page-how-do-i-make-it-responsive) and [this section in our Docs](https://docs.haiku.ai/embedding-and-using-haiku/haiku-core-api.html#embedapi).
+
 
 **React Component**
 
