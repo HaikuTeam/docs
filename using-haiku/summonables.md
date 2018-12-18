@@ -40,121 +40,67 @@ The following is a list of built-in summonables available to you within expressi
 
 > Note: All of these properties are intended to be **read-only**; you'll get unpredictable results if you try to modify them.
 
-* **$window (Object) - Collection of data from the [window](https://developer.mozilla.org/en-US/docs/Web/API/Window)**
-  * width (Number) - The width of the window in screen pixels
-  * height (Number) - The width of the window in screen pixels
-  * orientation (Object) - Collection of data about the [window.screen.orientation](https://developer.mozilla.org/en-US/docs/Web/API/Screen/orientation)
-    * angle (Number) - The angle of the screen in degrees
-    * type (String) - The orientation type, e.g. `"landscape-primary"`
-  * availHeight (Number)
-  * availLeft (Number)
-  * availWidth (Number)
-  * colorDepth (Number)
-  * pixelDepth (Number)
-  * navigator (Object) - Collection of data from [window.navigator](https://developer.mozilla.org/en-US/docs/Web/API/Navigator)
-    * userAgent (String)
-    * appCodeName (String)
-    * appName (String)
-    * appVersion (String)
-    * cookieEnabled (Boolean)
-    * doNotTrack (Boolean)
-    * language (String)
-    * maxTouchPoints (Number)
-    * onLine (Boolean)
-    * platform (String)
-    * product (String)
-    * vendor (String)
-  * document (Object) - Collection of data from [window.document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
-    * charset (String)
-    * compatMode (String)
-    * contentType (String)
-    * cookie (String)
-    * documentURI (String)
-    * fullscreen (Boolean)
-    * readyState (Number)
-    * referrer (String)
-    title (String)
-  * location (Object) - Collection of data from [window.location](https://developer.mozilla.org/en-US/docs/Web/API/Location)
-    * hash (String)
-    * host (String)
-    * hostname (String)
-    * href (String)
-    * pathname (String)
-    * protocol (String)
-    * search (String)
+* **$window (Object) - A reference to the [window](https://developer.mozilla.org/en-US/docs/Web/API/Window)** object
+
 * **$core (Object) - Collection of data about the current state of the [Haiku Core](./embedding-and-using-haiku/haiku-core-overview.md)**
-  * version (String) - The current version of the core
   * options (Object) - The current option configuration of the core
     * seed (String) - Seed used for producing predictable randomness, etc.
     * loop (Boolean) - Whether or not the core is configured to loop the animation
     * sizing (String) - The sizing mode of the component (`"cover"` or `"contain"`)
-    * preserve3d (Boolean)
+    * preserve3d (String)
     * position (String)
     * overflowX (String)
     * overflowY (String)
   * timeline (Object) - Collection of data representing the currently active timeline
     * name (String) - Name of the timeline (e.g. `"Default"`)
-    * duration (Number) - The total duration (in milliseconds) of this timeline
+    * duration (Function) - The total duration (in milliseconds) of this timeline
     * repeat (Boolean) - Whether this timeline is configured to repeat, i.e. loop
-    * time (Object) - Collection of data about the timeline's current time
-      * apparent (Number) - The time (in milliseconds) _up to_ this timeline's `max`
-      * elapsed (Number) - The total actual elapsed time (in milliseconds), regardless of the `max`
-      * max (Number) - The maximum time (in milliseconds) that this timeline can reach
-    * frame (Object) - Collection of data about the timeline's current frame
-      * apparent (Number) - The frame the component is currently rendering (e.g. if paused at frame `2`, the value will be `2`)
-      * elapsed (Number) - The total number of frames that would have elapsed since this timeline started playing
+    * time (Number) - The total actual elapsed time (in milliseconds), regardless of the `max`
+    * frame (Number) - The total number of frames that would have elapsed since this timeline started playing
   * clock (Object) - Collection of data about the core's global clock
     * frameDuration (Number) - How much "apparent time" each frame represents (usually 16.666 milliseconds)
     * frameDelay (Number) - How long the core waits between frame renders (usually 16.666 milliseconds)
-    * time (Object) - Collection of data about the core's global clock time
-      * apparent (Number) - The current time at which the context is currently rendering
-      * elapsed (Number) - The total time that has elapsed since the clock started ticking
+    * time (Number) - The total time that has elapsed since the clock started ticking
 * **$element (Object) - Collection of data about the currently targeted element**
-  * properties (Object) - Collection of data about properties of the element
-    * align (Object) - Specification of the element's placement within the parent, offset from its natural placement (0,0)
-      * x (Number) - % offset in the x-dimension, e.g. `0.5`
-      * y (Number) - % offset in the y-dimension, e.g. `0.5`
-      * z (Number) - % offset in the z-dimension, e.g. `0.5`
-    * attributes (Object) - The element's attributes as an object
-    * elementName (String) - The name of the element, e.g. `"path"`
-    * matrix (Array) - Array representing the computed 16-element transform matrix
-    * mount (Object) - Specification of the placement of the element offset from its natural placement (0,0)
-      * x (Number) - % offset in the x-dimension, e.g. `0.5`
-      * y (Number) - % offset in the y-dimension, e.g. `0.5`
-      * z (Number) - % offset in the z-dimension, e.g. `0.5`
-    * opacity (Number) - The opacity value of the element (must be on the range `0..1`)
-    * origin (Object) - The point about which transforms are applied
-      * x (Number) - % of the element's x-dimension, e.g. `0.5`
-      * y (Number) - % of the element's y-dimension, e.g. `0.5`
-      * z (Number) - % of the element's z-dimension, e.g. `0.5`
-    * rotation (Object) - Specification of the element's rotation in space
-      * x (Number) - The x-rotation, in radians
-      * y (Number) - The y-rotation, in radians
-      * z (Number) - The z-rotation, in radians
-    * scale (Object) - Specification of the element's scale in space
-      * x (Number) - The x-scale as a percentage of the original size, e.g. `1.0`
-      * y (Number) - The y-scale as a percentage of the original size, e.g. `1.0`
-      * z (Number) - The z-scale as a percentage of the original size, e.g. `1.0`
-    * shown (Boolean) - Whether the element is shown (visible) or not (invisible)
-    * size (Object) - The computed pixel dimensions of the element (note: does not account for its own transform)
-      * x (Number)
-      * y (Number)
-    * sizeAbsolute (Object) - For any dimension sized absolutely, fields of this object determine the size
-      * x (Number) - Pixel size of the x-domension
-      * y (Number) - Pixel size of the y-domension
-      * z (Number) - Pixel size of the z-domension
-    * sizeProportional (Object) - For any dimension sized proportionally, fields of this object determine the size
-      * x (Number) - % of the parent's x-dimension, e.g. `0.55`
-      * y (Number) - % of the parent's y-dimension, e.g. `0.55`
-      * z (Number) - % of the parent's z-dimension, e.g. `0.55`
-    * translation (Object) - Specification of the element's translation, i.e. position offset from origin point
-      * x (Number) - Pixel offset of the x-dimension
-      * y (Number) - Pixel offset of the y-dimension
-      * z (Number) - Pixel offset of the z-dimension
+  * offset (Object) - Specification of the element's placement within the parent, offset from its natural placement (0,0)
+    * x (Number) - % offset in the x-dimension, e.g. `0.5`
+    * y (Number) - % offset in the y-dimension, e.g. `0.5`
+    * z (Number) - % offset in the z-dimension, e.g. `0.5`
+  * attributes (Object) - The element's attributes as an object
+  * tagName (String) - The name of the element, e.g. `"path"`
+  * matrix (Array) - Array representing the computed 16-element transform matrix
+  * opacity (Number) - The opacity value of the element (must be on the range `0..1`)
+  * origin (Object) - The point about which transforms are applied
+    * x (Number) - % of the element's x-dimension, e.g. `0.5`
+    * y (Number) - % of the element's y-dimension, e.g. `0.5`
+    * z (Number) - % of the element's z-dimension, e.g. `0.5`
+  * rotation (Object) - Specification of the element's rotation in space
+    * x (Number) - The x-rotation, in radians
+    * y (Number) - The y-rotation, in radians
+    * z (Number) - The z-rotation, in radians
+  * scale (Object) - Specification of the element's scale in space
+    * x (Number) - The x-scale as a percentage of the original size, e.g. `1.0`
+    * y (Number) - The y-scale as a percentage of the original size, e.g. `1.0`
+    * z (Number) - The z-scale as a percentage of the original size, e.g. `1.0`
+  * shown (Boolean) - Whether the element is shown (visible) or not (invisible)
+  * size (Object) - The computed pixel dimensions of the element (note: does not account for its own transform)
+    * x (Number)
+    * y (Number)
+  * sizeAbsolute (Object) - For any dimension sized absolutely, fields of this object determine the size
+    * x (Number) - Pixel size of the x-domension
+    * y (Number) - Pixel size of the y-domension
+    * z (Number) - Pixel size of the z-domension
+  * sizeProportional (Object) - For any dimension sized proportionally, fields of this object determine the size
+    * x (Number) - % of the parent's x-dimension, e.g. `0.55`
+    * y (Number) - % of the parent's y-dimension, e.g. `0.55`
+    * z (Number) - % of the parent's z-dimension, e.g. `0.55`
+  * translation (Object) - Specification of the element's translation, i.e. position offset from origin point
+    * x (Number) - Pixel offset of the x-dimension
+    * y (Number) - Pixel offset of the y-dimension
+    * z (Number) - Pixel offset of the z-dimension
 * **$tree (Object) - Collection of data about the component's render tree**
   * parent (Object) - The parent element of the targeted element. See the `$element` schema.
   * children (Array) - Array of the targeted element's child elements (if any). See the `$element` schema.
-  * siblings (Array) - Array of the targeted element's sibling elements (if any). See the `$element` schema.
   * component (Object) - The element representing the top element of the component's render tree. See the `$element` schema.
   * root (Object) - The element representing the root element of the Haiku Core's top-level context. Usually the same as "component". See the $element schema.
   * element (Object) - The currently targeted element. See the `$element` schema.
