@@ -309,7 +309,7 @@ this.setState({foo: 10},
 })
 ```
 
-`duration` parameter means how long the transition should span. `curve` option allows user to define transition curve, defined in [Curve.ts](https://github.com/HaikuTeam/core/blob/master/src/api/Curve.ts)  (if none is provided, `linear` is automatically set). `queue` parameter enables queue transitions to be executed, by default set to `false` if not specified.
+`duration` parameter means how long the transition should span. `curve` option allows user to define transition curve, defined in [Core](https://github.com/HaikuTeam/core/blob/master/src/api/index.ts#L574)  (if none is provided, `linear` is automatically set). `queue` parameter enables queue transitions to be executed, by default set to `false` if not specified.
 
 Be careful, as of version 3.5.0, state transition works only with state being transitioned from `number` to `number`.
 
