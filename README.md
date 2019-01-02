@@ -29,4 +29,4 @@ Everything else in the Docs is navigable from the left hand menu or searchable i
 
 
 
-[Next: Getting Started](getting-started.md) &rarr;
+[Next: What is Haiku](what-is-haiku.md) &rarr;

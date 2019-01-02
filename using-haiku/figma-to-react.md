@@ -4,7 +4,7 @@ description: Turn any Figma design into an interactive React component with Haik
 
 # Turn any Figma Design Into an Interactive React Component with Haiku
 
-Haiku now allows you to easily bring your [Figma](/[http://figma.com](http://figma.com/) designs to life on the web by animating in Haiku and publishing as a clean React component. This tutorial will step you through the process.
+Haiku now allows you to easily bring your [Figma](http://figma.com/) designs to life on the web by animating in Haiku and publishing as a clean React component. This tutorial will step you through the process.
 
 
 <br>
@@ -47,7 +47,7 @@ Once we have the eyes, we’ll need to draw the smile using the Pen tool. Fill i
 
 ![](/assets/final_figma.png)
 
-Now we’re ready to bring our button to life in Haiku! If you don’t have Haiku download already, you can do that [here](/https://www.haiku.ai/account/new).
+Now we’re ready to bring our button to life in Haiku! If you don’t have Haiku download already, you can do that [here](https://www.haiku.ai/account/new).
 
 #### Getting set up in Haiku {#setup}
 

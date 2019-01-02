@@ -14,7 +14,7 @@ You can use Actions to:
 * Change properties of elements
 * And more!
 
-If you haven't already, check out [Tutorial 2: Interactivity with Actions](https://medium.com/haiku-blog/designing-the-real-thing-with-haiku-actions-a80ccddfcb1) to see Actions in action.
+If you haven't already, check out [Tutorial 2: Interactivity with Actions](https://www.haiku.ai/blog/designing-the-real-thing-with-haiku-actions/) to see Actions in action.
 
 <br>
 

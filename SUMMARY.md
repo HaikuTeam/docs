@@ -1,7 +1,9 @@
 # Table of Contents
 
 * [Welcome](README.md)
+* [What is Haiku](what-is-haiku.md)
 * [Getting Started](getting-started.md)
+
 
 
 ## Creating Content with Haiku

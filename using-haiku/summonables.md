@@ -42,7 +42,7 @@ The following is a list of built-in summonables available to you within expressi
 
 * **$window (Object) - A reference to the [window](https://developer.mozilla.org/en-US/docs/Web/API/Window)** object
 
-* **$core (Object) - Collection of data about the current state of the [Haiku Core](./embedding-and-using-haiku/haiku-core-overview.md)**
+* **$core (Object) - Collection of data about the current state of the [Haiku Core](/embedding-and-using-haiku/haiku-core-overview.md)**
   * options (Object) - The current option configuration of the core
     * seed (String) - Seed used for producing predictable randomness, etc.
     * loop (Boolean) - Whether or not the core is configured to loop the animation

@@ -9,7 +9,7 @@ description: Get started with Haiku. Learn about Haiku, download the software fo
 
 #### HAIKU OVERVIEW
 
-Haiku is a design tool for teams where you can bring your designs to life with animation and interactivity. You can then easily publish them as web-ready components. If you want to learn more about all Haiku can do go [here](what-is-haiku.md) and if you want to get started with Haiku - read on!
+Haiku is a design tool for teams where you can bring your designs to life with animation and interactivity. You can then easily publish them as web-ready components. If you want to learn more about all Haiku can do go [here](/what-is-haiku.md) and if you want to get started with Haiku - read on!
 
 <br>
 
@@ -31,7 +31,7 @@ If you don't have Sketch, you can download a free 30-day trial at [https://sketc
 
 If you don't use Figma, you can access it for free for individuals at [https://figma.com](https://figma.com).
 
-If you don't have illustrator, you can learn more here [https://adobe.com/illustrator] (https://www.adobe.com/products/illustrator.html)
+If you don't have illustrator, you can learn more here [https://adobe.com/illustrator](https://www.adobe.com/products/illustrator.html)
 
 > _Coming soon:_ We plan to support other drawing tools like Adobe Photoshop and eventually we'll have some of our own.
 
@@ -57,9 +57,11 @@ Now that you have Haiku downloaded you can start bringing your designs to life. 
 Click on the video below to get started with Motion Animation:
 [![Motion Animation Video](https://img.youtube.com/vi/Gs5YG_uf5UQ/0.jpg)](https://www.youtube.com/watch?v=Gs5YG_uf5UQ)
 
-(or, read our [blog post on motion animation](https://medium.com/haiku-blog/getting-started-with-animations-for-the-web-ios-android-with-haiku-568184eb31fa))
+(or, read our [blog post on motion animation](https://www.haiku.ai/blog/motion-design-for-the-web-ios-android-with-haiku))
+
 
 Click on the video below to get started with Interactivity:
+
 [![Motion Animation Video](https://img.youtube.com/vi/S376xLw7RUE/0.jpg)](https://www.youtube.com/watch?v=S376xLw7RUE)
 
 (or, read our [blog post on interactivity](https://www.haiku.ai/blog/designing-the-real-thing-with-haiku-actions))
@@ -67,7 +69,7 @@ Click on the video below to get started with Interactivity:
 <hr>
 #### LEARN MORE
 
-Continue to dive into our resources on the [Learn page](http://haiku.ai/learn) where you can watch and read comprehensive [tutorials](http://haiku.ai/learn/tutorials), read the [docs](http://docs.haiku.ai), and get [help & support.](http://haiku.ai/help)
+Continue to dive into our resources on the [Learn page](http://haiku.ai/learn) where you can watch and read comprehensive [tutorials](http://haiku.ai/learn), read the [docs](http://docs.haiku.ai), and get [help & support.](https://help.haiku.ai/)
 
 
 
