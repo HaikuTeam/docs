@@ -56,4 +56,4 @@ Haiku never breaks it's connection to your Figma source project. At any time, yo
 
 <br>
 
-[Next: Editing Elements on Stage](/using-haiku/editing-elements-on-the-stage.md) &rarr;
+[Next: Figma Element to React Component](/using-haiku/figma-to-react.md) &rarr;

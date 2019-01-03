@@ -160,7 +160,7 @@ Expressions are essentially just JavaScript functions. The return value of the e
 
 <br>
 
-_Expressions are one of the most powerful features in Haiku_, and we'll only scratch the surface in this section. For much more about expressions (including how to write expressions based on dynamic data), head over to the **[guide on expressions](./using-haiku/writing-expressions.md)**.
+_Expressions are one of the most powerful features in Haiku_, and we'll only scratch the surface in this section. For much more about expressions (including how to write expressions based on dynamic data), head over to the **[guide on expressions](/using-haiku/writing-expressions.md)**.
 
 <br>
 

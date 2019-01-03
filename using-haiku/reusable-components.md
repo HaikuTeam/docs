@@ -27,4 +27,4 @@ To use your components, simply drag them onto the Stage from the left hand menu 
 
 <br>
 
-[Next: Haiku Core Overview](embedding-and-using-haiku/haiku-core-overview.md) &rarr;
+[Next: Haiku Core Overview](/embedding-and-using-haiku/haiku-core-overview.md) &rarr;

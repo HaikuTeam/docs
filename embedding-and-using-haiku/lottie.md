@@ -35,7 +35,7 @@ For **lottie-ios**, raster image support is available in the latest code checked
 
 Lottie does not support all features of After Effects; please refer to the [list of supported features](http://airbnb.io/lottie/supported-features.html) for details. Notable After Effects features lacking support on both Android and iOS include 3D rotation and shear.
 
-Dynamic Haiku features including [Expressions](../using-haiku/writing-expressions.md), [Actions](../using-haiku/defining-states.md), [Summonables](../using-haiku/summonables.md), or [Actions](../using-haiku/actions.md) will not translate to dynamic Lottie animations.
+Dynamic Haiku features including [Expressions](../using-haiku/writing-expressions.md), [States](../using-haiku/defining-states.md), [Summonables](../using-haiku/summonables.md), or [Actions](../using-haiku/actions.md) will not translate to dynamic Lottie animations.
 
 Because Haiku components are typically created from scalable vector graphics (SVGs), which use many different conventions than After Effects shapes, you may notice some discrepancies between your Haiku rendered in a browser vs. Lottie. We are working closely with the Lottie team to bring our products closer together.
 
