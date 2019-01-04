@@ -24,6 +24,7 @@
 * [Defining States](using-haiku/defining-states.md)
 * [Just-in-time Properties](using-haiku/just-in-time-properties.md)
 * [Reusable Components](/using-haiku/reusable-components.md)
+* [Communicating between Components](/using-haiku/communicating-components.md)
 
 ## Embedding Haiku Components
 
