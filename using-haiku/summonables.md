@@ -1,10 +1,10 @@
 ---
-description: Values you summon into expressions are called summonables. Built-in summonables are commonly-used piece of data that Haiku tracks and updates such as current mouse position or the dimensions of the viewport.
+description: Values you summon into expressions are called summonables. Built-in summonables are commonly-used piece of data that Animator tracks and updates such as current mouse position or the dimensions of the viewport.
 ---
 
 # Summonables
 
-As you may know from our sections on [expressions](/using-haiku/writing-expressions.md) and [editing Haiku as code](/using-haiku/advanced-editing-haiku-as-code.md), expression functions can summon _states_ that your component has defined.
+As you may know from our sections on [expressions](/using-haiku/writing-expressions.md) and [editing Animator projects as code](/using-haiku/advanced-editing-haiku-as-code.md), expression functions can summon _states_ that your component has defined.
 
 In general, we call any value you summon into an expression a **_summonable_**.
 
@@ -24,7 +24,7 @@ function ($user) {
 }
 ```
 
-If you are typing an expression inside the Haiku app, this function signature will be created for you automatically. All you need to do is type `$user.mouse.x` like so:
+If you are typing an expression inside the Animator app, this function signature will be created for you automatically. All you need to do is type `$user.mouse.x` like so:
 
 ![](/assets/expression-single-line-usermousex.png)
 
@@ -126,7 +126,7 @@ The following is a list of built-in summonables available to you within expressi
 
 > Note: The above list is incomplete and simplified. Also, we plan to provide many additional built-in summonables for convenience in the future.
 
-> The root names of these built-in summonables are prefixed with a dollar sign (`$`) to differentiate them from your internal states, and to make sure your Haiku's private namespace stays clean.
+> The root names of these built-in summonables are prefixed with a dollar sign (`$`) to differentiate them from your internal states, and to make sure your Animator's private namespace stays clean.
 
 <br>
 

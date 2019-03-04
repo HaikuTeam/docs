@@ -1,22 +1,22 @@
 ---
-description: Every Haiku you create can have its own collection of internal state. These pieces of data are special to your component in that you may summon them into your expression functions, allowing you to create complex dynamic behavior.
+description: Every Animator project you create can have its own collection of internal state. These pieces of data are special to your component in that you may summon them into your expression functions, allowing you to create complex dynamic behavior.
 ---
 
 # Defining States
 
-Every Haiku you create can have its own collection of internal state. These pieces of data are special to your component in that you may "summon" them into your [expression functions](/using-haiku/writing-expressions.md), allowing you to create complex dynamic behavior.
+Every Animator project you create can have its own collection of internal state. These pieces of data are special to your component in that you may "summon" them into your [expression functions](/using-haiku/writing-expressions.md), allowing you to create complex dynamic behavior.
 
 <br>
 
 #### DEFINING/EDITING STATES {#defandedit}
 
-You can manage your Haiku's state values using the State Inspector, which is accessible via a tab next to the Library:
+You can manage your project's state values using the State Inspector, which is accessible via a tab next to the Library:
 
 <div style="width: 300px; margin: 0 auto;">
   <img src="/assets/states-ui-empty.png"/>
 </div>
 
-Press the "+" button at top-right to add a new state value. In the left field, type the state name. In the right field, type the state value. Haiku will automatically infer whether your input value is a string, numeric, or a complex data type like a JSON array or object.
+Press the "+" button at top-right to add a new state value. In the left field, type the state name. In the right field, type the state value. Animator will automatically infer whether your input value is a string, numeric, or a complex data type like a JSON array or object.
 
 <div style="width: 300px; margin: 0 auto;">
   <img src="/assets/states-ui.png"/>
@@ -28,7 +28,7 @@ Press `Enter` to save the state value.
 
 #### SUMMONING STATES IN EXPRESSIONS {#summoninexpressions}
 
-To access a state value in an [expression](/using-haiku/writing-expressions.md), simply **type its name**. Haiku will automatically detect the state you are referencing, and will send its current value to your expression whenever it is evaluated.
+To access a state value in an [expression](/using-haiku/writing-expressions.md), simply **type its name**. Animator will automatically detect the state you are referencing, and will send its current value to your expression whenever it is evaluated.
 
 ![](/assets/expr-multiline-ui-0.png)
 
@@ -36,17 +36,17 @@ To access a state value in an [expression](/using-haiku/writing-expressions.md),
 
 #### CHANGING STATE VALUES {#changevalues}
 
-You're probably thinking to yourself, "States aren't very useful unless you can change them." You're right! 
+You're probably thinking to yourself, "States aren't very useful unless you can change them." You're right!
 
-There are two ways to change state: Externally and programmatically from component itself. 
+There are two ways to change state: Externally and programmatically from component itself.
 
 
 ##### Changing state externally
 
 
-Every Haiku component provides a way to change its states, available when the component is [embedded](/embedding-and-using-haiku/publishing-and-embedding.md) in production.
+Every Animator component provides a way to change its states, available when the component is [embedded](/embedding-and-using-haiku/publishing-and-embedding.md) in production.
 
-All you need to do to update states dynamically as your component animates is to pass in a new _states object_, and the new values it contains will be used in place of the ones you defined inside the Haiku app.
+All you need to do to update states dynamically as your component animates is to pass in a new _states object_, and the new values it contains will be used in place of the ones you defined inside the Animator app.
 
 <br>
 
@@ -64,7 +64,7 @@ All you need to do to update states dynamically as your component animates is to
 
 ##### Changing state programmatically
 
-Another option to change states is inside [actions](/using-haiku/actions.md), as a response to a Haiku event (eg. On frame play, mouse click, mouse hover, etc). For example, imagine user want to change previous defined `baz` to `8` when user click on some element, the action contents of `click` should be:
+Another option to change states is inside [actions](/using-haiku/actions.md), as a response to an Animator event (eg. On frame play, mouse click, mouse hover, etc). For example, imagine user want to change previous defined `baz` to `8` when user click on some element, the action contents of `click` should be:
 
 ```
 this.setState({baz: 8})

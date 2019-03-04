@@ -1,10 +1,10 @@
 ---
-description: You can use the Haiku stage to position and transform your design elements. The first step is to get your designs on the stage. Then you can use Haiku's familiar on-stage tools to position and transform them.
+description: You can use the Animator stage to position and transform your design elements. The first step is to get your designs on the stage. Then you can use Animator's familiar on-stage tools to position and transform them.
 ---
 
 # Editing Elements on the Stage
 
-You can use the Haiku stage to position and transform your design elements. The first step is to get your designs on the stage. Then you can use Haiku's familiar on-stage tools to position and transform them.
+You can use the Animator stage to position and transform your design elements. The first step is to get your designs on the stage. Then you can use Animator's familiar on-stage tools to position and transform them.
 
 <br>
 
@@ -42,7 +42,7 @@ To *Pan*, hover over the stage with your mouse, hold the `Space Bar` and click a
 
 #### RESIZING THE STAGE {#resizestage}
 
-You can resize the stage (and thus default size for your Haiku component) in two ways:
+You can resize the stage (and thus default size for your Animator component) in two ways:
 
 Visually, you can hover over the stage name until the stage is outlined in pink — then click and you will get a visual resizing tool.
 

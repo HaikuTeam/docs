@@ -1,22 +1,22 @@
 ---
-description: Everything you build with Haiku is backed by simple JavaScript code. Under the hood, your Haiku is one JavaScript file on your filesystem.
+description: Everything you build with Haiku Animator is backed by simple JavaScript code. Under the hood, your Animator project is one JavaScript file on your filesystem.
 ---
 
-# Advanced:  Editing Haiku as Code
+# Advanced:  Editing Animator projects as Code
 
-Everything you build with Haiku is backed by simple JavaScript code.
+Everything you build with Animator is backed by simple JavaScript code.
 
 <br>
 
-Under the hood, your Haiku is one JavaScript file on your filesystem. You can find it in the folder that contains your project's content, e.g. `~/.haiku/projects/YOUR_ORG/YOUR_PROJECT`.
+Under the hood, your Animator project is one JavaScript file on your filesystem. You can find it in the folder that contains your project's content, e.g. `~/.haiku/projects/YOUR_ORG/YOUR_PROJECT`.
 
-The file _code/main/code.js_ (within the project folder) is the code for your Haiku. It exports a static object that you can think of as the _definition_ of your Haiku. When you embed your Haiku on a web page, the [Haiku Core](/embedding-and-using-haiku/haiku-core-api.md) transforms that definition into a dynamic UI.
+The file _code/main/code.js_ (within the project folder) is the code for your Animator project. It exports a static object that you can think of as the _definition_ of your Animator project. When you embed your Animator project on a web page, the [Haiku Core](/embedding-and-using-haiku/haiku-core-api.md) transforms that definition into a dynamic UI.
 
 <br>
 
 #### EXAMPLE CODE {#examplecode}
 
-Below is an example of the code for a simple interactive component, using Haiku's static definition format. This should look similar to the content you will see in your project's _code/main/code.js_ file.
+Below is an example of the code for a simple interactive component, using Animator's static definition format. This should look similar to the content you will see in your project's _code/main/code.js_ file.
 
 ```
 module.exports = {
@@ -70,7 +70,7 @@ Let's explore how this works.
 
 ##### template
 
-The **template** property describes the structure of your scene. Think of the template as a picture of your Haiku as a whole – including elements that may not always be visible.
+The **template** property describes the structure of your scene. Think of the template as a picture of your Animator project as a whole – including elements that may not always be visible.
 
 ```
 "elementName": "div",
@@ -84,7 +84,7 @@ Note that the _template_ is just a plain, static object. That's because adding d
 
 ##### states {#states}
 
-The **states** property describes your Haiku's internal state. States are key/descriptor pairs. The key is the name of the state, and the descriptor is an object with a `value` field. The `value` field contains the value of the state.
+The **states** property describes your project's internal state. States are key/descriptor pairs. The key is the name of the state, and the descriptor is an object with a `value` field. The `value` field contains the value of the state.
 
 ```
 "clicks": {        // <- State name
@@ -98,7 +98,7 @@ Now let's look at how to modify this state using _eventHandlers_.
 
 ##### eventHandlers {#eventHandlers}
 
-The **eventHandlers** object describes how you want your Haiku to respond to events such as UI events (e.g., a user's mouse click) and lifecycle events (e.g., the component's instantiation).
+The **eventHandlers** object describes how you want your project to respond to events such as UI events (e.g., a user's mouse click) and lifecycle events (e.g., the component's instantiation).
 
 ```
 "#box": {                           // <- CSS selector determines which elements in the template to match
@@ -109,7 +109,7 @@ The **eventHandlers** object describes how you want your Haiku to respond to eve
 
 As you can see, event listeners are just plain objects with a _handler_ property, which is a function. The parent object designates the name of the event to subscribe to. And the outermost object uses a CSS selector to designate which elements in the _template_ to listen to.
 
-Within the context of a handler function, `this` is bound to your component's instance. By mutating properties that match the names of your declared _states_ (e.g. `this.clicks = 2`), you change their state values. When those state values change, the Haiku Core knows it must re-render your Haiku.
+Within the context of a handler function, `this` is bound to your component's instance. By mutating properties that match the names of your declared _states_ (e.g. `this.clicks = 2`), you change their state values. When those state values change, the Haiku Core knows it must re-render your Animator component.
 
 <br>
 
@@ -166,7 +166,7 @@ _Expressions are one of the most powerful features in Haiku_, and we'll only scr
 
 #### FAQ {#faq}
 
-- **How do I edit my project's code?:** Just fire up a text editor and make a change to the _code/main/code.js_ file. If the Haiku app is running, your changes should appear instantly on stage.
+- **How do I edit my project's code?:** Just fire up a text editor and make a change to the _code/main/code.js_ file. If the Animator app is running, your changes should appear instantly on stage.
 
 - **Could the code.js format be nicer?** Yes. We plan to improve this in the near future. We welcome ideas for ways that it could be more concise to write and more clear to read.
 

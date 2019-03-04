@@ -1,14 +1,14 @@
 # Table of Contents
 
 * [Welcome](README.md)
-* [What is Haiku](what-is-haiku.md)
+* [What is Haiku Animator](what-is-haiku.md)
 * [Getting Started](getting-started.md)
 
 
 
-## Creating Content with Haiku
+## Creating Content with Haiku Animator
 
-* [Starting Haiku](using-haiku/starting-haiku.md)
+* [Starting Haiku Animator](using-haiku/starting-haiku.md)
 * [Importing Sketch & Other Image Assets](using-haiku/sketch-and-image-assets.md)
 * [Importing Figma Projects](using-haiku/importing-figma-projects.md)
 * [Editing Elements on the Stage](using-haiku/editing-elements-on-the-stage.md)
@@ -25,16 +25,16 @@
 * [Reusable Components](/using-haiku/reusable-components.md)
 * [Communicating between Components](/using-haiku/communicating-components.md)
 
-## Embedding Haiku Components
+## Embedding Animator Components
 
 * [Haiku Core Overview](embedding-and-using-haiku/haiku-core-overview.md)
 * [Publishing, Embedding and Forking](embedding-and-using-haiku/publishing-and-embedding.md)
 * [iOS & Android powered by Lottie](embedding-and-using-haiku/lottie.md)
 
-## Haiku for Developers
+## Animator for Developers
 
-* [Using the Haiku CLI](using-haiku/using-the-cli.md)
-* [Haiku Developer API](embedding-and-using-haiku/haiku-core-api.md)
+* [Using the Haiku Animator CLI](using-haiku/using-the-cli.md)
+* [Haiku Animator Developer API](embedding-and-using-haiku/haiku-core-api.md)
 * [Editing Haiku as Code](using-haiku/advanced-editing-haiku-as-code.md)
 * [Version Control](using-haiku/advanced-version-control.md)
 
