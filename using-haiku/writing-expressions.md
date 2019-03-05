@@ -6,9 +6,9 @@ description: Expressions are small snippets of code that add dynamic behaviour t
 
 # Writing Expressions
 
-Whether you're visually creating an animation with the [Timeline](/using-haiku/creating-an-animation.md), or [hand-editing your Haiku as code](/using-haiku/advanced-editing-haiku-as-code.md), one of the most powerful techniques you can use to bring your Haiku to life is **expressions**.
+Whether you're visually creating an animation with the [Timeline](/using-haiku/creating-an-animation.md), or [hand-editing your Animator projects as code](/using-haiku/advanced-editing-haiku-as-code.md), one of the most powerful techniques you can use to bring your Animator project to life is **expressions**.
 
-_Expressions_ are just small snippets of code that add dynamic behavior to the properties of your Haiku. To be more specific, they're really _just JavaScript functions_ that run at specific moments in time as your Haiku animates.
+_Expressions_ are just small snippets of code that add dynamic behavior to the properties of your project. To be more specific, they're really _just JavaScript functions_ that run at specific moments in time as your project animates.
 
 ![](/assets/expr-anim.gif)
 
@@ -18,7 +18,7 @@ _Expressions_ are just small snippets of code that add dynamic behavior to the p
 
 In the [Timeline guide](/using-haiku/creating-an-animation.md), we cover how to use the property inputs on the timeline to create keyframes. But those inputs can contain more than just simple values — they can also contain expressions!
 
-Just as you might write a formula with Microsoft Excel, in Haiku you can start creating an expression by **typing an _equals sign_ character**. The input field will automatically recognize that you're typing in an expression:
+Just as you might write a formula with Microsoft Excel, in Animator you can start creating an expression by **typing an _equals sign_ character**. The input field will automatically recognize that you're typing in an expression:
 
 ![](/assets/expr-00.png)
 
@@ -46,7 +46,7 @@ But where does the dynamic data come from in the first place? And how do you ref
 
 #### DYNAMIC DATA PART I: STATES {#dyanmicdatapt1}
 
-The basic kind of dynamic data in Haiku is called a _state_. You can manage your state values using the State Inspector which is accessible via a tab next to the Library:
+The basic kind of dynamic data in Animator is called a _state_. You can manage your state values using the State Inspector which is accessible via a tab next to the Library:
 
 <div style="width: 300px; margin: 0 auto;">
   <img src="/assets/states-ui.png"/>
@@ -58,7 +58,7 @@ The basic kind of dynamic data in Haiku is called a _state_. You can manage your
 
 #### SUMMONING STATES {#summonstates}
 
-To access a state value in an expression, simply **type its name**. Haiku will automatically match the word you type to the state you are referencing. Haiku will keep track of the state value and pass it to your expression whenever it is calculated.
+To access a state value in an expression, simply **type its name**. Animator will automatically match the word you type to the state you are referencing. Animator will keep track of the state value and pass it to your expression whenever it is calculated.
 
 ![](/assets/expr-ui.png)
 
@@ -68,13 +68,13 @@ If you toggle multi-line mode, you can see the entire expression function. As yo
 
 ![](/assets/expr-multiline-ui-0.png)
 
-> Note: Clearly, states aren't much use unless they can be changed! Changing your Haiku's states is covered in depth in the **[States guide](/using-haiku/defining-states.md)**.
+> Note: Clearly, states aren't much use unless they can be changed! Changing your Animator's states is covered in depth in the **[States guide](/using-haiku/defining-states.md)**.
 
 <br>
 
 #### DYNAMIC DATA PART II: BUILT-INS (#dynamicdatapt2)
 
-In addition to _states_, Haiku also provides a collection of built-in pieces of dynamic data that you can summon into your expression function, for example:
+In addition to _states_, Animator also provides a collection of built-in pieces of dynamic data that you can summon into your expression function, for example:
 
 * The user's mouse position (`$user.mouse.x` and `$user.mouse.y`)
 * The window size (`$window.width` and `$window.height`)
@@ -96,7 +96,7 @@ Just like with states, you can summon any dynamic built-in data point if you sim
 
 #### ADVANCED: EXPRESSIONS IN CODE {#advanced}
 
-Expressions that you write [manually in your code](/using-haiku/advanced-editing-haiku-as-code.md) are the same as expressions you create visually using the Haiku app. _When you write an expression in the Haiku app, it gets written to your code file as an expression function, just as if you had written it manually!_
+Expressions that you write [manually in your code](/using-haiku/advanced-editing-haiku-as-code.md) are the same as expressions you create visually using the Animator app. _When you write an expression in the Animator app, it gets written to your code file as an expression function, just as if you had written it manually!_
 
 Here's what an expression might look like if hand-written in code:
 

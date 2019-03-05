@@ -14,7 +14,7 @@ We have a short video tutorial available on Reusable Components that you can wat
 
 #### CREATING A COMPONENT {#create}
 
-To create a subcomponent simply highlight your desired component in Haiku and right click on it to "Create Component".
+To create a subcomponent simply highlight your desired component in Animator and right click on it to "Create Component".
 
 ![Create Component Gif](/assets/create_component.gif)
 
