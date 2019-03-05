@@ -4,13 +4,13 @@
 
 #### OVERVIEW {#overview}
 
-A programmatic interface to the Haiku Core (and your published Haiku) is available for those who need more control. With the programmatic API, you can access your Haiku's internal content and create fine-grained behavior that responds to user and page events.
+A programmatic interface to the Haiku Core (and your published project) is available for those who need more control. With the programmatic API, you can access your project's internal content and create fine-grained behavior that responds to user and page events.
 
 <br>
 
 #### EMBED API {#embedapi}
 
-The first interface to control your Haiku is via its declarative embedding API. (Getting your embed snippet is covered in the [embedding section](/embedding-and-using-haiku/publishing-and-embedding.md).)
+The first interface to control your project is via its declarative embedding API. (Getting your embed snippet is covered in the [embedding section](/embedding-and-using-haiku/publishing-and-embedding.md).)
 
 <br>
 
@@ -18,7 +18,7 @@ The first interface to control your Haiku is via its declarative embedding API. 
 
 The first thing you might want to do is override the [states](/using-haiku/defining-states.md) you've defined.
 
-For example, if you are embedding a Haiku as a React component, you can override its internal states by passing a `haikuStates` prop. (Note: It is best to think of Haiku states as a combination of React's `this.state` and `this.props`, since internally the Haiku Core treats them the same.)
+For example, if you are embedding a project as a React component, you can override its internal states by passing a `haikuStates` prop. (Note: It is best to think of Animator states as a combination of React's `this.state` and `this.props`, since internally the Haiku Core treats them the same.)
 
 ```
 <MyHaiku
@@ -56,14 +56,14 @@ Haiku Core's behavior can be controlled by passing in lifecycle event handlers a
   onHaikuComponentWillUnmount: null,
 
   // contextMenu: String
-  // Whether the Haiku menu will display when the component is right-clicked;
+  // Whether the Animator menu will display when the component is right-clicked;
   // value may be 'enabled' or 'disabled'
   contextMenu: 'enabled',
 
   // mixpanel: String|Boolean
   // If provided, the component will transmit metadata to Mixpanel;
   // specify your own token here, or set to falsy to disable tracking altogether.
-  // We send only public information: your component's name, its Haiku account username,
+  // We send only public information: your component's name, its Animator account username,
   // the software version it was built with, and its share identifier.
   mixpanel: '{mixpanel api token}',
 
@@ -148,9 +148,9 @@ Haiku Core's behavior can be controlled by passing in lifecycle event handlers a
 
 **Passing in children &amp; using "placeholders"**
 
-You can pass child elements into your `<MyHaiku>` element to be inserted in place of elements that you have composed and orchestrated on stage. This is a great way to use Haiku to animate dynamic content.
+You can pass child elements into your `<MyHaiku>` element to be inserted in place of elements that you have composed and orchestrated on stage. This is a great way to use Animator to animate dynamic content.
 
-In [Haiku for Mac](https://haiku.ai), use the Timeline to add a `controlFlow.placeholder` property to any element on stage. Set the field's value to a CSS id selector, such as `#some-content`. Then, when embedding your `<MyHaiku>` in a React component, pass it a child element whose id matches that selector.
+In [Animator](https://www.haikuforteams.com/), use the Timeline to add a `controlFlow.placeholder` property to any element on stage. Set the field's value to a CSS id selector, such as `#some-content`. Then, when embedding your `<MyHaiku>` in a React component, pass it a child element whose id matches that selector.
 
 ```
 <MyHaiku>
@@ -270,7 +270,7 @@ You can also subscribe to custom events:
 
 ###### PROPERTIES
 
-* `state` (object) - An object of the state values held by this instance of your component. (These states are the same states you configure visually using the State Inspector in Haiku for Mac.)
+* `state` (object) - An object of the state values held by this instance of your component. (These states are the same states you configure visually using the State Inspector in Animator.)
 * `CORE_VERSION` (string) - The semver-based version of Haiku Core that is running this instance.
 * `config` (object) - The configuration settings for this instance.
 
@@ -280,7 +280,7 @@ You can also subscribe to custom events:
 
 > Note: As known as immediate `setState`
 
-Similar to React's API, `.setState` updates the states defined in the instance of your component. (These states are the same states you configure visually using the State Inspector in Haiku for Mac.) A state can be a `number`, `string`, `array`, `object`, or `null`. Example:
+Similar to React's API, `.setState` updates the states defined in the instance of your component. (These states are the same states you configure visually using the State Inspector in Animator.) A state can be a `number`, `string`, `array`, `object`, or `null`. Example:
 
 ```
 this.setState({
@@ -301,9 +301,9 @@ In addition to immediate `setState`, user has the option to set a state transiti
 
 
 ```
-this.setState({foo: 10}, 
+this.setState({foo: 10},
 {
-  duration: 1000, 
+  duration: 1000,
   curve: "easeInExpo",
   queue: true
 })
@@ -559,7 +559,7 @@ Haiku Core's API currently offers a familiar CSS-like querying system for locati
 * By id, e.g. `.querySelector('#foo')`
 * By class name, e.g. `.querySelector('.bar')`
 * Comma-separated lists of the above, .e.g `div, #foo, .bar`
-* By Haiku identifier, e.g. `.querySelector('haiku:abcde12345')`. (Note: this Haiku-specific extension is subject to revision in the future. As Haiku elements' identifiers are autogenerated in Haiku for Mac, use with care.)
+* By Haiku identifier, e.g. `.querySelector('haiku:abcde12345')`. (Note: this Haiku-specific extension is subject to revision in the future. As Haiku elements' identifiers are autogenerated in Animator for Mac, use with care.)
 
 **Not yet supported:**
 
@@ -571,4 +571,4 @@ We may support more CSS selector features if we hear from the community that the
 
 <br>
 
-[Next: Editing Haiku as Code](/using-haiku/advanced-editing-haiku-as-code.md) &rarr;
+[Next: Editing Animator projects as Code](/using-haiku/advanced-editing-haiku-as-code.md) &rarr;

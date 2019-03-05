@@ -1,5 +1,5 @@
 ---
-description: Learn about publishing and embedding your Haiku. The first step to getting your Haiku out into the world is to publish it. Simply press Publish and your up-to-the-moment work will be shuttled out to the cloud and packaged up for use in any codebase.
+description: Learn about publishing and embedding your Animator project. The first step to getting your Animator project out into the world is to publish it. Simply press Publish and your up-to-the-moment work will be shuttled out to the cloud and packaged up for use in any codebase.
 ---
 
 # Publishing and Embedding
@@ -7,7 +7,7 @@ description: Learn about publishing and embedding your Haiku. The first step to 
 
 #### PUBLISH BUTTON {#button}
 
-The first step to getting your Haiku out into the world is to _publish_ it.
+The first step to getting your Animator project out into the world is to _publish_ it.
 
 You'll find a button on the top-right of project editor that does just that.
 
@@ -23,9 +23,9 @@ Simply press PUBLISH and your up-to-the-moment work will be shuttled out to the 
 
 ![](/assets/publish-options.jpg)
 
-The shareable link will take you to your Haiku's Share Page: see below.
+The shareable link will take you to your project's Share Page: see below.
 
-Here you can also explore embed options for your Haiku, which are also mirrored on your Share page.
+Here you can also explore embed options for your project, which are also mirrored on your Share page.
 
 > _Note on publish speed_: Depending on your connection speed and place in the world, publishing can currently take a little while, between 5 seconds and 2 minutes.  We're working on making this faster.  Once when we have realtime collaboration hooked up, publishing should be seamless and nearly immediate.
 
@@ -36,12 +36,12 @@ Here you can also explore embed options for your Haiku, which are also mirrored 
 ![](/assets/share-page.png)
 
 
-The Share Page is your entry point for sharing Haiku.  You can see and interact with your Haiku, share the link and explore embed options.
+The Share Page is your entry point for sharing Animator projects. You can see and interact with your project, share the link and explore embed options.
 
 
 #### HOW TO USE {#howtouse}
 
-The key to the Share Page is the "Get the Code" button on the bottom-right.  If you click that button, the bottom panel expands and explains exactly how to use your Haiku in a number of different codebases, including vanilla HTML (embed,) vanilla JS, React, Vue, and more.
+The key to the Share Page is the "Get the Code" button on the bottom-right.  If you click that button, the bottom panel expands and explains exactly how to use your project in a number of different codebases, including vanilla HTML (embed,) vanilla JS, React, Vue, and more.
 
 ![](/assets/share-page-get-the-code.png)
 
@@ -52,16 +52,16 @@ The key to the Share Page is the "Get the Code" button on the bottom-right.  If 
 
 From the Share Page "How to Use" menu, select the HTML Embed option, then copy and paste the snippet anywhere you'd like.  Here's an example of an HTML embed in CodePen: [https://codepen.io/anon/pen/EXQZEb](https://codepen.io/anon/pen/EXQZEb)
 
-**Tip**: To learn more about how to make your Haiku responsive please read [this help article](https://help.haiku.ai/troubleshooting-and-help/once-my-haiku-is-on-a-web-page-how-do-i-make-it-responsive) and [this section in our Docs](https://docs.haiku.ai/embedding-and-using-haiku/haiku-core-api.html#embedapi).
+**Tip**: To learn more about how to make your Animator project responsive please read [this help article](https://help.haiku.ai/troubleshooting-and-help/once-my-haiku-is-on-a-web-page-how-do-i-make-it-responsive) and [this section in our Docs](https://docs.haiku.ai/embedding-and-using-haiku/haiku-core-api.html#embedapi).
 
 
 **React Component**
 
-From the Share Page "How to Use" menu, select the React option, then **follow the instructions to install the CLI** (More info here:  [Using the Haiku CLI](../using-haiku/using-the-cli.md))
+From the Share Page "How to Use" menu, select the React option, then **follow the instructions to install the CLI** (More info here:  [Using the Haiku Animator CLI](../using-haiku/using-the-cli.md))
 
 Then from the command line, inside your React project, run `haiku install YourProjectName`.  Behind the scenes, this simply runs `npm install`, and sets up your environment to pull that component from the correct server.
 
-> _Important_: the `haiku install` command will create or modify a file called `.npmrc` in your project.  It's important that you check this into your version control, otherwise other teammates will not be able to install your Haiku components.
+> _Important_: the `haiku install` command will create or modify a file called `.npmrc` in your project.  It's important that you check this into your version control, otherwise other teammates will not be able to install your Animator components.
 
 <br>
 
@@ -71,11 +71,11 @@ Then from the command line, inside your React project, run `haiku install YourPr
 
 Forks are a unique copy of a project, which can be freely experimented on without affecting the original project. Forks can be a fun and interesting way to build upon other people's work, using their project as a starting point for your own idea.
 
-With Haiku for Mac installed, public projects can be forked by selecting **Fork this component** on their share page. Private projects cannot be forked.
+With Haiku Animator for Mac installed, public projects can be forked by selecting **Fork this component** on their share page. Private projects cannot be forked.
 
 [Read more about Public & Private projects](../using-haiku/starting-haiku.md#public--private-projects)
 
-> _Note_: Projects containing source design assets are included with projects when forked. Sketch & SVG files are bundled with Haiku projects, and Figma project URL’s are viewable but not editable (unless specified otherwise in Figma).
+> _Note_: Projects containing source design assets are included with projects when forked. Sketch & SVG files are bundled with Animator projects, and Figma project URL’s are viewable but not editable (unless specified otherwise in Figma).
 
 <br>
 
@@ -84,11 +84,11 @@ With Haiku for Mac installed, public projects can be forked by selecting **Fork 
 
 **`~/.haiku` Folder**
 
-When you open any project with Haiku on your desktop, the project files are copied to your filesystem at this location:  `~/.haiku/projects/YOUR_ORG/YOUR_PROJECT`
+When you open any project with Animator on your desktop, the project files are copied to your filesystem at this location:  `~/.haiku/projects/YOUR_ORG/YOUR_PROJECT`
 
 **`haiku clone`**
 
-You can also clone down a project directly to any location of your choosing.  You can do this with the `haiku clone YourProject` command, which uses `git clone` behind the scenes.  First, you need to install the Haiku CLI, see:  [Using the Haiku CLI](../using-haiku/using-the-cli.md)
+You can also clone down a project directly to any location of your choosing.  You can do this with the `haiku clone YourProject` command, which uses `git clone` behind the scenes.  First, you need to install the Haiku Animator CLI, see:  [Using the Haiku Animator CLI](../using-haiku/using-the-cli.md)
 
 <br>
 

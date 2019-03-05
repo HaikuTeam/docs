@@ -1,14 +1,14 @@
 ---
-description: When you first open Haiku, you will be prompted to log in.  Enter the username and password you used when you created your account.  If you forgot your password, you can reset it with this link.
+description: When you first open Animator, you will be prompted to log in.  Enter the username and password you used when you created your account.  If you forgot your password, you can reset it with this link.
 ---
 
-# Starting Haiku
+# Starting Haiku Animator
 
 #### LOGGING IN {#login}
 
-When you first open Haiku, you will be prompted to log in.  Enter the username and password you used when you created your account.  If you forgot your password, you can reset your password [here](https://www.haiku.ai/account/reset-password).
+When you first open Animator, you will be prompted to log in.  Enter the username and password you used when you created your account.  If you forgot your password, you can reset your password [here](https://www.haiku.ai/account/reset-password).
 
-**Haiku CLI option:**  you can run `haiku login` to log in interactively from the command line.  You can also run `haiku logout` to log out.
+**Haiku Animator CLI option:**  you can run `haiku login` to log in interactively from the command line.  You can also run `haiku logout` to log out.
 
 <br>
 

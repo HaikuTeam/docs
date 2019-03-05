@@ -1,31 +1,31 @@
 ---
-description: Get started with Haiku. Learn about Haiku, download the software for Mac, and start designing.
+description: Get started with Haiku Animator. Learn about Animator, download the software for Mac, and start designing.
 ---
 
 
 
-# Getting Started with Haiku
+# Getting Started with Haiku Animator
 <br>
 
-#### HAIKU OVERVIEW
+#### ANIMATOR OVERVIEW
 
-Haiku is a design tool for teams where you can bring your designs to life with animation and interactivity. You can then easily publish them as web-ready components. If you want to learn more about all Haiku can do go [here](/what-is-haiku.md) and if you want to get started with Haiku - read on!
+Animator is a design tool for teams where you can bring your designs to life with animation and interactivity. You can then easily publish them as web-ready components. If you want to learn more about all Animator can do go [here](/what-is-haiku.md) and if you want to get started with Animator - read on!
 
 <br>
 
-#### DOWNLOADING HAIKU
+#### DOWNLOADING ANIMATOR
 
-To download Haiku, you'll first need to create an account at [https://www.haiku.ai/](https://www.haiku.ai/).
+To download Animator, you'll first need to create an account at [https://www.haikuforteams.com/](https://www.haikuforteams.com/).
 
-Once you create your account, you will automatically be taken to the download site for Haiku.
+Once you create your account, you will automatically be taken to the download site for Animator.
 
-Please install Haiku by dragging it to your `/Applications` folder.
+Please install Animator by dragging it to your `/Applications` folder.
 
 <br>
 
 #### OTHER TOOLS
 
-Haiku  integrates with Sketch, Illustrator, and Figma. To get the most out of Haiku, you'll want to use one of these tools so you can import your designs easily into Haiku.
+Animator integrates with Sketch, Illustrator, and Figma. To get the most out of Animator, you'll want to use one of these tools so you can import your designs easily into Animator.
 
 If you don't have Sketch, you can download a free 30-day trial at [https://sketchapp.com/](https://sketchapp.com/).
 
@@ -37,9 +37,9 @@ If you don't have illustrator, you can learn more here [https://adobe.com/illust
 
 <br>
 
-#### INSTALLING THE HAIKU CLI
+#### INSTALLING THE HAIKU ANIMATOR CLI
 
-The CLI \(Command Line Interface\) is an optional part of Haiku, but it opens up a lot of powerful features — for example, you need the CLI to import a Haiku into an existing codebase, or you can use the CLI to directly clone a Haiku project to your computer, to access and edit the code manually.
+The CLI \(Command Line Interface\) is an optional part of Animator, but it opens up a lot of powerful features — for example, you need the CLI to import an Animator project into an existing codebase, or you can use the CLI to directly clone an Animator project to your computer, to access and edit the code manually.
 
 To install, run one of the following commands in your terminal:
 
@@ -52,7 +52,7 @@ OR
 
 #### START DESIGNING
 
-Now that you have Haiku downloaded you can start bringing your designs to life. Before you jump in, learn the basics with the following short intro videos (<5min each) on adding motion animation and interactivity to your Haiku projects:
+Now that you have Animator downloaded you can start bringing your designs to life. Before you jump in, learn the basics with the following short intro videos (<5min each) on adding motion animation and interactivity to your Animator projects:
 
 Click on the video below to get started with Motion Animation:
 [![Motion Animation Video](https://img.youtube.com/vi/Gs5YG_uf5UQ/0.jpg)](https://www.youtube.com/watch?v=Gs5YG_uf5UQ)
@@ -78,4 +78,4 @@ Continue to dive into our resources on the [Learn page](http://haiku.ai/learn) w
 
 
 
-[Learn More: Haiku.ai/learn](http://haiku.ai/learn) &rarr;
+[Learn More: https://www.haikuforteams.com/learn](https://www.haikuforteams.com/learn) &rarr;

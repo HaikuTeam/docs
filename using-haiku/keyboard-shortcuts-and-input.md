@@ -1,11 +1,11 @@
 ---
-description: Boost your productivity with keyboard shortcuts. Haiku supports an array of keyboard shortcuts to help expedite your workflow.
+description: Boost your productivity with keyboard shortcuts. Haiku Animator supports an array of keyboard shortcuts to help expedite your workflow.
 ---
 # Keyboard shortcuts &amp; Input
 
 #### KEYBOARD SHORTCUTS {#keyboard}
 
-Haiku supports an array of keyboard shortcuts to help expedite your workflow:
+Haiku Animator supports an array of keyboard shortcuts to help expedite your workflow:
 
 | Keyboard Input (macOS) | Shortcut |
 | -- | -- |

@@ -1,14 +1,14 @@
 ---
-description: Animation is one of the main features of Haiku, and the heart of creating animations in Haiku is the Timeline. Using a combination of the Timeline and Stage, you can move and transform elements in your component over time, with the result being... animation!
+description: Animation is one of the main features of Haiku Animator, and the heart of creating animations in Animator is the Timeline. Using a combination of the Timeline and Stage, you can move and transform elements in your component over time, with the result being... animation!
 ---
 
 # Creating Animations with the Timeline
 
-Animation is one of the main features of Haiku, and the heart of creating animations in Haiku is the **Timeline**. Using a combination of the Timeline and Stage, you can move and transform elements in your component over time, with the result being... animation!
+Animation is one of the main features of Haiku Animator, and the heart of creating animations in Animator is the **Timeline**. Using a combination of the Timeline and Stage, you can move and transform elements in your component over time, with the result being... animation!
 
 <br>
 
-Think of it like this: While the Stage shows what each element in your Haiku _looks like_ as it animates, the Timeline depicts how the elements' _properties_ change.
+Think of it like this: While the Stage shows what each element in your project _looks like_ as it animates, the Timeline depicts how the elements' _properties_ change.
 
 The Stage is pretty self-explanatory — especially if you're familiar with a drawing tool like Sketch.
 
@@ -98,12 +98,12 @@ When you drag the timeline *ticker* left or right, you're changing the current *
 
 **Any changes you make while the ticker is at a certain position will affect the values (_keyframes_) specifically at that time.**
 
-Once you've affected values at two such points in time (i.e., created _keyframes_), you can then create a *transition* to have Haiku automatically ease between the values.  Experiment with different easing curves to finesse your animations!
+Once you've affected values at two such points in time (i.e., created _keyframes_), you can then create a *transition* to have Animator automatically ease between the values.  Experiment with different easing curves to finesse your animations!
 
 ![](/assets/animate-position.gif)
 
 > **Advanced: Animating along curves**<br>
-> While we plan to support custom, visual animation along paths in the future, there's a lot you can do with Haiku today.  Since you can animate X and Y position separately, try out *different easing curves* for each of X and Y positions.  For example, if you animate `linear` with X and `ease in > quadratic` with Y, you can plot half of a parabola (then `ease out > quadratic` with Y while continuing linearly with X to plot the other half.)  You can do the same thing with `sin`, `circ`, `bounce`, and any number of other transitions to create complex parametric path animations.
+> While we plan to support custom, visual animation along paths in the future, there's a lot you can do with Animator today.  Since you can animate X and Y position separately, try out *different easing curves* for each of X and Y positions.  For example, if you animate `linear` with X and `ease in > quadratic` with Y, you can plot half of a parabola (then `ease out > quadratic` with Y while continuing linearly with X to plot the other half.)  You can do the same thing with `sin`, `circ`, `bounce`, and any number of other transitions to create complex parametric path animations.
 
 <br>
 
@@ -113,7 +113,7 @@ If you drag an element across the stage *at a point in time*, keyframes will aut
 
 Both techniques are 'windows' into the same underlying data.
 
-In fact, both of these techniques also have exactly the same outcome as editing the values manually in the code — which you can read more about under [Advanced:  Editing Haiku as Code](./advanced-editing-haiku-as-code.md).
+In fact, both of these techniques also have exactly the same outcome as editing the values manually in the code — which you can read more about under [Advanced:  Editing Animator projects as Code](./advanced-editing-haiku-as-code.md).
 
 <br>
 
@@ -161,7 +161,7 @@ To edit the _value of a keyframe_, simply align the ticker over the keyframe, th
 
 #### CREATING OR EDITING A TRANSITION/TWEEN {#tweens}
 
-Once you've created two keyframes (there's always a keyframe at the first frame) you can create a Transition.  Haiku will then ease between the values of the two keyframes, along the Easing Curve that you specify.
+Once you've created two keyframes (there's always a keyframe at the first frame) you can create a Transition.  Animator will then ease between the values of the two keyframes, along the Easing Curve that you specify.
 
 To create a transition, right-click between two keyframes, then choose `"Create Tween" >` and select your desired curve.
 
