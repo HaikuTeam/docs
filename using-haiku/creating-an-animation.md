@@ -167,7 +167,10 @@ To create a transition, right-click between two keyframes, then choose `"Create 
 
 ![](/assets/make-tween.png)
 
-> **Coming soon:**  we'll be adding support for custom easing curves, plus the ability to better visualize the shape of a given curve.
+After creating a transition, you can always modify it by right-clicking on the transition and choose one of the following two options:
+
+- `"Change Tween >"`: lets you select a curve from a set of predefined curves.
+- `"Edit Bezier Curve" >`: lets you create a customized Cubic Bezier Curve.
 
 <br>
 
