@@ -40,6 +40,8 @@
 
 ## Release Notes
 * [Index](release-notes/index.md)
+* [4.5.1 Release Notes](release-notes/release-notes-4-5-1.md)
+* [4.5.0 Release Notes](release-notes/release-notes-4-5-0.md)
 * [4.4.0 Release Notes](release-notes/release-notes-4-4-0.md)
 * [4.3.12 Release Notes](release-notes/release-notes-4-3-12.md)
 * [4.3.11 Release Notes](release-notes/release-notes-4-3-11.md)
