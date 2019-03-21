@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,700');
+
 body {
-  font-family: "ff-tisa-sans-web-pro", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 ::selection {
-  background: #57c8e6;
+  background: #F15D4A;
   color: #FAFCFC;
 }
 ::-moz-selection {
-  background: #57c8e6;
+  background: #F15D4A;
   color: #FAFCFC;
 }
 
@@ -45,10 +47,6 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.book.font-family-1, .book-summary {
-  font-family: "ff-tisa-sans-web-pro", sans-serif !important;
-}
-
 .gitbook-link, a[aria-label="Share"], .font-settings, a[aria-label="Change Layout"], .custom-link {
   display: none !important;
 }
@@ -58,11 +56,11 @@ body {
 }
 
 .markdown-section {
-  color: rgb(86, 88, 103);
+  color: #070E18;
 }
 
 .markdown-section a, .book-summary ul.summary li.active>a {
-  color: rgb(128, 224, 226);
+  color: #F15D4A;
   font-weight: bold;
 }
 
@@ -75,11 +73,11 @@ body {
 }
 
 .book-summary {
-  background-color: rgb(36, 45, 49);
+  background-color: #070E18;
 }
 
 #book-search-input {
-  background-color: rgb(36, 45, 49);
+  background-color: #070E18;
   color: rgb(255, 255, 255);
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   position: relative;
@@ -91,11 +89,11 @@ input::placeholder {
 
 .book-body {
   background-color: rgb(248, 248, 248);
-  color: rgb(86, 88, 103);
+  color: #070E18;
 }
 
 .book-body a {
-  color: rgb(67, 196, 209);
+  color: #F15D4A;
 }
 
 .book-header {
@@ -110,8 +108,8 @@ input::placeholder {
 }
 
 .docs-logo {
-  width: 179px;
-  margin: 20px 0 0 14px;
+  width: 86%;
+  margin: 20px 0 20px 14px;
 }
 
 .go-to-www {

@@ -4,7 +4,7 @@ description: The Haiku Animator docs are your one stop shop for everything you n
 
 <br>
 
-# Welcome to the Haiku Animator Docs !
+# Welcome to the Haiku Animator Docs
 
 Welcome! Everything new and advanced users want to know about Animator should be available in the Docs. If you're brand new to Animator check out our [Getting Started](http://docs.haiku.ai/getting-started.html) page or the rest of our learning resources (like tutorials and support) on the [Learn page](http://haiku.ai/learn).
 
