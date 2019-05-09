@@ -18,6 +18,10 @@ Haiku Animator supports an array of keyboard shortcuts to help expedite your wor
 | `DELETE` or `Backspace` | Deletes selection |
 | `CMD ⌘` + `+` | Zoom Out |
 | `CMD ⌘` + `-` | Zoom Out |
+| `←` or `→` | Navigates the timeline left and right if the cursor is placed over it |
+| `CMD ⌘` + `←` or `→` | Moves the playhead |
+| `CMD ⌘` + `SHIFT` + `←` | Jumps the playhead all the way back to time 0 |
+
 
 You can also:
 
